@@ -63852,3 +63852,570 @@ Session ID: df9672e5-bdd5-4d93-9a3c-40b047bd10ec
 2018-11-12 00:08:06,448 INFO  [Log] X 
 2018-11-12 00:08:06,448 INFO  [Log] X 
 2018-11-12 00:08:06,448 INFO  [Log] X 
+2018-11-12 00:20:01,688 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:20:01,690 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:20:01,691 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:20:01,691 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:20:01,691 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:20:01,868 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:20:01,868 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:20:01,868 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:20:01,868 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:20:01,868 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:20:02,440 INFO  [Log] Excel sheet opened 
+2018-11-12 00:20:02,440 INFO  [Log] Excel sheet opened 
+2018-11-12 00:20:02,440 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:20:02,440 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:20:20,241 INFO  [Log] New driver instantiated 
+2018-11-12 00:20:21,138 INFO  [Log] New driver instantiated 
+2018-11-12 00:20:23,820 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:20:24,699 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:20:35,401 INFO  [Log] Web application launched successfully 
+2018-11-12 00:20:35,430 INFO  [Log] OUNASS FB Login  Tests Failed because of Verification 
+2018-11-12 00:20:35,712 INFO  [Log] Web application launched successfully 
+2018-11-12 00:20:35,740 INFO  [Log] NISNASS User Registration Tests started 
+2018-11-12 00:20:37,488 ERROR [Log]  
+2018-11-12 00:20:37,494 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:20:37,494 INFO  [Log] X 
+2018-11-12 00:20:37,494 INFO  [Log] X 
+2018-11-12 00:20:37,494 INFO  [Log] X 
+2018-11-12 00:20:37,494 INFO  [Log] X 
+2018-11-12 00:20:55,799 INFO  [Log] NISNASS HP Does not Launched Successfully 
+2018-11-12 00:20:56,532 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:20:56,532 INFO  [Log] X 
+2018-11-12 00:20:56,532 INFO  [Log] X 
+2018-11-12 00:20:56,532 INFO  [Log] X 
+2018-11-12 00:20:56,533 INFO  [Log] X 
+2018-11-12 00:22:15,695 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:22:15,696 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:22:15,696 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:22:15,696 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:22:15,696 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:22:15,810 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:22:15,811 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:22:15,811 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:22:15,811 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:22:15,811 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:22:16,405 INFO  [Log] Excel sheet opened 
+2018-11-12 00:22:16,405 INFO  [Log] Excel sheet opened 
+2018-11-12 00:22:16,405 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:22:16,405 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:22:25,710 INFO  [Log] New driver instantiated 
+2018-11-12 00:22:25,806 INFO  [Log] New driver instantiated 
+2018-11-12 00:22:29,268 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:22:29,324 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:22:38,555 INFO  [Log] Web application launched successfully 
+2018-11-12 00:22:38,592 INFO  [Log] NISNASS User Registration Tests started 
+2018-11-12 00:22:38,607 INFO  [Log] Web application launched successfully 
+2018-11-12 00:22:38,622 INFO  [Log] Ounass FB Login Test started::Tests02_Ounass 
+2018-11-12 00:22:58,658 INFO  [Log] NISNASS HP Does not Launched Successfully 
+2018-11-12 00:22:59,434 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:22:59,434 INFO  [Log] X 
+2018-11-12 00:22:59,434 INFO  [Log] X 
+2018-11-12 00:22:59,434 INFO  [Log] X 
+2018-11-12 00:22:59,434 INFO  [Log] X 
+2018-11-12 00:23:18,868 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:23:18,869 INFO  [Log] X 
+2018-11-12 00:23:18,869 INFO  [Log] X 
+2018-11-12 00:23:18,869 INFO  [Log] X 
+2018-11-12 00:23:18,869 INFO  [Log] X 
+2018-11-12 00:25:00,899 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:25:00,899 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:25:00,900 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:25:00,900 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:25:00,900 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:25:01,038 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:25:01,039 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:25:01,039 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:25:01,039 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:25:01,039 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:25:01,516 INFO  [Log] Excel sheet opened 
+2018-11-12 00:25:01,516 INFO  [Log] Excel sheet opened 
+2018-11-12 00:25:01,516 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:25:01,516 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:25:42,574 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:25:42,575 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:25:42,575 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:25:42,575 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:25:42,575 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:25:42,687 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:25:42,687 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:25:42,687 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:25:42,687 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:25:42,687 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:25:43,254 INFO  [Log] Excel sheet opened 
+2018-11-12 00:25:43,254 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:25:43,254 INFO  [Log] Excel sheet opened 
+2018-11-12 00:25:43,254 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:25:52,281 INFO  [Log] New driver instantiated 
+2018-11-12 00:25:52,281 INFO  [Log] New driver instantiated 
+2018-11-12 00:25:55,831 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:25:55,900 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:26:02,115 INFO  [Log] Web application launched successfully 
+2018-11-12 00:26:02,161 INFO  [Log] NISNASS User Registration Tests started 
+2018-11-12 00:26:02,291 INFO  [Log] NISNASS HP Launched 
+2018-11-12 00:26:05,348 INFO  [Log] Web application launched successfully 
+2018-11-12 00:26:05,362 INFO  [Log] Ounass FB Login Test started::Tests02_Ounass 
+2018-11-12 00:26:24,883 INFO  [Log] User Loggin Sucess 
+2018-11-12 00:26:27,363 INFO  [Log] Email Field is non editable 
+2018-11-12 00:26:32,382 INFO  [Log] Profile is updated successfully 
+2018-11-12 00:26:32,412 INFO  [Log] New mobile number is updated successfully 
+2018-11-12 00:26:32,415 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:26:32,415 INFO  [Log] X 
+2018-11-12 00:26:32,415 INFO  [Log] X 
+2018-11-12 00:26:32,415 INFO  [Log] X 
+2018-11-12 00:26:32,415 INFO  [Log] X 
+2018-11-12 00:26:45,700 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:26:45,700 INFO  [Log] X 
+2018-11-12 00:26:45,700 INFO  [Log] X 
+2018-11-12 00:26:45,700 INFO  [Log] X 
+2018-11-12 00:26:45,700 INFO  [Log] X 
+2018-11-12 00:28:34,582 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:28:34,582 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:28:34,582 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:28:34,582 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:28:34,583 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:28:34,704 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:28:34,704 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:28:34,704 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:28:34,704 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:28:34,704 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:28:35,324 INFO  [Log] Excel sheet opened 
+2018-11-12 00:28:35,324 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:28:35,324 INFO  [Log] Excel sheet opened 
+2018-11-12 00:28:35,324 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:28:44,309 INFO  [Log] New driver instantiated 
+2018-11-12 00:28:44,536 INFO  [Log] New driver instantiated 
+2018-11-12 00:28:47,867 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:28:48,056 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:28:54,835 INFO  [Log] Web application launched successfully 
+2018-11-12 00:28:54,870 INFO  [Log] Ounass FB Login Test started::Tests02_Ounass 
+2018-11-12 00:28:54,949 INFO  [Log] Web application launched successfully 
+2018-11-12 00:28:54,961 INFO  [Log] NISNASS User Registration Tests started 
+2018-11-12 00:29:15,020 INFO  [Log] NISNASS HP Does not Launched Successfully 
+2018-11-12 00:29:15,662 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:29:15,662 INFO  [Log] X 
+2018-11-12 00:29:15,662 INFO  [Log] X 
+2018-11-12 00:29:15,662 INFO  [Log] X 
+2018-11-12 00:29:15,662 INFO  [Log] X 
+2018-11-12 00:29:18,368 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:29:18,368 INFO  [Log] X 
+2018-11-12 00:29:18,369 INFO  [Log] X 
+2018-11-12 00:29:18,369 INFO  [Log] X 
+2018-11-12 00:29:18,369 INFO  [Log] X 
+2018-11-12 00:30:10,521 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:30:10,521 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:30:10,522 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:30:10,522 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:30:10,522 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:30:10,646 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:30:10,646 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:30:10,646 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:30:10,646 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:30:10,646 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:30:11,211 INFO  [Log] Excel sheet opened 
+2018-11-12 00:30:11,211 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:30:11,211 INFO  [Log] Excel sheet opened 
+2018-11-12 00:30:11,211 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:30:20,096 INFO  [Log] New driver instantiated 
+2018-11-12 00:30:20,485 INFO  [Log] New driver instantiated 
+2018-11-12 00:30:23,665 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:30:24,004 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:30:29,595 INFO  [Log] Web application launched successfully 
+2018-11-12 00:30:29,620 INFO  [Log] Web application launched successfully 
+2018-11-12 00:30:29,643 INFO  [Log] NISNASS User Registration Tests started 
+2018-11-12 00:30:29,643 INFO  [Log] Ounass FB Login Test started::Tests02_Ounass 
+2018-11-12 00:30:29,818 INFO  [Log] NISNASS HP Launched 
+2018-11-12 00:30:47,880 INFO  [Log] User Loggin Sucess 
+2018-11-12 00:30:50,396 INFO  [Log] Email Field is non editable 
+2018-11-12 00:30:52,917 INFO  [Log] Profile is updated successfully 
+2018-11-12 00:30:52,944 INFO  [Log] New mobile number is updated successfully 
+2018-11-12 00:30:52,947 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:30:52,947 INFO  [Log] X 
+2018-11-12 00:30:52,947 INFO  [Log] X 
+2018-11-12 00:30:52,947 INFO  [Log] X 
+2018-11-12 00:30:52,947 INFO  [Log] X 
+2018-11-12 00:31:10,013 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:31:10,013 INFO  [Log] X 
+2018-11-12 00:31:10,014 INFO  [Log] X 
+2018-11-12 00:31:10,014 INFO  [Log] X 
+2018-11-12 00:31:10,014 INFO  [Log] X 
+2018-11-12 00:33:20,336 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:33:20,337 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:33:20,337 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:33:20,337 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:33:20,337 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:33:20,466 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:33:20,466 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:33:20,466 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:33:20,467 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:33:20,467 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:33:21,021 INFO  [Log] Excel sheet opened 
+2018-11-12 00:33:21,021 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:33:21,022 INFO  [Log] Excel sheet opened 
+2018-11-12 00:33:21,022 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:33:55,313 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:33:55,314 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:33:55,314 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:33:55,314 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:33:55,314 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:33:55,500 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:33:55,500 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:33:55,500 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:33:55,500 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:33:55,500 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:33:56,076 INFO  [Log] Excel sheet opened 
+2018-11-12 00:33:56,076 INFO  [Log] Excel sheet opened 
+2018-11-12 00:33:56,076 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:33:56,076 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:34:03,595 INFO  [Log] New driver instantiated 
+2018-11-12 00:34:03,791 INFO  [Log] New driver instantiated 
+2018-11-12 00:34:07,215 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:34:07,318 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:34:16,176 INFO  [Log] Web application launched successfully 
+2018-11-12 00:34:16,218 INFO  [Log] NISNASS User Registration Tests started 
+2018-11-12 00:34:16,832 INFO  [Log] Web application launched successfully 
+2018-11-12 00:34:16,849 INFO  [Log] Ounass FB Login Test started::Tests02_Ounass 
+2018-11-12 00:34:18,774 INFO  [Log] OUNASS FB Login  Tests Failed because of Verification 
+2018-11-12 00:34:19,734 ERROR [Log] Element <button id="onesignal-popover-cancel-button" class="align-right secondary popover-button"> could not be scrolled into view
+Build info: version: '3.5.2', revision: '10229a9', time: '2017-08-21T17:29:55.15Z'
+System info: host: 'LAPTOP-HQ8T4QQ2', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Juber\AppData\Local\Temp\rust_mozprofile.5G4upuANy45X, rotatable=false, moz:geckodriverVersion=0.23.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=63.0.1, platformVersion=10.0, moz:processID=22020, browserName=firefox, javascriptEnabled=true, platformName=windows, setWindowRect=true, moz:webdriverClick=true}]
+Session ID: 478a414a-381f-4486-98d4-04aa95503b3d 
+2018-11-12 00:34:19,737 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:34:19,737 INFO  [Log] X 
+2018-11-12 00:34:19,737 INFO  [Log] X 
+2018-11-12 00:34:19,738 INFO  [Log] X 
+2018-11-12 00:34:19,738 INFO  [Log] X 
+2018-11-12 00:34:36,249 INFO  [Log] NISNASS HP Does not Launched Successfully 
+2018-11-12 00:34:37,020 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:34:37,020 INFO  [Log] X 
+2018-11-12 00:34:37,020 INFO  [Log] X 
+2018-11-12 00:34:37,020 INFO  [Log] X 
+2018-11-12 00:34:37,020 INFO  [Log] X 
+2018-11-12 00:36:17,301 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:17,302 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:17,302 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:36:17,302 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:17,302 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:17,459 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:17,460 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:17,460 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:36:17,460 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:17,460 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:17,992 INFO  [Log] Excel sheet opened 
+2018-11-12 00:36:17,992 INFO  [Log] Excel sheet opened 
+2018-11-12 00:36:17,992 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:36:17,992 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:36:30,768 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:30,768 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:30,768 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:36:30,768 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:30,768 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:30,954 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:30,955 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:30,955 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:36:30,955 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:30,955 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:31,666 INFO  [Log] Excel sheet opened 
+2018-11-12 00:36:31,667 INFO  [Log] Excel sheet opened 
+2018-11-12 00:36:31,667 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:36:31,667 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:36:50,738 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:50,739 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:50,739 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:36:50,739 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:50,739 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:50,868 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:50,868 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:50,868 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:36:50,868 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:50,868 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:36:51,426 INFO  [Log] Excel sheet opened 
+2018-11-12 00:36:51,427 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:36:51,427 INFO  [Log] Excel sheet opened 
+2018-11-12 00:36:51,427 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:37:17,822 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:37:17,823 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:37:17,823 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:37:17,823 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:37:17,823 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:37:18,383 INFO  [Log] Excel sheet opened 
+2018-11-12 00:37:18,383 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:37:34,248 INFO  [Log] New driver instantiated 
+2018-11-12 00:37:37,779 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:37:46,581 INFO  [Log] Web application launched successfully 
+2018-11-12 00:37:46,676 INFO  [Log] NISNASS User Registration Tests started 
+2018-11-12 00:37:46,722 INFO  [Log] NISNASS HP Launched 
+2018-11-12 00:38:02,582 INFO  [Log] User Loggin Sucess 
+2018-11-12 00:38:06,769 INFO  [Log] Email Field is non editable 
+2018-11-12 00:38:09,580 INFO  [Log] Profile is updated successfully 
+2018-11-12 00:38:09,613 INFO  [Log] New mobile number is updated successfully 
+2018-11-12 00:38:09,617 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:38:09,617 INFO  [Log] X 
+2018-11-12 00:38:09,617 INFO  [Log] X 
+2018-11-12 00:38:09,617 INFO  [Log] X 
+2018-11-12 00:38:09,617 INFO  [Log] X 
+2018-11-12 00:38:11,875 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:38:11,876 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:38:11,876 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:38:11,876 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:38:11,876 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:38:11,963 INFO  [Log] Excel sheet opened 
+2018-11-12 00:38:11,963 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:38:17,650 INFO  [Log] New driver instantiated 
+2018-11-12 00:38:21,188 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:38:30,556 INFO  [Log] Web application launched successfully 
+2018-11-12 00:38:30,575 INFO  [Log] Ounass FB Login Test started::Tests02_Ounass 
+2018-11-12 00:38:52,193 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:38:52,193 INFO  [Log] X 
+2018-11-12 00:38:52,193 INFO  [Log] X 
+2018-11-12 00:38:52,193 INFO  [Log] X 
+2018-11-12 00:38:52,193 INFO  [Log] X 
+2018-11-12 00:40:09,843 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:40:09,843 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:40:09,843 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:40:09,843 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:40:09,843 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:40:10,387 INFO  [Log] Excel sheet opened 
+2018-11-12 00:40:10,388 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:40:16,511 INFO  [Log] New driver instantiated 
+2018-11-12 00:40:20,069 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:40:25,632 INFO  [Log] Web application launched successfully 
+2018-11-12 00:40:25,735 INFO  [Log] NISNASS User Registration Tests started 
+2018-11-12 00:40:25,784 INFO  [Log] NISNASS HP Launched 
+2018-11-12 00:40:40,150 INFO  [Log] User Loggin Sucess 
+2018-11-12 00:40:43,154 INFO  [Log] Email Field is non editable 
+2018-11-12 00:40:45,788 INFO  [Log] Profile is updated successfully 
+2018-11-12 00:40:45,830 INFO  [Log] New mobile number is updated successfully 
+2018-11-12 00:40:45,836 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:40:45,836 INFO  [Log] X 
+2018-11-12 00:40:45,837 INFO  [Log] X 
+2018-11-12 00:40:45,837 INFO  [Log] X 
+2018-11-12 00:40:45,837 INFO  [Log] X 
+2018-11-12 00:40:48,149 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:40:48,150 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:40:48,150 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:40:48,150 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:40:48,150 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:40:48,199 INFO  [Log] Excel sheet opened 
+2018-11-12 00:40:48,200 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:40:53,273 INFO  [Log] New driver instantiated 
+2018-11-12 00:40:56,800 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:41:03,738 INFO  [Log] Web application launched successfully 
+2018-11-12 00:41:03,748 INFO  [Log] Ounass FB Login Test started::Tests02_Ounass 
+2018-11-12 00:41:03,902 INFO  [Log] OUNASS FB Login  Tests Failed because of Verification 
+2018-11-12 00:41:04,704 ERROR [Log] Element <button id="onesignal-popover-cancel-button" class="align-right secondary popover-button"> could not be scrolled into view
+Build info: version: '3.5.2', revision: '10229a9', time: '2017-08-21T17:29:55.15Z'
+System info: host: 'LAPTOP-HQ8T4QQ2', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Juber\AppData\Local\Temp\rust_mozprofile.lACTsinQN0SQ, rotatable=false, moz:geckodriverVersion=0.23.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=63.0.1, platformVersion=10.0, moz:processID=21744, browserName=firefox, javascriptEnabled=true, platformName=windows, setWindowRect=true, moz:webdriverClick=true}]
+Session ID: 9a2d5a68-d6c5-444e-9a56-ba462dbb14f6 
+2018-11-12 00:41:04,707 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:41:04,707 INFO  [Log] X 
+2018-11-12 00:41:04,707 INFO  [Log] X 
+2018-11-12 00:41:04,707 INFO  [Log] X 
+2018-11-12 00:41:04,707 INFO  [Log] X 
+2018-11-12 00:54:28,300 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:54:28,301 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:54:28,301 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:54:28,301 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:54:28,301 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:54:28,862 INFO  [Log] Excel sheet opened 
+2018-11-12 00:54:28,863 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:54:34,881 INFO  [Log] New driver instantiated 
+2018-11-12 00:54:38,493 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:54:45,136 INFO  [Log] Web application launched successfully 
+2018-11-12 00:54:45,199 INFO  [Log] NISNASS User Registration Tests started 
+2018-11-12 00:54:45,273 INFO  [Log] NISNASS HP Launched 
+2018-11-12 00:55:05,604 INFO  [Log] User Loggin Sucess 
+2018-11-12 00:55:09,627 INFO  [Log] Email Field is non editable 
+2018-11-12 00:55:12,205 INFO  [Log] Profile is updated successfully 
+2018-11-12 00:55:12,225 INFO  [Log] New mobile number is updated successfully 
+2018-11-12 00:55:12,231 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:55:12,231 INFO  [Log] X 
+2018-11-12 00:55:12,231 INFO  [Log] X 
+2018-11-12 00:55:12,231 INFO  [Log] X 
+2018-11-12 00:55:12,231 INFO  [Log] X 
+2018-11-12 00:55:14,465 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:55:14,465 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:55:14,465 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:55:14,465 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:55:14,465 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:55:14,510 INFO  [Log] Excel sheet opened 
+2018-11-12 00:55:14,510 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:55:19,572 INFO  [Log] New driver instantiated 
+2018-11-12 00:55:23,110 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:55:29,589 INFO  [Log] Web application launched successfully 
+2018-11-12 00:55:29,591 INFO  [Log] Ounass FB Login Test started::Tests02_Ounass 
+2018-11-12 00:56:09,881 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:56:09,882 INFO  [Log] X 
+2018-11-12 00:56:09,882 INFO  [Log] X 
+2018-11-12 00:56:09,882 INFO  [Log] X 
+2018-11-12 00:56:09,882 INFO  [Log] X 
+2018-11-12 00:58:23,133 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:58:23,133 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:58:23,133 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:58:23,133 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:58:23,133 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:58:23,679 INFO  [Log] Excel sheet opened 
+2018-11-12 00:58:23,679 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:58:30,809 INFO  [Log] New driver instantiated 
+2018-11-12 00:58:34,364 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:58:39,047 INFO  [Log] Web application launched successfully 
+2018-11-12 00:58:39,101 INFO  [Log] NISNASS User Registration Tests started 
+2018-11-12 00:58:39,161 INFO  [Log] NISNASS HP Launched 
+2018-11-12 00:58:51,823 INFO  [Log] User Loggin Sucess 
+2018-11-12 00:58:54,502 INFO  [Log] Email Field is non editable 
+2018-11-12 00:58:57,340 INFO  [Log] Profile is updated successfully 
+2018-11-12 00:58:57,369 INFO  [Log] New mobile number is updated successfully 
+2018-11-12 00:58:57,373 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:58:57,373 INFO  [Log] X 
+2018-11-12 00:58:57,373 INFO  [Log] X 
+2018-11-12 00:58:57,373 INFO  [Log] X 
+2018-11-12 00:58:57,373 INFO  [Log] X 
+2018-11-12 00:58:59,448 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:58:59,449 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:58:59,449 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 00:58:59,449 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:58:59,449 INFO  [Log] **************************************************************************************** 
+2018-11-12 00:58:59,507 INFO  [Log] Excel sheet opened 
+2018-11-12 00:58:59,507 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 00:59:04,512 INFO  [Log] New driver instantiated 
+2018-11-12 00:59:08,044 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 00:59:15,043 INFO  [Log] Web application launched successfully 
+2018-11-12 00:59:15,046 INFO  [Log] Ounass FB Login Test started::Tests02_Ounass 
+2018-11-12 00:59:55,344 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 00:59:55,345 INFO  [Log] X 
+2018-11-12 00:59:55,345 INFO  [Log] X 
+2018-11-12 00:59:55,345 INFO  [Log] X 
+2018-11-12 00:59:55,345 INFO  [Log] X 
+2018-11-12 01:01:26,780 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:01:26,781 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:01:26,781 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 01:01:26,781 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:01:26,781 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:01:27,380 INFO  [Log] Excel sheet opened 
+2018-11-12 01:01:27,380 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 01:01:32,919 INFO  [Log] New driver instantiated 
+2018-11-12 01:01:36,448 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 01:01:41,307 INFO  [Log] Web application launched successfully 
+2018-11-12 01:01:41,346 INFO  [Log] NISNASS User Registration Tests started 
+2018-11-12 01:01:41,422 INFO  [Log] NISNASS HP Launched 
+2018-11-12 01:01:59,212 INFO  [Log] User Loggin Sucess 
+2018-11-12 01:02:01,085 INFO  [Log] Email Field is non editable 
+2018-11-12 01:02:03,385 INFO  [Log] Profile is updated successfully 
+2018-11-12 01:02:03,415 INFO  [Log] New mobile number is updated successfully 
+2018-11-12 01:02:03,417 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 01:02:03,417 INFO  [Log] X 
+2018-11-12 01:02:03,417 INFO  [Log] X 
+2018-11-12 01:02:03,417 INFO  [Log] X 
+2018-11-12 01:02:03,417 INFO  [Log] X 
+2018-11-12 01:02:07,178 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:02:07,178 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:02:07,178 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 01:02:07,178 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:02:07,178 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:02:07,233 INFO  [Log] Excel sheet opened 
+2018-11-12 01:02:07,233 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 01:02:19,477 INFO  [Log] New driver instantiated 
+2018-11-12 01:02:23,010 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 01:02:31,880 INFO  [Log] Web application launched successfully 
+2018-11-12 01:02:31,885 INFO  [Log] Ounass FB Login Test started::Tests02_Ounass 
+2018-11-12 01:02:32,068 INFO  [Log] OUNASS FB Login  Tests Failed because of Verification 
+2018-11-12 01:02:33,079 ERROR [Log] Element <button id="onesignal-popover-cancel-button" class="align-right secondary popover-button"> could not be scrolled into view
+Build info: version: '3.5.2', revision: '10229a9', time: '2017-08-21T17:29:55.15Z'
+System info: host: 'LAPTOP-HQ8T4QQ2', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Juber\AppData\Local\Temp\rust_mozprofile.0OsXEQVQ3xXF, rotatable=false, moz:geckodriverVersion=0.23.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=63.0.1, platformVersion=10.0, moz:processID=4644, browserName=firefox, javascriptEnabled=true, platformName=windows, setWindowRect=true, moz:webdriverClick=true}]
+Session ID: 777eefd5-8bb8-4cc1-aadc-aa9c2d1d5261 
+2018-11-12 01:02:33,084 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 01:02:33,084 INFO  [Log] X 
+2018-11-12 01:02:33,084 INFO  [Log] X 
+2018-11-12 01:02:33,084 INFO  [Log] X 
+2018-11-12 01:02:33,084 INFO  [Log] X 
+2018-11-12 01:04:56,634 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:04:56,636 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:04:56,636 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 01:04:56,636 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:04:56,636 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:04:57,153 INFO  [Log] Excel sheet opened 
+2018-11-12 01:04:57,153 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 01:05:02,515 INFO  [Log] New driver instantiated 
+2018-11-12 01:05:06,052 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 01:05:14,551 INFO  [Log] Web application launched successfully 
+2018-11-12 01:05:14,640 INFO  [Log] NISNASS User Registration Tests Failed 
+2018-11-12 01:05:14,641 ERROR [Log]  
+2018-11-12 01:05:14,648 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 01:05:14,648 INFO  [Log] X 
+2018-11-12 01:05:14,648 INFO  [Log] X 
+2018-11-12 01:05:14,649 INFO  [Log] X 
+2018-11-12 01:05:14,649 INFO  [Log] X 
+2018-11-12 01:05:23,640 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:05:23,640 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:05:23,640 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 01:05:23,640 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:05:23,640 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:05:23,685 INFO  [Log] Excel sheet opened 
+2018-11-12 01:05:23,685 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 01:05:29,876 INFO  [Log] New driver instantiated 
+2018-11-12 01:05:33,464 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 01:05:46,381 INFO  [Log] Web application launched successfully 
+2018-11-12 01:05:46,383 INFO  [Log] OUNASS FB Login  Tests Failed because of Verification 
+2018-11-12 01:05:47,233 ERROR [Log]  
+2018-11-12 01:05:47,236 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-12 01:05:47,236 INFO  [Log] X 
+2018-11-12 01:05:47,236 INFO  [Log] X 
+2018-11-12 01:05:47,236 INFO  [Log] X 
+2018-11-12 01:05:47,237 INFO  [Log] X 
+2018-11-12 01:09:51,880 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:09:51,881 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:09:51,881 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 01:09:51,881 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:09:51,881 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:09:52,404 INFO  [Log] Excel sheet opened 
+2018-11-12 01:09:52,404 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 01:09:58,530 INFO  [Log] New driver instantiated 
+2018-11-12 01:10:02,096 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 01:10:07,502 INFO  [Log] Web application launched successfully 
+2018-11-12 01:10:07,676 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:10:07,676 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:10:07,676 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 01:10:07,676 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:10:07,676 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:10:07,800 INFO  [Log] Excel sheet opened 
+2018-11-12 01:10:07,800 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 01:10:16,796 INFO  [Log] New driver instantiated 
+2018-11-12 01:10:20,323 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 01:10:28,402 INFO  [Log] Web application launched successfully 
+2018-11-12 01:11:44,058 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:11:44,059 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:11:44,059 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 01:11:44,059 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:11:44,060 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:11:44,632 INFO  [Log] Excel sheet opened 
+2018-11-12 01:11:44,632 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 01:11:50,139 INFO  [Log] New driver instantiated 
+2018-11-12 01:11:53,693 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 01:11:58,384 INFO  [Log] Web application launched successfully 
+2018-11-12 01:11:58,616 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:11:58,616 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:11:58,616 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests02_Ounass       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 01:11:58,616 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:11:58,616 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:11:58,758 INFO  [Log] Excel sheet opened 
+2018-11-12 01:11:58,758 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 01:12:20,116 INFO  [Log] New driver instantiated 
+2018-11-12 01:12:23,661 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 01:12:32,471 INFO  [Log] Web application launched successfully 
+2018-11-12 01:13:04,919 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:13:04,920 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:13:04,920 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:Tests_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-12 01:13:04,920 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:13:04,920 INFO  [Log] **************************************************************************************** 
+2018-11-12 01:13:05,514 INFO  [Log] Excel sheet opened 
+2018-11-12 01:13:05,514 INFO  [Log] Total number of Row used return as < 2 >. 
+2018-11-12 01:13:15,093 INFO  [Log] New driver instantiated 
+2018-11-12 01:13:18,632 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-12 01:13:24,440 INFO  [Log] Web application launched successfully 

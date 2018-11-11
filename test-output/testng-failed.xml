@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]" parallel="tests">
-  <test thread-count="1" name="flipkart(failed)" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.altayer.web.tests.Tests_01_NISNASS">
         <methods>
+          <include name="flushExtentReport"/>
           <include name="quit"/>
           <include name="accountRegistration"/>
+          <include name="extentReport"/>
           <include name="init"/>
         </methods>
       </class> <!-- com.altayer.web.tests.Tests_01_NISNASS -->
     </classes>
-  </test> <!-- flipkart(failed) -->
-</suite> <!-- Failed suite [Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

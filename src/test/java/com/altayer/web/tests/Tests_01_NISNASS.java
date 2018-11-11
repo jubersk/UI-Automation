@@ -5,6 +5,11 @@ import com.altayer.web.utilitiy.BaseClass;
 import com.altayer.web.utilitiy.ConstantOnlineReg;
 import com.altayer.web.utilitiy.ExcelUtils;
 import com.altayer.web.utilitiy.Log;
+import com.altayer.web.utilitiy.utils;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
 import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -18,9 +23,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 
 
-public class Tests_01_NISNASS{
+public class Tests_01_NISNASS extends utils{
 	public static WebDriver driver = null;
 	private static String rootPath = "";
 	public static WebDriverWait wait;
@@ -31,10 +37,11 @@ public class Tests_01_NISNASS{
 	private static String navigateURL = "";
 
 
+
 	// This method is to navigate flipkart URL
 	@BeforeClass
 	public void init() throws Exception {
-
+		
 
 		if(prop==null){
 			prop = new Properties();
@@ -77,7 +84,7 @@ public class Tests_01_NISNASS{
 		Log.info("Implicit wait applied on the driver for 20 seconds");
 		driver.get(navigateURL);
 		Log.info("Web application launched successfully");
-		
+		logger.log(LogStatus.INFO, "Web application launched successfully");
 		wait = new WebDriverWait(driver, 120);
 	}
 
@@ -85,6 +92,8 @@ public class Tests_01_NISNASS{
 	@Test
 	public void accountRegistration() throws Exception {
 		try{
+			extent.startTest(sTestCaseName);
+			logger.log(LogStatus.INFO, "User Registration Test Started");
 			Log.info("NISNASS User Registration Tests started");
 			Reporter.log("NISNASS User Registration Tests Failed");
 			fn_UserRegistration(iTestCaseRow);
@@ -108,6 +117,8 @@ public class Tests_01_NISNASS{
 	public void quit() {
 		Log.endTestCase(sTestCaseName);
 		Reporter.log("Nisnass User Registration Test Ends::" + sTestCaseName);
+		extent.endTest(logger);
+		//extent.flush();
 		driver.close();
 		//driver.quit();
 	}

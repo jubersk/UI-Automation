@@ -43,7 +43,7 @@ public class BaseClass {
 	//public static WebDriver driver;
 	private static String rootPath = "";
 	private static String navigateURL = "";
-
+	
 	/*public BaseClass(WebDriver driver){
 		
 		BaseClass.bResult = true;

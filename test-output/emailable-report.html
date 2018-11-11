@@ -8,15 +8,70 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Test Suite</th></tr>
-<tr><td><a href="#t0">flipkart</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">43,195</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">snapdeal</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">63,333</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">106,528</th><th colspan="2"></th></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">19,648</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">flipkart &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.altayer.web.tests.Tests_01_NISNASS</td><td><a href="#m0">accountRegistration</a></td><td rowspan="1">1541966284474</td><td rowspan="1">21831</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">snapdeal &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.altayer.web.tests.Tests02_Ounass</td><td><a href="#m1">login</a></td><td rowspan="1">1541966286700</td><td rowspan="1">40274</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.altayer.web.tests.Tests_01_NISNASS</td><td><a href="#m0">init</a></td><td rowspan="1">1541970784883</td><td rowspan="1">19563</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">com.altayer.web.tests.Tests_01_NISNASS</td><td><a href="#m1">flushExtentReport</a></td><td rowspan="1">1541970804576</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">quit</a></td><td rowspan="1">1541970804520</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.altayer.web.tests.Tests_01_NISNASS</td><td><a href="#m3">accountRegistration</a></td><td rowspan="1">1541970804511</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>flipkart</h2><h3 id="m0">com.altayer.web.tests.Tests_01_NISNASS#accountRegistration</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">NISNASS User Registration Tests Failed<br/>NISNASS HP Launched<br/>Sigup Popup opened sucessfully<br/>User Loggin Sucess<br/>Email Field is non editable<br/>Profile is updated successfully<br/>New mobile number is updated successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>snapdeal</h2><h3 id="m1">com.altayer.web.tests.Tests02_Ounass#login</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Ounass FB Login Test started::Tests02_Ounass<br/>OUNASS FB Login Tests has been verified successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.altayer.web.tests.Tests_01_NISNASS#init</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.altayer.web.tests.Tests_01_NISNASS.init(Tests_01_NISNASS.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.altayer.web.tests.Tests_01_NISNASS#flushExtentReport</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.altayer.web.tests.Tests_01_NISNASS#quit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.altayer.web.tests.Tests_01_NISNASS#accountRegistration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.altayer.web.tests.Tests_01_NISNASS.init(Tests_01_NISNASS.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

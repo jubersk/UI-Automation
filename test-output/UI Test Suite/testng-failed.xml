@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [UI Test Suite]">
+  <test thread-count="5" name="NISNASS(failed)">
+    <classes>
+      <class name="com.altayer.web.tests.Tests_01_NISNASS">
+        <methods>
+          <include name="flushExtentReport"/>
+          <include name="quit"/>
+          <include name="accountRegistration"/>
+          <include name="extentReport"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.altayer.web.tests.Tests_01_NISNASS -->
+    </classes>
+  </test> <!-- NISNASS(failed) -->
+  <test thread-count="5" name="OUNASS(failed)">
+    <classes>
+      <class name="com.altayer.web.tests.Tests02_Ounass">
+        <methods>
+          <include name="login"/>
+          <include name="quit"/>
+          <include name="flushExtentReport"/>
+          <include name="init"/>
+          <include name="extentReport"/>
+        </methods>
+      </class> <!-- com.altayer.web.tests.Tests02_Ounass -->
+    </classes>
+  </test> <!-- OUNASS(failed) -->
+</suite> <!-- Failed suite [UI Test Suite] -->

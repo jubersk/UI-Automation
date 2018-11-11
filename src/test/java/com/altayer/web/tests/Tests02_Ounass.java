@@ -6,6 +6,11 @@ import com.altayer.web.utilitiy.BaseClass;
 import com.altayer.web.utilitiy.ConstantOnlineReg;
 import com.altayer.web.utilitiy.ExcelUtils;
 import com.altayer.web.utilitiy.Log;
+import com.altayer.web.utilitiy.utils;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
 import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -17,9 +22,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 
-public class Tests02_Ounass {
+public class Tests02_Ounass extends utils {
 	
 	public static WebDriver driver = null;
 	private static String rootPath = "";
@@ -29,6 +35,7 @@ public class Tests02_Ounass {
 	private int iTestCaseRow;
 	public static boolean bResult;
 	private static String navigateURL = "";
+
 
 	// This method is to navigate snapdeal URL
 	@BeforeClass
@@ -75,12 +82,16 @@ public class Tests02_Ounass {
 		//				driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.get(navigateURL);
 		Log.info("Web application launched successfully");
+		logger.log(LogStatus.INFO, "Web application launched successfully");
 	}
 
 	// To log in flipkart
 	@Test
 	public void login() throws Exception {
 		try{
+			//extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReportNew.html", true);
+			Tests_01_NISNASS.extent.startTest(sTestCaseName);
+			logger.log(LogStatus.INFO, "Ounass FB Login Test started");
 			Log.info("Ounass FB Login Test started::" + sTestCaseName);
 			Reporter.log("Ounass FB Login Test started::" + sTestCaseName);
 			//Execute the action on below test
@@ -136,9 +147,14 @@ public class Tests02_Ounass {
 	public void quit() {
 		Log.endTestCase(sTestCaseName);
    		Reporter.log("OUNASS FB Login Test Ends::" + sTestCaseName);
-		//driver.quit();
+   		extent.endTest(logger);
    		driver.close();
+		//driver.quit();
+   	
+   		
+   		
 	}
+
 	
 	public static void fn_LoginFlow() throws Exception{
 		//then click on user icon
