@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="2" name="Test Suite" annotations="JDK" parallel="tests">
+         
+  <test name="flipkart">
+	 <classes>
+	   <class name="com.altayer.web.tests.Tests_01_NISNASS"/>
+	 </classes>
+   </test>
+   
+  <test name="snapdeal">
+     <classes>
+       <class name="com.altayer.web.tests.Tests02_Ounass"/>
+     </classes>
+   </test>
+</suite>

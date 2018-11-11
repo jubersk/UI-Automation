@@ -10,8 +10,7 @@ import com.altayer.web.actions.Action_TC_04_ProductListing;
 import com.altayer.web.utilitiy.BaseClass;
 import com.altayer.web.utilitiy.ConstantOnlineReg;
 import com.altayer.web.utilitiy.ExcelUtils;
-import com.altayer.web.utilitiy.Log;
-import com.relevantcodes.extentreports.LogStatus;
+
 
 public class TC_4_ProductListingPage {/*
 	public WebDriver driver;
