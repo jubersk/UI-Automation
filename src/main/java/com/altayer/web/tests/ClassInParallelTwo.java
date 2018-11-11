@@ -1,4 +1,4 @@
-package com.altayer.web.tests;
+/*package com.altayer.web.tests;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -67,4 +67,4 @@ public class ClassInParallelTwo {
 		System.out.println("Closing Tests");
 		driver.quit();
 	}
-}
+}*/

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]" parallel="tests">
-  <test thread-count="2" name="flipkart(failed)" parallel="tests">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]" parallel="tests">
+  <test thread-count="1" name="flipkart(failed)" parallel="tests">
     <classes>
       <class name="com.altayer.web.tests.Tests_01_NISNASS">
         <methods>
@@ -12,15 +12,4 @@
       </class> <!-- com.altayer.web.tests.Tests_01_NISNASS -->
     </classes>
   </test> <!-- flipkart(failed) -->
-  <test thread-count="2" name="snapdeal(failed)" parallel="tests">
-    <classes>
-      <class name="com.altayer.web.tests.Tests02_Ounass">
-        <methods>
-          <include name="login"/>
-          <include name="quit"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- com.altayer.web.tests.Tests02_Ounass -->
-    </classes>
-  </test> <!-- snapdeal(failed) -->
 </suite> <!-- Failed suite [Test Suite] -->

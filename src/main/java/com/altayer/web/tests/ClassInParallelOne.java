@@ -1,4 +1,4 @@
-package com.altayer.web.tests;
+/*package com.altayer.web.tests;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -66,4 +66,4 @@ public class ClassInParallelOne {
 	}
 	
 	
-}
+}*/

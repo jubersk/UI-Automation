@@ -40,21 +40,21 @@ public class BaseClass {
 	public static ExtentReports extent;
 	public static ExtentTest logger;
 	
-	public static WebDriver driver = null;
+	//public static WebDriver driver;
 	private static String rootPath = "";
 	private static String navigateURL = "";
 
-	public BaseClass(WebDriver driver){
+	/*public BaseClass(WebDriver driver){
 		
 		BaseClass.bResult = true;
 		extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReport.html", true);
 		//softas.assertTrue(true);
 		wait = new WebDriverWait(driver, 120);
 		// Tell webdriver to wait
-		/*FluentWait wait = new FluentWait(driver)  
+		FluentWait wait = new FluentWait(driver)  
 				.withTimeout(30, TimeUnit.SECONDS)  
 				.pollingEvery(2, TimeUnit.SECONDS)  
-				.ignoring(NoSuchElementException.class); */
+				.ignoring(NoSuchElementException.class); 
 		if(prop==null){
 			prop = new Properties();
 			try{
@@ -82,10 +82,10 @@ public class BaseClass {
 		
 		
 
-	}
+	}*/
 
 	
-	public static  WebDriver OpenBrowser(int iTestCaseRow) throws Exception{
+	/*public static  WebDriver OpenBrowser(int iTestCaseRow) throws Exception{
 		String sBrowserName;
 
 
@@ -146,9 +146,9 @@ public class BaseClass {
 		return driver;
 
 
-	}
+	}*/
 	//Function to enter the text in text box
-	public static void fn_enterText(By locator, String textToEnter){
+	/*public static void fn_enterText(By locator, String textToEnter){
 		try{
 			Actions actions = new Actions(driver);
 			actions.moveToElement(driver.findElement(locator));
@@ -162,10 +162,10 @@ public class BaseClass {
 
 		}
 	}
-
+*/
 	//Function to select the dropdown item
 
-	public static void fn_selectItem(By locator, String itemToSelect) throws Exception{
+	/*public static void fn_selectItem(By locator, String itemToSelect) throws Exception{
 		try{
 			Select sdropDownItem = new Select(driver.findElement(locator));
 			sdropDownItem.selectByVisibleText(itemToSelect);
@@ -177,31 +177,12 @@ public class BaseClass {
 			e.printStackTrace();
 		}
 
-	}
-	//Function to click on button
-	public static void fn_click(By locator){
-		try{
-			//Actions actions = new Actions(driver);
-			//actions.moveToElement(driver.findElement(locator));
-			//actions.click();
-			driver.findElement(locator).click();
-		}catch(Exception e){
-			e.printStackTrace();
-		}
+	}*/
 
-	}
-	//Function to clear the text box value
-	public static void fn_clear(By locator){
-		try{
-			driver.findElement(locator).clear();
-		}catch(Exception e){
-			e.printStackTrace();
-		}
-	}
 
 	
 
-	public static boolean isElementPresent(By Locator){
+	public static boolean isElementPresent(WebDriver driver,By Locator){
 
 		if(driver.findElements(Locator).size()>0)
 		{
@@ -214,12 +195,12 @@ public class BaseClass {
 
 	
 
-	public static void waitAndclickUntilSelectOptionsPopulated(By locator){
+/*	public static void waitAndclickUntilSelectOptionsPopulated(By locator){
 		WebDriverWait Wait = new WebDriverWait(driver,40);
 		driver.findElement(locator).click();
 		Wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 
-	}
+	}*/
 
 
 	public static String getTestCaseName(String sTestCase)throws Exception{

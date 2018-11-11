@@ -1,4 +1,4 @@
-package com.altayer.web.actions;
+/*package com.altayer.web.actions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -122,4 +122,4 @@ public class Action_TC_02_AddToCart extends BaseClass{
 		
 
 	}
-}
+}*/

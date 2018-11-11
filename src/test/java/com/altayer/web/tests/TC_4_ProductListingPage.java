@@ -1,4 +1,4 @@
-package com.altayer.web.tests;
+/*package com.altayer.web.tests;
 
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +12,7 @@ import com.altayer.web.utilitiy.ConstantOnlineReg;
 import com.altayer.web.utilitiy.ExcelUtils;
 
 
-public class TC_4_ProductListingPage {/*
+public class TC_4_ProductListingPage {
 	public WebDriver driver;
 	private String sTestCaseName;
 	private int iTestCaseRow;
@@ -94,7 +94,8 @@ public class TC_4_ProductListingPage {/*
 			BaseClass.driver.close();
 			BaseClass.driver.quit();
 		}
-*/}
+}
 
 
 
+*/

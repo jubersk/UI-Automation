@@ -2,26 +2,17 @@ package com.altayer.web.tests;
 
 import org.testng.annotations.Test;
 
-import com.altayer.web.actions.Action_TC_03_LoginThorughFB;
 import com.altayer.web.utilitiy.BaseClass;
 import com.altayer.web.utilitiy.ConstantOnlineReg;
 import com.altayer.web.utilitiy.ExcelUtils;
 import com.altayer.web.utilitiy.Log;
-
 import java.io.FileInputStream;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
@@ -96,13 +87,13 @@ public class Tests02_Ounass {
 			bResult = true;
 			//Check popups
 			//Check if modal popups are open
-			if (BaseClass.isElementPresent(By.xpath("//*[@id='onesignal-popover-cancel-button']"))){
+			if (BaseClass.isElementPresent(driver,By.xpath("//*[@id='onesignal-popover-cancel-button']"))){
 				//Close popup
 				driver.findElement(By.xpath("//*[@id='onesignal-popover-cancel-button']")).click();
 				Thread.sleep(1000);
 			}
 		
-			if (BaseClass.isElementPresent(By.cssSelector(prop.getProperty("btn_popupnewsLetter_css")))){
+			if (BaseClass.isElementPresent(driver,By.cssSelector(prop.getProperty("btn_popupnewsLetter_css")))){
 				//Close popup
 				driver.findElement(By.cssSelector(prop.getProperty("btn_popupnewsLetter_css"))).click();
 				Thread.sleep(1000);
@@ -145,7 +136,8 @@ public class Tests02_Ounass {
 	public void quit() {
 		Log.endTestCase(sTestCaseName);
    		Reporter.log("OUNASS FB Login Test Ends::" + sTestCaseName);
-		driver.quit();
+		//driver.quit();
+   		driver.close();
 	}
 	
 	public static void fn_LoginFlow() throws Exception{

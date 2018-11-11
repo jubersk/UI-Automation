@@ -18,10 +18,7 @@ import io.restassured.response.ResponseBody;
 
 
 public class TestAPI extends BaseClass {
-	public TestAPI(WebDriver driver) {
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
+
 
 	public static int statusCode;
 	public static Response response;

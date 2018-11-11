@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite thread-count="2" name="Test Suite" annotations="JDK" parallel="tests">
+<suite name="UI Test Suite" parallel="tests" thread-count="2">
          
-  <test name="flipkart">
+  <test name="NISNASS">
 	 <classes>
 	   <class name="com.altayer.web.tests.Tests_01_NISNASS"/>
 	 </classes>
    </test>
    
-  <test name="snapdeal">
+  <test name="OUNASS">
      <classes>
        <class name="com.altayer.web.tests.Tests02_Ounass"/>
      </classes>

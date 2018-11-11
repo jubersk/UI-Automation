@@ -1,4 +1,4 @@
-package com.altayer.web.tests;
+/*package com.altayer.web.tests;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
@@ -48,7 +48,7 @@ public class TC_01_NISNASS {
 		// Launching the browser, this will take the Browser Type from Test Data Sheet
 		
 		driver = BaseClass.OpenBrowser(iTestCaseRow);
-		new BaseClass(driver);  
+		//new BaseClass(driver);  
     }
 	
 
@@ -107,3 +107,4 @@ public class TC_01_NISNASS {
 
 
 
+*/

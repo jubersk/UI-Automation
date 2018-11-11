@@ -1,4 +1,4 @@
-package com.altayer.web.tests;
+/*package com.altayer.web.tests;
 
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +15,7 @@ import com.altayer.web.utilitiy.ExcelUtils;
 import com.altayer.web.utilitiy.Log;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class TC_2_OUNASS{/*
+public class TC_2_OUNASS{
 	public WebDriver driver;
 	private String sTestCaseName;
 	private int iTestCaseRow;
@@ -105,7 +105,8 @@ public class TC_2_OUNASS{/*
 			//BaseClass.driver.close();
 			BaseClass.driver.quit();
 	    }
-*/}
+}
 
 
 
+*/

@@ -1,24 +1,18 @@
 package com.altayer.web.tests;
 
 import org.testng.annotations.Test;
-
 import com.altayer.web.utilitiy.BaseClass;
 import com.altayer.web.utilitiy.ConstantOnlineReg;
 import com.altayer.web.utilitiy.ExcelUtils;
 import com.altayer.web.utilitiy.Log;
 import java.io.FileInputStream;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
@@ -74,9 +68,9 @@ public class Tests_01_NISNASS{
 		navigateURL = ExcelUtils.getCellData(iTestCaseRow, ConstantOnlineReg.Col_URL);	
 		System.out.println(navigateURL);
 		String driverPath = rootPath + "Drivers\\";
-		System.setProperty("webdriver.chrome.driver", driverPath+ "chromedriver.exe");
-		//driver = new HtmlUnitDriver();
-		driver = new ChromeDriver();
+		System.setProperty("webdriver.gecko.driver", driverPath+ "geckodriver.exe");
+	
+		driver =new FirefoxDriver();
 		Log.info("New driver instantiated");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -115,11 +109,11 @@ public class Tests_01_NISNASS{
 		Log.endTestCase(sTestCaseName);
 		Reporter.log("Nisnass User Registration Test Ends::" + sTestCaseName);
 		driver.close();
-		driver.quit();
+		//driver.quit();
 	}
 
 	private static void fn_UserRegistration(int iTestCaseRow) throws Exception{
-		if(BaseClass.isElementPresent(By.cssSelector(".CustomerPopup > button:nth-child(1)"))){
+		if(BaseClass.isElementPresent(driver,By.cssSelector(".CustomerPopup > button:nth-child(1)"))){
 			Log.info("NISNASS HP Launched");
 			Reporter.log("NISNASS HP Launched");
 			//Click Account Link to SignUp
@@ -127,7 +121,7 @@ public class Tests_01_NISNASS{
 
 
 			//Verify that popup opened successfully
-			if(BaseClass.isElementPresent(By.cssSelector(".SignInForm-signUpButton"))){
+			if(BaseClass.isElementPresent(driver,By.cssSelector(".SignInForm-signUpButton"))){
 				//check the individual fields on the page
 				Reporter.log("Sigup Popup opened sucessfully");
 				driver.findElement(By.cssSelector(".SignInForm-signUpButton")).click();
@@ -175,7 +169,7 @@ public class Tests_01_NISNASS{
 		driver.findElement(By.cssSelector(prop.getProperty("lnk_MyAccount_css"))).click();
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector(prop.getProperty("txt_MyAccount_css")))));
 		//Verify that verification code page is displayed
-		if(BaseClass.isElementPresent(By.cssSelector(prop.getProperty("txt_MyAccount_css")))){
+		if(BaseClass.isElementPresent(driver,By.cssSelector(prop.getProperty("txt_MyAccount_css")))){
 
 			Log.info("User Loggin Sucess");
 			Reporter.log("User Loggin Sucess");

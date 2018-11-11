@@ -1,4 +1,4 @@
-package com.altayer.web.tests;
+/*package com.altayer.web.tests;
 import java.io.FileInputStream;
 import java.net.URL;
 import java.util.Properties;
@@ -27,7 +27,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 
 
-public class TC_0_NISNASS {/*
+public class TC_0_NISNASS {
 	private String sTestCaseName;
 	private int iTestCaseRow;
 	public static SoftAssert softas = new SoftAssert();
@@ -269,9 +269,10 @@ public class TC_0_NISNASS {/*
 		}
 
 	
-*/}
+}
 
 
 
 
 
+*/

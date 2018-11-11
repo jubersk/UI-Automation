@@ -1,4 +1,4 @@
-package com.altayer.web.actions;
+/*package com.altayer.web.actions;
 
 import java.util.List;
 
@@ -49,12 +49,12 @@ public Action_TC_04_ProductListing(WebDriver driver) {
 			System.out.println(Integer.parseInt(trmStrCount));
 			int totalCount = Integer.parseInt(trmStrCount);
 			
-			/*List<WebElement> objListItems  = driver.findElements(By.className(("img-loaded")));
+			List<WebElement> objListItems  = driver.findElements(By.className(("img-loaded")));
 			System.out.println(objListItems.size());
 			if(objListItems.size()<72){
 				((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", driver.findElement(By.cssSelector(prop.getProperty("btn_loadmore_css"))));
 				System.out.println(objListItems.size());
-			}*/
+			}
 		
 		
 	 
@@ -102,3 +102,4 @@ public Action_TC_04_ProductListing(WebDriver driver) {
 	}
 
 
+*/

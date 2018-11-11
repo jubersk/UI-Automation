@@ -1,4 +1,4 @@
-package com.altayer.web.tests;
+/*package com.altayer.web.tests;
 
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -40,7 +40,7 @@ public class TC_03_OUNASS{
 			System.out.println("TestCase Row Number" +iTestCaseRow);
 			// Launching the browser, this will take the Browser Type from Test Data Sheet 
 			driver = BaseClass.OpenBrowser(iTestCaseRow);
-			new BaseClass(driver);  
+			//new BaseClass(driver);  
 	    }
 
 	
@@ -94,3 +94,4 @@ public class TC_03_OUNASS{
 
 
 
+*/

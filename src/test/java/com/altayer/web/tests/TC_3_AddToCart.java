@@ -1,4 +1,4 @@
-package com.altayer.web.tests;
+/*package com.altayer.web.tests;
 
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +14,7 @@ import com.altayer.web.utilitiy.ExcelUtils;
 import com.altayer.web.utilitiy.Log;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class TC_3_AddToCart {/*
+public class TC_3_AddToCart {
 	public WebDriver driver;
 	private String sTestCaseName;
 	private int iTestCaseRow;
@@ -96,7 +96,8 @@ public class TC_3_AddToCart {/*
 			BaseClass.driver.close();
 			BaseClass.driver.quit();
 		}
-*/}
+}
 
 
 
+*/

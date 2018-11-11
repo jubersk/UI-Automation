@@ -1,4 +1,4 @@
-package com.altayer.web.actions;
+/*package com.altayer.web.actions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -96,3 +96,4 @@ public class Action_TC_03_LoginThorughFB extends BaseClass{
 	}
 
 
+*/

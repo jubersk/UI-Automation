@@ -1,4 +1,4 @@
-package com.altayer.web.actions;
+/*package com.altayer.web.actions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +22,7 @@ public class Action_TC_01_UserRegistration extends BaseClass{
 	public static void Execute(int iTestCaseRow) throws Exception{
 		BaseClass.bResult = true;
 			fn_UserRegistration(iTestCaseRow);
-			/*if(BaseClass.bResult==true){
+			if(BaseClass.bResult==true){
 				// If the value of boolean variable is True, then your test is complete pass and do this
 				ExcelUtils.setCellData("Pass", iTestCaseRow, ConstantOnlineReg.Col_Result);
 				ExcelUtils.writeWorkbook();
@@ -34,7 +34,7 @@ public class Action_TC_01_UserRegistration extends BaseClass{
 				ExcelUtils.writeWorkbook();
 				throw new Exception("Test Case Failed because of Verification");
 
-			}*/
+			}
 		
 
 		//Delete the existing screenshots
@@ -169,3 +169,4 @@ public class Action_TC_01_UserRegistration extends BaseClass{
 	}
 
 
+*/

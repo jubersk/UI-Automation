@@ -1,4 +1,4 @@
-package com.altayer.web.tests;
+/*package com.altayer.web.tests;
 
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -39,7 +39,7 @@ public class TC_04_ProductListingPage {
 		iTestCaseRow = ExcelUtils.getRowContains(sTestCaseName,ConstantOnlineReg.Col_TestCaseName);
 		System.out.println("TestCase Row Number" +iTestCaseRow);
 		driver = BaseClass.OpenBrowser(iTestCaseRow);
-		new BaseClass(driver);  
+		//new BaseClass(driver);  
 		
 	}
 	@Test
@@ -92,3 +92,4 @@ public class TC_04_ProductListingPage {
 
 
 
+*/
