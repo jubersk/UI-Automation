@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UI Tests"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.493">
+  <properties />
+  
+  
+            <testcase name="AddToCart_Tests" time="0.493" classname="com.altayer.web.tests.TC_02_AddToCart" />
+      
+</testsuite>

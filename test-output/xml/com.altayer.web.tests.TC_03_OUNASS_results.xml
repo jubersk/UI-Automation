@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UI Tests"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.506">
+  <properties />
+  
+  
+            <testcase name="Ounass_Tests" time="0.506" classname="com.altayer.web.tests.TC_03_OUNASS" />
+      
+</testsuite>

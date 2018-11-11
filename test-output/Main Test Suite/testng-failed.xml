@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Main Test Suite]">
+  <test thread-count="5" name="TestNG Grid(failed)">
+    <classes>
+      <class name="com.altayer.web.tests.GridExampleTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+          <include name="testGooglePageTitleInIEBrowser"/>
+        </methods>
+      </class> <!-- com.altayer.web.tests.GridExampleTest -->
+    </classes>
+  </test> <!-- TestNG Grid(failed) -->
+</suite> <!-- Failed suite [Main Test Suite] -->

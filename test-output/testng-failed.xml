@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [UI Automation]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="UI Tests(failed)">
+    <classes>
+      <class name="com.altayer.web.tests.TC_01_NISNASS">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="Nisnass_Tests"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.altayer.web.tests.TC_01_NISNASS -->
+    </classes>
+  </test> <!-- UI Tests(failed) -->
+</suite> <!-- Failed suite [UI Automation] -->
