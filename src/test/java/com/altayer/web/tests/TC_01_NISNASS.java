@@ -5,11 +5,7 @@ import com.altayer.web.utilitiy.BaseClass;
 import com.altayer.web.utilitiy.ConstantOnlineReg;
 import com.altayer.web.utilitiy.ExcelUtils;
 import com.altayer.web.utilitiy.Log;
-import com.altayer.web.utilitiy.utils;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
 import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -23,10 +19,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 
 
-public class Tests_01_NISNASS extends BaseClass{
+
+public class TC_01_NISNASS extends BaseClass{
 	public static WebDriver driver = null;
 	private static String rootPath = "";
 	public static WebDriverWait wait;
@@ -76,13 +72,12 @@ public class Tests_01_NISNASS extends BaseClass{
 		System.out.println(navigateURL);
 		String driverPath = rootPath + "Drivers\\";
 		System.setProperty("webdriver.gecko.driver", driverPath+ "geckodriver.exe");
-	
 		driver =new FirefoxDriver();
 		Log.info("New driver instantiated");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		Log.info("Implicit wait applied on the driver for 20 seconds");
-		driver.get(navigateURL);
+		driver.get("https://www.nisnass.ae/");
 		logger = extent.startTest(sTestCaseName);
 		Log.info("Web application launched successfully");
 		logger.log(LogStatus.INFO, "Web application launched successfully");

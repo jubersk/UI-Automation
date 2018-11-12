@@ -6,26 +6,21 @@ import com.altayer.web.utilitiy.BaseClass;
 import com.altayer.web.utilitiy.ConstantOnlineReg;
 import com.altayer.web.utilitiy.ExcelUtils;
 import com.altayer.web.utilitiy.Log;
-import com.altayer.web.utilitiy.utils;
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
 import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 
-public class Tests02_Ounass extends BaseClass {
+public class TC_03_OUNASS extends BaseClass {
 	
 	public static WebDriver driver = null;
 	private static String rootPath = "";
@@ -72,15 +67,15 @@ public class Tests02_Ounass extends BaseClass {
 		navigateURL = ExcelUtils.getCellData(iTestCaseRow, ConstantOnlineReg.Col_URL);
 		System.out.println(navigateURL);
 		String driverPath = rootPath + "Drivers\\";
-		System.setProperty("webdriver.gecko.driver", driverPath+ "geckodriver.exe");
-		//driver.manage().window().maximize();
-		driver =new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", driverPath+ "chromedriver.exe");
+		//driver = new HtmlUnitDriver();
+		driver = new ChromeDriver();
 		Log.info("New driver instantiated");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		Log.info("Implicit wait applied on the driver for 20 seconds");
 		//				driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver.get(navigateURL);
+		driver.get("https://www.ounass.ae/");
 		Log.info("Web application launched successfully");
 		logger = extent.startTest(sTestCaseName);
 		logger.log(LogStatus.INFO, "Web application launched successfully");
