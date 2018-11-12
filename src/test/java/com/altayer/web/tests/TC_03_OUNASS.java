@@ -21,7 +21,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class TC_03_OUNASS extends BaseClass {
-	
+
 	public static WebDriver driver = null;
 	private static String rootPath = "";
 	public static WebDriverWait wait;
@@ -47,13 +47,12 @@ public class TC_03_OUNASS extends BaseClass {
 
 		}
 		bResult = true;
-		
-	
+
+
 		// Configuring Log4j logs
 		DOMConfigurator.configure("log4j.xml");
-		//BaseClass baseClass=new BaseClass();
 		// The below method will refine your test case name, exactly the name use have used
-		sTestCaseName = BaseClass.getTestCaseName(this.toString());
+		sTestCaseName = getTestCaseName(this.toString());
 		System.out.println("Test Case Name:" + sTestCaseName);
 		// Start printing the logs and printing the Test Case name
 		Log.startTestCase("Test Case Name:" + sTestCaseName);
@@ -81,12 +80,12 @@ public class TC_03_OUNASS extends BaseClass {
 		logger.log(LogStatus.INFO, "Web application launched successfully");
 	}
 
-	// To log in flipkart
+	// FB Login
 	@Test
 	public void login() throws Exception {
 		try{
 			//extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReportNew.html", true);
-		
+
 			logger.log(LogStatus.INFO, "Ounass FB Login Test started");
 			Log.info("Ounass FB Login Test started::" + sTestCaseName);
 			Reporter.log("Ounass FB Login Test started::" + sTestCaseName);
@@ -94,28 +93,27 @@ public class TC_03_OUNASS extends BaseClass {
 			bResult = true;
 			//Check popups
 			//Check if modal popups are open
-			if (BaseClass.isElementPresent(driver,By.xpath("//*[@id='onesignal-popover-cancel-button']"))){
+			if (isElementPresent(driver,By.xpath("//*[@id='onesignal-popover-cancel-button']"))){
 				//Close popup
 				driver.findElement(By.xpath("//*[@id='onesignal-popover-cancel-button']")).click();
 				Thread.sleep(1000);
 			}
-		
-			if (BaseClass.isElementPresent(driver,By.cssSelector(prop.getProperty("btn_popupnewsLetter_css")))){
+
+			if (isElementPresent(driver,By.cssSelector(prop.getProperty("btn_popupnewsLetter_css")))){
 				//Close popup
 				driver.findElement(By.cssSelector(prop.getProperty("btn_popupnewsLetter_css"))).click();
 				Thread.sleep(1000);
-				
-				fn_LoginFlow();
-			}
-			
-			
 
-		if(bResult==true){
+			}
+			//Tests Actual Steps
+			fn_LoginFlow();
+
+			if(bResult==true){
 				Reporter.log("OUNASS FB Login Tests has been verified successfully");
 				// If the value of boolean variable is True, then your test is complete pass and do this
 				ExcelUtils.setCellData("Pass", iTestCaseRow, ConstantOnlineReg.Col_Result);
 				ExcelUtils.writeWorkbook();
-		
+
 
 			}else{
 				Log.info("OUNASS FB Login  FB Tests Failed");
@@ -130,33 +128,33 @@ public class TC_03_OUNASS extends BaseClass {
 			ExcelUtils.setCellData("Fail", iTestCaseRow, ConstantOnlineReg.Col_Result);
 			ExcelUtils.writeWorkbook();
 			// If the exception is in between the test, bcoz of any element not found or anything, this will take a screen shot
-			BaseClass.takeScreenshot(driver, sTestCaseName);
+			takeScreenshot(driver, sTestCaseName);
 			// This will print the error log message
 			Log.error(e.getMessage());
 			throw (e);
 		}
 	}
 
-	
+
 
 	@AfterClass
 	public void quit() {
 		Log.endTestCase(sTestCaseName);
-   		Reporter.log("OUNASS FB Login Test Ends::" + sTestCaseName);
-   		extent.endTest(logger);
-   		driver.close();
-		//driver.quit();
-   	
-   		
-   		
+		Reporter.log("OUNASS FB Login Test Ends::" + sTestCaseName);
+		extent.endTest(logger);
+		//driver.close();
+		driver.quit();
+
+
+
 	}
 
-	
+
 	public static void fn_LoginFlow() throws Exception{
 		//then click on user icon
 		driver.findElement(By.cssSelector(prop.getProperty("icon_user_css"))).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(prop.getProperty("btn_Amber_css"))));
-		
+
 		//Click on Amber button
 		driver.findElement(By.cssSelector(prop.getProperty("btn_Amber_css"))).click();
 		Thread.sleep(1000);
@@ -169,7 +167,7 @@ public class TC_03_OUNASS extends BaseClass {
 		Thread.sleep(2000);
 		// Switch to new window opened
 		for(String winHandle : driver.getWindowHandles()){
-		    driver.switchTo().window(winHandle);
+			driver.switchTo().window(winHandle);
 		}
 
 		// Perform the actions on new window
@@ -181,27 +179,27 @@ public class TC_03_OUNASS extends BaseClass {
 
 		// Switch back to original browser (first window)
 		driver.switchTo().window(winHandleBefore);
-		
-		
+
+
 		//Check that user is logged in to FB account successfully
 		//if not then check the error message on frame(0)
 		driver.switchTo().frame(0);
 		String strErrorData = driver.findElement(By.cssSelector("#errorData")).getText();
-		
+
 		if(strErrorData.contains("Please try again")) {
-			
+
 			//User is not logged in successfully
 			Log.info("Error whil FB Login");
 			Reporter.log("Error whil FB Login");
 			bResult = false;
-			BaseClass.takeScreenshot(driver, "ProductListingPage");
-			
+			takeScreenshot(driver, "ProductListingPage");
+
 		}
 		driver.switchTo().parentFrame();
 		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(prop.getProperty("btn_LoginwithFacebook_css"))));
-		
+
 		//Enter FB Credentials and return to site and make sure user is logged in
-		
-		
+
+
 	}
 }

@@ -1,3 +1,4 @@
+package com.altayer.web.tests;
 /*package com.altayer.web.tests;
 
 import org.apache.log4j.xml.DOMConfigurator;

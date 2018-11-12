@@ -37,7 +37,7 @@ public class TC_01_NISNASS extends BaseClass{
 	// This method is to navigate 
 	@BeforeClass
 	public void init() throws Exception {
-		
+
 
 		if(prop==null){
 			prop = new Properties();
@@ -51,13 +51,12 @@ public class TC_01_NISNASS extends BaseClass{
 
 		}
 		bResult = true;
-	
-	
+
+
 		// Configuring Log4j logs
 		DOMConfigurator.configure("log4j.xml");
-		//BaseClass baseClass=new BaseClass();
 		// The below method will refine your test case name, exactly the name use have used
-		sTestCaseName = BaseClass.getTestCaseName(this.toString());
+		sTestCaseName = getTestCaseName(this.toString());
 		System.out.println("Test Case Name:" + sTestCaseName);
 		// Start printing the logs and printing the Test Case name
 		Log.startTestCase("Test Case Name:" + sTestCaseName);
@@ -84,23 +83,42 @@ public class TC_01_NISNASS extends BaseClass{
 		wait = new WebDriverWait(driver, 120);
 	}
 
-	// Account Registration
+	//Verify Account Registration
 	@Test
 	public void accountRegistration() throws Exception {
 		try{
-		
+
 			logger.log(LogStatus.INFO, "User Registration Test Started");
 			Log.info("NISNASS User Registration Tests started");
-			Reporter.log("NISNASS User Registration Tests Failed");
+			Reporter.log("NISNASS User Registration Tests started");
+			//Tests Actual Steps
 			fn_UserRegistration(iTestCaseRow);
+
+			if(bResult==true){
+				Reporter.log("NISNASS User Registration Tests verified successfully");
+				// If the value of boolean variable is True, then your test is complete pass and do this
+				ExcelUtils.setCellData("Pass", iTestCaseRow, ConstantOnlineReg.Col_Result);
+				ExcelUtils.writeWorkbook();
+
+			}else{
+
+				Log.info("NISNASS User Registration Tests Failed");
+				Reporter.log("NISNASS User Registration TestsFailed");
+				logger.log(LogStatus.FAIL, "User Registration Test Failed");
+				throw new Exception("User Registration Test Failed");
+
+			}
+
+
 
 		}catch (Exception e){
 			Log.info("NISNASS User Registration Tests Failed");
 			Reporter.log("NISNASS User Registration Tests Failed");
 			// If in case you got any exception during the test, it will mark your test as Fail in the test result sheet
-
+			ExcelUtils.setCellData("Fail", iTestCaseRow, ConstantOnlineReg.Col_Result);
+			ExcelUtils.writeWorkbook();
 			//Take Screenshot
-
+			takeScreenshot(driver, sTestCaseName);
 			// This will print the error log message
 			Log.error(e.getMessage());
 			throw (e);
@@ -115,12 +133,12 @@ public class TC_01_NISNASS extends BaseClass{
 		Reporter.log("Nisnass User Registration Test Ends::" + sTestCaseName);
 		extent.endTest(logger);
 		//extent.flush();
-		driver.close();
-		//driver.quit();
+		//driver.close();
+		driver.quit();
 	}
 
 	private static void fn_UserRegistration(int iTestCaseRow) throws Exception{
-		if(BaseClass.isElementPresent(driver,By.cssSelector(".CustomerPopup > button:nth-child(1)"))){
+		if(isElementPresent(driver,By.cssSelector(".CustomerPopup > button:nth-child(1)"))){
 			Log.info("NISNASS HP Launched");
 			Reporter.log("NISNASS HP Launched");
 			//Click Account Link to SignUp
@@ -128,7 +146,7 @@ public class TC_01_NISNASS extends BaseClass{
 
 
 			//Verify that popup opened successfully
-			if(BaseClass.isElementPresent(driver,By.cssSelector(".SignInForm-signUpButton"))){
+			if(isElementPresent(driver,By.cssSelector(".SignInForm-signUpButton"))){
 				//check the individual fields on the page
 				Reporter.log("Sigup Popup opened sucessfully");
 				driver.findElement(By.cssSelector(".SignInForm-signUpButton")).click();
@@ -139,7 +157,7 @@ public class TC_01_NISNASS extends BaseClass{
 				Log.info("Sigup Popup Does not opened");
 				Reporter.log("Sigup Popup Does not opened");
 				bResult = false;
-				BaseClass.takeScreenshot(driver, "Sigup Popup");
+				takeScreenshot(driver, "Sigup Popup");
 
 			}
 
@@ -148,24 +166,24 @@ public class TC_01_NISNASS extends BaseClass{
 			Log.info("NISNASS HP Does not Launched Successfully");
 			Reporter.log("NISNASS HP Does not Launched Successfully");
 			bResult = false;
-			BaseClass.takeScreenshot(driver, "Login");
+			takeScreenshot(driver, "Login");
 		}
 	}
 
 	public static void fn_RegistrationDetail(int iTestCaseRow)throws Exception{
 
 		driver.findElement(By.cssSelector(".Profile-firstName")).clear();
-		driver.findElement(By.cssSelector(".Profile-firstName")).sendKeys (BaseClass.fn_getAlphabeticString_en());
+		driver.findElement(By.cssSelector(".Profile-firstName")).sendKeys (fn_getAlphabeticString_en());
 		//(ExcelUtils.getCellData(iTestCaseRow,ConstantOnlineReg.Col_FirstName));
 
 		driver.findElement(By.cssSelector(prop.getProperty("txt_LastName_css"))).clear();
-		driver.findElement(By.cssSelector(prop.getProperty("txt_LastName_css"))).sendKeys(BaseClass.fn_getAlphabeticString_en());
+		driver.findElement(By.cssSelector(prop.getProperty("txt_LastName_css"))).sendKeys(fn_getAlphabeticString_en());
 
 		driver.findElement(By.cssSelector(prop.getProperty("txt_Email_css"))).clear();
-		driver.findElement(By.cssSelector(prop.getProperty("txt_Email_css"))).sendKeys(BaseClass.fn_getAlphabeticString_en() + "@" + "hotmail.com");
+		driver.findElement(By.cssSelector(prop.getProperty("txt_Email_css"))).sendKeys(fn_getAlphabeticString_en() + "@" + "hotmail.com");
 
 		driver.findElement(By.cssSelector(prop.getProperty("txt_Password_css"))).clear();
-		driver.findElement(By.cssSelector(prop.getProperty("txt_Password_css"))).sendKeys(BaseClass.fn_getAlphabeticString_en());
+		driver.findElement(By.cssSelector(prop.getProperty("txt_Password_css"))).sendKeys(fn_getAlphabeticString_en());
 
 		driver.findElement(By.cssSelector(prop.getProperty("txt_PhoneNumber_css"))).clear();
 		driver.findElement(By.cssSelector(prop.getProperty("txt_PhoneNumber_css"))).sendKeys(ExcelUtils.getCellData(iTestCaseRow,ConstantOnlineReg.Col_PhoneNumber));
@@ -176,7 +194,7 @@ public class TC_01_NISNASS extends BaseClass{
 		driver.findElement(By.cssSelector(prop.getProperty("lnk_MyAccount_css"))).click();
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector(prop.getProperty("txt_MyAccount_css")))));
 		//Verify that verification code page is displayed
-		if(BaseClass.isElementPresent(driver,By.cssSelector(prop.getProperty("txt_MyAccount_css")))){
+		if(isElementPresent(driver,By.cssSelector(prop.getProperty("txt_MyAccount_css")))){
 
 			Log.info("User Loggin Sucess");
 			Reporter.log("User Loggin Sucess");
@@ -194,7 +212,7 @@ public class TC_01_NISNASS extends BaseClass{
 				Log.info("Email Field should be non editable");
 				Reporter.log("Email Field should be non editable");
 				bResult = false;
-				BaseClass.takeScreenshot(driver, "MyAccount");
+				takeScreenshot(driver, "MyAccount");
 			}
 
 			//Update mobile number and verify
@@ -220,14 +238,14 @@ public class TC_01_NISNASS extends BaseClass{
 					Log.info("Mobile number is not updated with new number");
 					Reporter.log("Mobile number is not updated with new number");
 					bResult = false;
-					BaseClass.takeScreenshot(driver, "MyAccount");
+					takeScreenshot(driver, "MyAccount");
 				}
 			}
 			else {
 				Log.info("Update Message is not displayed on Profile Update");
 				Reporter.log("Update Message is not displayed on Profile Update");
 				bResult = false;
-				BaseClass.takeScreenshot(driver, "MyAccount");
+				takeScreenshot(driver, "MyAccount");
 			}
 
 		}
@@ -236,7 +254,7 @@ public class TC_01_NISNASS extends BaseClass{
 			Log.info("User in not loggedin");
 			Reporter.log("User in not loggedin");
 			bResult = false;
-			BaseClass.takeScreenshot(driver, "Login");
+			takeScreenshot(driver, "Login");
 		}
 
 
