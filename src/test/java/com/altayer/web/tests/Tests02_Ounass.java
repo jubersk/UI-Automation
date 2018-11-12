@@ -25,7 +25,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 
-public class Tests02_Ounass extends utils {
+public class Tests02_Ounass extends BaseClass {
 	
 	public static WebDriver driver = null;
 	private static String rootPath = "";
@@ -82,6 +82,7 @@ public class Tests02_Ounass extends utils {
 		//				driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.get(navigateURL);
 		Log.info("Web application launched successfully");
+		logger = extent.startTest(sTestCaseName);
 		logger.log(LogStatus.INFO, "Web application launched successfully");
 	}
 
@@ -90,7 +91,7 @@ public class Tests02_Ounass extends utils {
 	public void login() throws Exception {
 		try{
 			//extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReportNew.html", true);
-			Tests_01_NISNASS.extent.startTest(sTestCaseName);
+		
 			logger.log(LogStatus.INFO, "Ounass FB Login Test started");
 			Log.info("Ounass FB Login Test started::" + sTestCaseName);
 			Reporter.log("Ounass FB Login Test started::" + sTestCaseName);

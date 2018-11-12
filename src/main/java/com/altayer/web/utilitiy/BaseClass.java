@@ -22,6 +22,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -31,19 +34,29 @@ public class BaseClass {
 	
 	public static WebDriverWait wait;
 	public static boolean bResult;
-	public static Properties prop = null; 
+	//public static Properties prop = null; 
 	public static Properties messageValdition = null; 
 	public static Properties api = null;
 	public static Properties docsprop = null; 
 	//public static SoftAssert softas = new SoftAssert();
 	public static Robot object;
-	public static ExtentReports extent;
-	public static ExtentTest logger;
-	
+		
 	//public static WebDriver driver;
 	private static String rootPath = "";
 	private static String navigateURL = "";
+	public static ExtentReports extent;
+	public static ExtentTest logger;
 	
+	@BeforeSuite
+	public void extentReport(){
+		extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReportNew.html", true);
+	}
+	
+	@AfterSuite
+	public void flushExtentReport(){
+	    extent.flush();
+	   // extent.close();
+	   }
 	/*public BaseClass(WebDriver driver){
 		
 		BaseClass.bResult = true;

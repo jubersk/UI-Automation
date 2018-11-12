@@ -26,7 +26,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 
-public class Tests_01_NISNASS extends utils{
+public class Tests_01_NISNASS extends BaseClass{
 	public static WebDriver driver = null;
 	private static String rootPath = "";
 	public static WebDriverWait wait;
@@ -38,7 +38,7 @@ public class Tests_01_NISNASS extends utils{
 
 
 
-	// This method is to navigate flipkart URL
+	// This method is to navigate 
 	@BeforeClass
 	public void init() throws Exception {
 		
@@ -83,6 +83,7 @@ public class Tests_01_NISNASS extends utils{
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		Log.info("Implicit wait applied on the driver for 20 seconds");
 		driver.get(navigateURL);
+		logger = extent.startTest(sTestCaseName);
 		Log.info("Web application launched successfully");
 		logger.log(LogStatus.INFO, "Web application launched successfully");
 		wait = new WebDriverWait(driver, 120);
@@ -92,7 +93,7 @@ public class Tests_01_NISNASS extends utils{
 	@Test
 	public void accountRegistration() throws Exception {
 		try{
-			extent.startTest(sTestCaseName);
+		
 			logger.log(LogStatus.INFO, "User Registration Test Started");
 			Log.info("NISNASS User Registration Tests started");
 			Reporter.log("NISNASS User Registration Tests Failed");
