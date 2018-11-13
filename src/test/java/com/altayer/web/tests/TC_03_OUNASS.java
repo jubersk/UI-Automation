@@ -8,12 +8,18 @@ import com.altayer.web.utilitiy.ExcelUtils;
 import com.altayer.web.utilitiy.Log;
 import com.relevantcodes.extentreports.LogStatus;
 import java.io.FileInputStream;
+import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
@@ -65,10 +71,27 @@ public class TC_03_OUNASS extends BaseClass {
 		System.out.println("TestCase Row Number" +iTestCaseRow);
 		navigateURL = ExcelUtils.getCellData(iTestCaseRow, ConstantOnlineReg.Col_URL);
 		System.out.println(navigateURL);
+		
+		//*************Local driver***********************//
+		Path currentRelativePath = Paths.get("");
+		rootPath = currentRelativePath.toAbsolutePath().toString() + "\\";
+		System.out.println(rootPath);
 		String driverPath = rootPath + "Drivers\\";
 		System.setProperty("webdriver.chrome.driver", driverPath+ "chromedriver.exe");
 		//driver = new HtmlUnitDriver();
 		driver = new ChromeDriver();
+		//**************************************************//
+		
+		
+		//**********Remote Driver**********************************//
+		/*DesiredCapabilities cap = DesiredCapabilities.chrome();
+		cap.setCapability("version", "");
+		cap.setPlatform(Platform.LINUX);
+		
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
+		*/
+		//************************************************************//
+		
 		Log.info("New driver instantiated");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -78,6 +101,7 @@ public class TC_03_OUNASS extends BaseClass {
 		Log.info("Web application launched successfully");
 		logger = extent.startTest(sTestCaseName);
 		logger.log(LogStatus.INFO, "Web application launched successfully");
+		wait = new WebDriverWait(driver, 120);
 	}
 
 	// FB Login
@@ -118,6 +142,8 @@ public class TC_03_OUNASS extends BaseClass {
 			}else{
 				Log.info("OUNASS FB Login  FB Tests Failed");
 				Reporter.log("OUNASS FB Login  FB Tests Failed");
+				logger.log(LogStatus.FAIL, "OUNASS FB Login  FB Tests Failed");
+				throw new Exception("OUNASS FB Login  FB Tests Failed");
 			}
 
 			// Below are the steps you may like to perform in case of failed test or any exception faced before ending your test 
@@ -128,7 +154,7 @@ public class TC_03_OUNASS extends BaseClass {
 			ExcelUtils.setCellData("Fail", iTestCaseRow, ConstantOnlineReg.Col_Result);
 			ExcelUtils.writeWorkbook();
 			// If the exception is in between the test, bcoz of any element not found or anything, this will take a screen shot
-			takeScreenshot(driver, sTestCaseName);
+		//	takeScreenshot(driver, sTestCaseName);
 			// This will print the error log message
 			Log.error(e.getMessage());
 			throw (e);
@@ -174,6 +200,7 @@ public class TC_03_OUNASS extends BaseClass {
 		driver.findElement(By.cssSelector("#email")).sendKeys("jubersk@gmail.com");
 		driver.findElement(By.cssSelector("#pass")).sendKeys("@sonu&mywife#amru84");
 		driver.findElement(By.cssSelector("#u_0_0")).click();
+		Thread.sleep(3000);
 		// Close the new window, if that window no more required
 		//driver.close();
 
@@ -189,10 +216,12 @@ public class TC_03_OUNASS extends BaseClass {
 		if(strErrorData.contains("Please try again")) {
 
 			//User is not logged in successfully
-			Log.info("Error whil FB Login");
-			Reporter.log("Error whil FB Login");
+			Log.info("Social Account Error while FB Login");
+			Reporter.log("Social Account Error while FB Login");
+			logger.log(LogStatus.FAIL, "Social Account Error while FB Login");
 			bResult = false;
-			takeScreenshot(driver, "ProductListingPage");
+			
+			//takeScreenshot(driver, "ProductListingPage");
 
 		}
 		driver.switchTo().parentFrame();

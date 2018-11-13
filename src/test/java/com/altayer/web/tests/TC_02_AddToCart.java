@@ -7,15 +7,19 @@ import com.altayer.web.utilitiy.ExcelUtils;
 import com.altayer.web.utilitiy.Log;
 import com.relevantcodes.extentreports.LogStatus;
 import java.io.FileInputStream;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -27,7 +31,7 @@ import org.testng.annotations.BeforeClass;
 
 
 public class TC_02_AddToCart extends BaseClass{
-	public static WebDriver driver = null;
+	public static RemoteWebDriver driver = null;
 	private static String rootPath = "";
 	public static WebDriverWait wait;
 	public static Properties prop = null; 
@@ -73,9 +77,14 @@ public class TC_02_AddToCart extends BaseClass{
 		System.out.println("TestCase Row Number" +iTestCaseRow);
 		navigateURL = ExcelUtils.getCellData(iTestCaseRow, ConstantOnlineReg.Col_URL);	
 		System.out.println(navigateURL);
-		String driverPath = rootPath + "Drivers\\";
+		DesiredCapabilities cap = DesiredCapabilities.firefox();
+		cap.setCapability("version", "");
+		cap.setPlatform(Platform.LINUX);
+		
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
+		/*String driverPath = rootPath + "Drivers\\";
 		System.setProperty("webdriver.gecko.driver", driverPath+ "geckodriver.exe");
-		driver =new FirefoxDriver();
+		driver =new FirefoxDriver();*/
 		Log.info("New driver instantiated");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
