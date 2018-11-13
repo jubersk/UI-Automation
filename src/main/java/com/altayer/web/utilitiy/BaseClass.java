@@ -19,6 +19,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -33,6 +34,7 @@ import com.relevantcodes.extentreports.LogStatus;
 public class BaseClass {
 	
 	public static WebDriverWait wait;
+//	public static WebDriver driver = null;
 	public static boolean bResult;
 	//public static Properties prop = null; 
 	public static Properties messageValdition = null; 
@@ -43,7 +45,6 @@ public class BaseClass {
 		
 	//public static WebDriver driver;
 	private static String rootPath = "";
-	private static String navigateURL = "";
 	public static ExtentReports extent;
 	public static ExtentTest logger;
 	
@@ -57,54 +58,13 @@ public class BaseClass {
 	    extent.flush();
 	   // extent.close();
 	   }
-	/*public BaseClass(WebDriver driver){
-		
-		BaseClass.bResult = true;
-		extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReport.html", true);
-		//softas.assertTrue(true);
-		wait = new WebDriverWait(driver, 120);
-		// Tell webdriver to wait
-		FluentWait wait = new FluentWait(driver)  
-				.withTimeout(30, TimeUnit.SECONDS)  
-				.pollingEvery(2, TimeUnit.SECONDS)  
-				.ignoring(NoSuchElementException.class); 
-		if(prop==null){
-			prop = new Properties();
-			try{
-				FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+"\\ElementLocators.properties");
-				prop.load(fs);
-
-			}catch (Exception e){
-				e.printStackTrace();
-			}
-
-		}
-
-		if(api==null){
-			api = new Properties();
-			try{
-				FileInputStream fs = new FileInputStream(System.getProperty("user.dir")+"\\RestAPIs.properties");
-				api.load(fs);
-
-			}catch (Exception e){
-				e.printStackTrace();
-			}
-
-		}
-
-		
-		
-
-	}*/
-
 	
-	/*public static  WebDriver OpenBrowser(int iTestCaseRow) throws Exception{
-		String sBrowserName;
-
+	/*
+	public  void OpenBrowser(int iTestCaseRow, String sBrowserName, String navigateURL) throws Exception{
+		
 
 		try{
-			sBrowserName = ExcelUtils.getCellData(iTestCaseRow, ConstantOnlineReg.Col_Browser);
-			System.out.println(sBrowserName);
+		
 		//	Dictionary<String, String> dict = new Hashtable<String, String>();
 			//dict = UtilityClass.LoadAppSettings();
 			Path currentRelativePath = Paths.get("");
@@ -156,7 +116,7 @@ public class BaseClass {
 		}catch (Exception e){
 			Log.error("Class Utils | Method OpenBrowser | Exception desc : "+e.getMessage());
 		}
-		return driver;
+		//return driver;
 
 
 	}*/
@@ -232,7 +192,7 @@ public class BaseClass {
 	}
 
 		
-	public static void takeScreenshot(WebDriver driver, String sTestCaseName) throws Exception{
+	public static void takeScreenshot(RemoteWebDriver driver, String sTestCaseName) throws Exception{
 		try{
 			File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(scrFile, new File(ConstantOnlineReg.Path_ScreenShot + sTestCaseName +".jpg"));	

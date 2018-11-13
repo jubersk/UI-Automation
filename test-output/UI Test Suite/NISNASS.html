@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>NISNASS</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 12 12:47:31 GST 2018</td>
+<td>Started on:</td><td>Tue Nov 13 12:56:56 GST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>60 seconds (60344 ms)</td>
+<tr><td>Total time:</td><td>379 seconds (379220 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,168 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.altayer.web.tests.TC_04_ProductListingPage.quit()'><b>quit</b><br>Test class: com.altayer.web.tests.TC_04_ProductListingPage<br/>
+<a href="#Output-420124619" onClick='toggleBox("Output-420124619", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-420124619" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-420124619">
+OUNASS FB Login Test Ends::TC_04_ProductListingPage<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Session [feda54977a895871fe479a14b85be29c] was terminated due to BROWSER_TIMEOUT
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.5.2&apos;, revision: &apos;10229a9&apos;, time: &apos;2017-08-21T17:29:55.15Z&apos;
+System info: host: &apos;JLT01702L&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:35543}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d), userDataDir=/tmp/.org.chromium.Chromium.tM4s0O}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=70.0.3538.77, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=feda54977a895871fe479a14b85be29c, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: feda54977a895871fe479a14b85be29c
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:537)
+	at com.altayer.web.tests.TC_04_ProductListingPage.quit(TC_04_ProductListingPage.java:161)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.GridException: Session [feda54977a895871fe479a14b85be29c] was terminated due to BROWSER_TIMEOUT
+	at org.openqa.grid.internal.ActiveTestSessions.getExistingSession(ActiveTestSessions.java:115)
+	at org.openqa.grid.internal.DefaultGridRegistry.getExistingSession(DefaultGridRegistry.java:387)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.getSession(RequestHandler.java:241)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:123)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
+	at org.openqa.grid.web.servlet.DriverServlet.doDelete(DriverServlet.java:75)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:865)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1242)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:503)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:103)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace420124619", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace420124619'><pre>org.openqa.selenium.WebDriverException: Session [feda54977a895871fe479a14b85be29c] was terminated due to BROWSER_TIMEOUT
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.5.2&apos;, revision: &apos;10229a9&apos;, time: &apos;2017-08-21T17:29:55.15Z&apos;
+System info: host: &apos;JLT01702L&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:35543}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d), userDataDir=/tmp/.org.chromium.Chromium.tM4s0O}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=70.0.3538.77, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=feda54977a895871fe479a14b85be29c, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: feda54977a895871fe479a14b85be29c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:537)
+	at com.altayer.web.tests.TC_04_ProductListingPage.quit(TC_04_ProductListingPage.java:161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.GridException: Session [feda54977a895871fe479a14b85be29c] was terminated due to BROWSER_TIMEOUT
+	at org.openqa.grid.internal.ActiveTestSessions.getExistingSession(ActiveTestSessions.java:115)
+	at org.openqa.grid.internal.DefaultGridRegistry.getExistingSession(DefaultGridRegistry.java:387)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.getSession(RequestHandler.java:241)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:123)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
+	at org.openqa.grid.web.servlet.DriverServlet.doDelete(DriverServlet.java:75)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:865)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1242)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:503)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:103)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.altayer.web.tests.TC_04_ProductListingPage@4516af24</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,23 +237,38 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.altayer.web.tests.Tests_01_NISNASS.accountRegistration()'><b>accountRegistration</b><br>Test class: com.altayer.web.tests.Tests_01_NISNASS<br/>
-<a href="#Output-466032056" onClick='toggleBox("Output-466032056", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.altayer.web.tests.TC_02_AddToCart.AddToCart()'><b>AddToCart</b><br>Test class: com.altayer.web.tests.TC_02_AddToCart<br/>
+<a href="#Output-800588759" onClick='toggleBox("Output-800588759", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-466032056" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-466032056">
-NISNASS User Registration Tests Failed<br/>
+<a href="#Output-800588759" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-800588759">
+NISNASS Add to Cart Test Started<br/>
+All the items addedd in cart successfully<br/>
+NISNASS Add to Cart Tests verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>134</td>
+<td>com.altayer.web.tests.TC_02_AddToCart@149494d8</td></tr>
+<tr>
+<td title='com.altayer.web.tests.TC_01_NISNASS.accountRegistration()'><b>accountRegistration</b><br>Test class: com.altayer.web.tests.TC_01_NISNASS<br/>
+<a href="#Output-1579038707" onClick='toggleBox("Output-1579038707", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1579038707" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1579038707">
+NISNASS User Registration Tests started<br/>
 NISNASS HP Launched<br/>
 Sigup Popup opened sucessfully<br/>
 User Loggin Sucess<br/>
 Email Field is non editable<br/>
 Profile is updated successfully<br/>
 New mobile number is updated successfully<br/>
+NISNASS User Registration Tests verified successfully<br/>
 </div>
 </td>
 <td></td>
-<td>29</td>
-<td>com.altayer.web.tests.Tests_01_NISNASS@1786f9d5</td></tr>
+<td>176</td>
+<td>com.altayer.web.tests.TC_01_NISNASS@954b04f</td></tr>
 </table><p>
 </body>
 </html>

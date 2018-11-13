@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="UI Test Suite">
+<suite name="UI Test Suite" parallel="tests">
          
-  <test name="NISNASS">
+ <!--  <test name="NISNASS">
 	 <classes>
-	   <class name="com.altayer.web.tests.Tests_01_NISNASS"/>
+	   <class name="com.altayer.web.tests.TC_01_NISNASS"/>
+	  <class name="com.altayer.web.tests.TC_02_AddToCart"/>
 	 </classes>
    </test>
    
   <test name="OUNASS">
      <classes>
-       <class name="com.altayer.web.tests.Tests02_Ounass"/>
+       <class name="com.altayer.web.tests.TC_03_OUNASS"/>
+      <class name="com.altayer.web.tests.TC_04_ProductListingPage"/>
+     </classes>
+   </test> -->
+   
+    <test name="APIS">
+     <classes>
+       <class name="APIAutomation.TestAPI"/>
+      
      </classes>
    </test>
+   
 </suite>
