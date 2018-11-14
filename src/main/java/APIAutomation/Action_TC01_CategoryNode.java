@@ -2,7 +2,7 @@ package APIAutomation;
 
 import java.util.List;
 
-public class CategoryNode {
+public class Action_TC01_CategoryNode {
 	private Integer categoryId;
 	private String key;
 	private String url;
@@ -10,7 +10,7 @@ public class CategoryNode {
 	private Boolean includeInMenu;
 	private int level;
 	private String featureLink;
-	private List<CategoryNode> children;
+	private List<Action_TC01_CategoryNode> children;
 	private List<String> availableSortBy;
 	private String image;
 	
@@ -56,10 +56,10 @@ public class CategoryNode {
 	public void setFeatureLink(String featureLink) {
 		this.featureLink = featureLink;
 	}
-	public List<CategoryNode> getChildren() {
+	public List<Action_TC01_CategoryNode> getChildren() {
 		return children;
 	}
-	public void setChildren(List<CategoryNode> children) {
+	public void setChildren(List<Action_TC01_CategoryNode> children) {
 		this.children = children;
 	}
 	public List<String> getAvailableSortBy() {

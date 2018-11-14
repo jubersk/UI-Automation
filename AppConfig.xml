@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<configuration>
-	<appSettings>
-		
-		<add key="ProjectRoot" value="C:\\WorkspaceNew\\Unified\\Unified_AutomationTesting\\"/>
-		<add key="NavigateURL" value="http://86.96.192.122:8989"/>
-		<add key="changeStatusURL" value="http://testweb.moifawri.ae/modules/applicationmgt/accrejapplication.aspx"/>
-   </appSettings>   
-</configuration>

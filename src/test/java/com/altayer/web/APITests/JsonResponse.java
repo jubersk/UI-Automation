@@ -1,4 +1,4 @@
-package APIAutomation;
+package com.altayer.web.APITests;
 
 import java.util.ArrayList;
 

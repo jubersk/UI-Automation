@@ -1,4 +1,4 @@
-package APIAutomation;
+package com.altayer.web.APITests;
 
 import java.util.regex.Pattern;
 import org.apache.commons.collections4.CollectionUtils;
@@ -11,12 +11,13 @@ import org.testng.asserts.SoftAssert;
 import com.altayer.web.utilitiy.BaseClass;
 import com.altayer.web.utilitiy.Log;
 import com.relevantcodes.extentreports.LogStatus;
+import APIAutomation.Action_TC01_CategoryNode;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 
 
-public class TestAPI extends BaseClass {
+public class TC_01_GetCategory extends BaseClass {
 
 	public static int statusCode;
 	public static Response response;
@@ -43,7 +44,7 @@ public class TestAPI extends BaseClass {
 
 			//***************************************First node should have more than 10 categories on children data node.***********
 			ResponseBody jsonresponseBody= RestAssured.get("https://www.ounass.ae/categories/getcategorytree/").getBody();
-			CategoryNode objCategoryNode = jsonresponseBody.as(CategoryNode.class);
+			Action_TC01_CategoryNode objCategoryNode = jsonresponseBody.as(Action_TC01_CategoryNode.class);
 
 			//softas.assertTrue(objCategoryNode.getChildren().size()>=10);
 			if(objCategoryNode.getChildren().size()>=10){
@@ -72,7 +73,7 @@ public class TestAPI extends BaseClass {
 		softas.assertAll();	
 	}
 
-	private void verifyNode(CategoryNode categoryNode) {
+	private void verifyNode(Action_TC01_CategoryNode categoryNode) {
 
 
 		//	softas.assertNotNull(categoryNode.getCategoryId(),"CategoryID");
@@ -181,7 +182,7 @@ public class TestAPI extends BaseClass {
 
 }
 
-private boolean isLastLevel(CategoryNode categoryNode) {
+private boolean isLastLevel(Action_TC01_CategoryNode categoryNode) {
 	return CollectionUtils.isEmpty(categoryNode.getChildren());
 }
 
