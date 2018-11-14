@@ -73,23 +73,23 @@ public class TC_03_OUNASS extends BaseClass {
 		System.out.println(navigateURL);
 		
 		//*************Local driver***********************//
-		Path currentRelativePath = Paths.get("");
+		/*Path currentRelativePath = Paths.get("");
 		rootPath = currentRelativePath.toAbsolutePath().toString() + "\\";
 		System.out.println(rootPath);
 		String driverPath = rootPath + "Drivers\\";
 		System.setProperty("webdriver.chrome.driver", driverPath+ "chromedriver.exe");
 		//driver = new HtmlUnitDriver();
-		driver = new ChromeDriver();
+		driver = new ChromeDriver();*/
 		//**************************************************//
 		
 		
 		//**********Remote Driver**********************************//
-		/*DesiredCapabilities cap = DesiredCapabilities.chrome();
+		DesiredCapabilities cap = DesiredCapabilities.chrome();
 		cap.setCapability("version", "");
 		cap.setPlatform(Platform.LINUX);
 		
 		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
-		*/
+		
 		//************************************************************//
 		
 		Log.info("New driver instantiated");

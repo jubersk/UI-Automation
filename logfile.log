@@ -65429,3 +65429,24 @@ Session ID: feda54977a895871fe479a14b85be29c
 2018-11-13 19:24:16,105 INFO  [Log] **************************************************************************************** 
 2018-11-13 19:24:27,231 INFO  [Log] Excel sheet opened 
 2018-11-13 19:24:27,232 INFO  [Log] Total number of Row used return as < 4 >. 
+2018-11-14 18:23:27,914 INFO  [Log] **************************************************************************************** 
+2018-11-14 18:23:27,928 INFO  [Log] **************************************************************************************** 
+2018-11-14 18:23:27,928 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:TC_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-11-14 18:23:27,928 INFO  [Log] **************************************************************************************** 
+2018-11-14 18:23:27,928 INFO  [Log] **************************************************************************************** 
+2018-11-14 18:23:29,168 INFO  [Log] Excel sheet opened 
+2018-11-14 18:23:29,168 INFO  [Log] Total number of Row used return as < 4 >. 
+2018-11-14 18:23:46,382 INFO  [Log] New driver instantiated 
+2018-11-14 18:23:50,935 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-11-14 18:23:58,293 INFO  [Log] Web application launched successfully 
+2018-11-14 18:23:58,371 INFO  [Log] NISNASS User Registration Tests started 
+2018-11-14 18:23:58,468 INFO  [Log] NISNASS HP Launched 
+2018-11-14 18:24:22,205 INFO  [Log] User Loggin Sucess 
+2018-11-14 18:24:24,703 INFO  [Log] Email Field is non editable 
+2018-11-14 18:24:28,334 INFO  [Log] Profile is updated successfully 
+2018-11-14 18:24:28,392 INFO  [Log] New mobile number is updated successfully 
+2018-11-14 18:24:29,246 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-11-14 18:24:29,246 INFO  [Log] X 
+2018-11-14 18:24:29,246 INFO  [Log] X 
+2018-11-14 18:24:29,246 INFO  [Log] X 
+2018-11-14 18:24:29,246 INFO  [Log] X 
