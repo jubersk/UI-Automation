@@ -101,9 +101,9 @@ public class TC_04_ProductListingPage extends BaseClass {
 		try{
 			//extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReportNew.html", true);
 		
-			logger.log(LogStatus.INFO, "Ounass FB Login Test started");
-			Log.info("Ounass FB Login Test started::" + sTestCaseName);
-			Reporter.log("Ounass FB Login Test started::" + sTestCaseName);
+			logger.log(LogStatus.INFO, "OUNASS Product Feature Listing Test started");
+			Log.info("OUNASS Product Feature Listing Test started::" + sTestCaseName);
+			Reporter.log("OUNASS Product Feature Listing  Test started::" + sTestCaseName);
 			//Execute the action on below test
 			bResult = true;
 			//Check popups
@@ -125,21 +125,21 @@ public class TC_04_ProductListingPage extends BaseClass {
 			fn_ProductListing();
 
 		if(bResult==true){
-				Reporter.log("OUNASS FB Login Tests has been verified successfully");
+				Reporter.log("OUNASS Product Feature Listing Tests has been verified successfully");
 				// If the value of boolean variable is True, then your test is complete pass and do this
 				ExcelUtils.setCellData("Pass", iTestCaseRow, ConstantOnlineReg.Col_Result);
 				ExcelUtils.writeWorkbook();
 		
 
 			}else{
-				Log.info("OUNASS FB Login  FB Tests Failed");
-				Reporter.log("OUNASS FB Login  FB Tests Failed");
+				Log.info("OUNASS Product Feature Listing Tests Failed");
+				Reporter.log("OUNASS Product Feature Listing Tests Failed");
 			}
 
 			// Below are the steps you may like to perform in case of failed test or any exception faced before ending your test 
 		}catch (Exception e){
-			Log.info("OUNASS FB Login  Tests Failed because of Verification");
-			Reporter.log("OUNASS FB Login  Tests Failed because of Verification");
+			Log.info("OUNASS Product Feature Listing Tests Failed because of Verification");
+			Reporter.log("OUNASS Product Feature Listing Tests Failed because of Verification");
 			// If in case you got any exception during the test, it will mark your test as Fail in the test result sheet
 			ExcelUtils.setCellData("Fail", iTestCaseRow, ConstantOnlineReg.Col_Result);
 			ExcelUtils.writeWorkbook();

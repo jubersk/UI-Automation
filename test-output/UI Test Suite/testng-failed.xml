@@ -3,14 +3,36 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [UI Test Suite]" parallel="tests">
   <test thread-count="5" name="APIS(failed)" parallel="tests">
     <classes>
-      <class name="APIAutomation.TestAPI">
+      <class name="com.altayer.web.APITests.TC_01_GetCategory">
         <methods>
-          <include name="init"/>
           <include name="extentReport"/>
           <include name="getPlaceAPI"/>
+          <include name="init"/>
           <include name="flushExtentReport"/>
         </methods>
-      </class> <!-- APIAutomation.TestAPI -->
+      </class> <!-- com.altayer.web.APITests.TC_01_GetCategory -->
     </classes>
   </test> <!-- APIS(failed) -->
+  <test thread-count="5" name="OUNASS(failed)" parallel="tests">
+    <classes>
+      <class name="com.altayer.web.tests.TC_03_OUNASS">
+        <methods>
+          <include name="extentReport"/>
+          <include name="init"/>
+          <include name="login"/>
+          <include name="flushExtentReport"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.altayer.web.tests.TC_03_OUNASS -->
+      <class name="com.altayer.web.tests.TC_04_ProductListingPage">
+        <methods>
+          <include name="login"/>
+          <include name="extentReport"/>
+          <include name="quit"/>
+          <include name="init"/>
+          <include name="flushExtentReport"/>
+        </methods>
+      </class> <!-- com.altayer.web.tests.TC_04_ProductListingPage -->
+    </classes>
+  </test> <!-- OUNASS(failed) -->
 </suite> <!-- Failed suite [UI Test Suite] -->

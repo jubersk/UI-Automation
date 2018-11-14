@@ -3,15 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.altayer.web.tests.TC_03_OUNASS">
+      <class name="com.altayer.web.APITests.TC_01_GetCategory">
         <methods>
           <include name="extentReport"/>
+          <include name="getPlaceAPI"/>
           <include name="init"/>
-          <include name="login"/>
           <include name="flushExtentReport"/>
-          <include name="quit"/>
         </methods>
-      </class> <!-- com.altayer.web.tests.TC_03_OUNASS -->
+      </class> <!-- com.altayer.web.APITests.TC_01_GetCategory -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

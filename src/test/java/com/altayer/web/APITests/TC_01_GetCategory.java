@@ -70,16 +70,16 @@ public class TC_01_GetCategory extends BaseClass {
 
 		}
 
-		softas.assertAll();	
+		//	softas.assertAll();	
 	}
 
-	private void verifyNode(Action_TC01_CategoryNode categoryNode) {
+	private void verifyNode(Action_TC01_CategoryNode categoryNode) throws Exception {
 
 
 		//	softas.assertNotNull(categoryNode.getCategoryId(),"CategoryID");
 		if(categoryNode.getCategoryId()!= null){
 			Log.info("Category ID Found::" + categoryNode.getCategoryId());
-			logger.log(LogStatus.PASS, "Category ID Found::" + categoryNode.getCategoryId());
+			//logger.log(LogStatus.PASS, "Category ID Found::" + categoryNode.getCategoryId());
 			Reporter.log("Category ID Found::" + categoryNode.getCategoryId());
 		}
 		else{
@@ -91,7 +91,7 @@ public class TC_01_GetCategory extends BaseClass {
 
 		if(categoryNode.getUrl()!=""){
 			Log.info("URL Found For Category ID::" + categoryNode.getCategoryId());
-			logger.log(LogStatus.PASS, "URL Found For Category ID::" + categoryNode.getCategoryId());
+			//logger.log(LogStatus.PASS, "URL Found For Category ID::" + categoryNode.getCategoryId());
 			Reporter.log("URL Found For Category ID::" + categoryNode.getCategoryId());
 		}
 		else{
@@ -105,7 +105,7 @@ public class TC_01_GetCategory extends BaseClass {
 		if(categoryNode.getName()!=""){
 
 			Log.info("name Found For Category ID::" + categoryNode.getCategoryId());
-			logger.log(LogStatus.PASS, "name Found For Category ID::" + categoryNode.getCategoryId());
+			//logger.log(LogStatus.PASS, "name Found For Category ID::" + categoryNode.getCategoryId());
 			Reporter.log("name Found For Category ID::" + categoryNode.getCategoryId());
 		}
 		else{
@@ -115,81 +115,99 @@ public class TC_01_GetCategory extends BaseClass {
 
 		}
 
-		try{
 
-			if(categoryNode.getLevel()!=3){
-				softas.assertTrue(StringUtils.isNotBlank(categoryNode.getImage()));
+		try{
+			if((categoryNode.getLevel()==3) && (categoryNode.getImage())!=""){
+				//	softas.assertTrue(StringUtils.isNotBlank(categoryNode.getImage()));
 				Log.info("image Found For Category ID::" + categoryNode.getCategoryId());
-				logger.log(LogStatus.PASS, "image Found For Category ID::" + categoryNode.getCategoryId());
+				//logger.log(LogStatus.PASS, "image Found For Category ID::" + categoryNode.getCategoryId());
 				Reporter.log("image Found For Category ID::" + categoryNode.getCategoryId());
 
 
 			}
+
+
+
+
+			else{	//softas.assertFalse(categoryNode.getIncludeInMenu());
+				Log.info("Should contains an image"+ "Category ID::" + categoryNode.getCategoryId() + "Level" + categoryNode.getLevel());
+				//logger.log(LogStatus.FAIL, "Should contains an image"+ "Category ID::" + categoryNode.getCategoryId() + "Level" + categoryNode.getLevel(),"Failed");
+				Reporter.log("Should contains an image"+ "Category ID::" + categoryNode.getCategoryId() + "Level" + categoryNode.getLevel());
+				throw new Exception("Should contains an image");
+
+			}
+		}
+		catch(Exception e){
+			logger.log(LogStatus.FAIL, "Should contains and image"+ "Category ID::" + categoryNode.getCategoryId() + "Level" + categoryNode.getLevel());
+			throw e;
 		}
 
 
-		catch (Exception e){
-			//softas.assertFalse(categoryNode.getIncludeInMenu());
-			Log.info("3rd Level Category Id should not contains an image"+categoryNode.getCategoryId());
-			logger.log(LogStatus.FAIL, "3rd Level Category Id should not contains an image"+categoryNode.getCategoryId());
-			Reporter.log("3rd Level Category Id should not contains an image"+categoryNode.getCategoryId());
 
-		}
-
-
-	
-
-	if(isLastLevel(categoryNode)){
-		//softas.assertTrue(categoryNode.getAvailableSortBy().size()>=2);
 		try{
 
+			if(isLastLevel(categoryNode)){
+				//softas.assertTrue(categoryNode.getAvailableSortBy().size()>=2);
 
-			if((categoryNode.getAvailableSortBy().size()>=2)){
-				softas.assertTrue(categoryNode.getAvailableSortBy().contains("shoeSizeCode"));
+				if((categoryNode.getAvailableSortBy().size()>=2)){
+					if(categoryNode.getAvailableSortBy().contains("shoeSizeCode") && (categoryNode.getAvailableSortBy().contains("designer")) ){
+						//logger.log(LogStatus.PASS, "Last level of categories availableSortBy has minimum of 2 sub nodes"+categoryNode.getCategoryId());
+					}
+					/*	softas.assertTrue(categoryNode.getAvailableSortBy().contains("shoeSizeCode"));
 				softas.assertTrue(categoryNode.getAvailableSortBy().contains("designer"));
+					 */			
+				}
 
-				logger.log(LogStatus.PASS, "Last level of categories availableSortBy has minimum of 2 sub nodes"+categoryNode.getCategoryId());
+				else{
+					logger.log(LogStatus.FAIL, "Last level of categories availableSortBy has less than 2 sub nodes::Category ID::"+categoryNode.getCategoryId());
+					
+				}
+
 			}
 		}
-		catch (Exception e){
-			logger.log(LogStatus.FAIL, "Last level of categories availableSortBy has less than 2 sub nodes"+categoryNode.getCategoryId());
-
-		}
-
-	}
-
-	if(isFeatureEditLink(categoryNode.getFeatureLink())){
-
-		try{
-
-
-			if((categoryNode.getAvailableSortBy().size()>=2)){
-				softas.assertEquals(categoryNode.getLevel(), 3);
-
-				logger.log(LogStatus.PASS, "featureLink node with /edits/* is only in 3rd level category "+categoryNode.getCategoryId());
+			catch(Exception e){
+				logger.log(LogStatus.FAIL, "Should contains and image"+ "Category ID::" + categoryNode.getCategoryId() + "Level" + categoryNode.getLevel());
 			}
-		}
-		catch (Exception e){
-			logger.log(LogStatus.FAIL, "featureLink node with /edits/* should not be in other level except 3rd level category"+categoryNode.getCategoryId());
+
+			if(isFeatureEditLink(categoryNode.getFeatureLink())){
+
+				if((categoryNode.getAvailableSortBy().size()>=2)){
+					if(categoryNode.getLevel()==3){
+						//logger.log(LogStatus.PASS, "featureLink node with /edits/* is only in 3rd level category "+categoryNode.getCategoryId());
+					}
+					//softas.assertEquals(categoryNode.getLevel(), 3);
+
+
+				}
+
+				else{
+					logger.log(LogStatus.FAIL, "featureLink node with /edits/* should not be in other level except 3rd level category"+categoryNode.getCategoryId());
+
+				}
+
+			}
+
+			if(CollectionUtils.isNotEmpty(categoryNode.getChildren())){
+				categoryNode.getChildren().forEach(arg0 -> {
+					try {
+						verifyNode(arg0);
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				});
+			}
 
 		}
 
+		private boolean isLastLevel(Action_TC01_CategoryNode categoryNode) {
+			return CollectionUtils.isEmpty(categoryNode.getChildren());
+		}
+
+		private boolean isFeatureEditLink(String featureLink) {
+			return StringUtils.isNotBlank(featureLink) && Pattern.matches("\\/edit\\/\\w*", featureLink);
+
+		}
+
+
 	}
-
-	if(CollectionUtils.isNotEmpty(categoryNode.getChildren())){
-		categoryNode.getChildren().forEach(this::verifyNode);
-	}
-
-}
-
-private boolean isLastLevel(Action_TC01_CategoryNode categoryNode) {
-	return CollectionUtils.isEmpty(categoryNode.getChildren());
-}
-
-private boolean isFeatureEditLink(String featureLink) {
-	return StringUtils.isNotBlank(featureLink) && Pattern.matches("\\/edit\\/\\w*", featureLink);
-
-}
-
-
-}

@@ -28,7 +28,7 @@ import org.testng.annotations.BeforeClass;
 
 public class TC_03_OUNASS extends BaseClass {
 
-	public static WebDriver driver = null;
+	public static RemoteWebDriver driver = null;
 	private static String rootPath = "";
 	public static WebDriverWait wait;
 	public static Properties prop = null; 
@@ -154,7 +154,7 @@ public class TC_03_OUNASS extends BaseClass {
 			ExcelUtils.setCellData("Fail", iTestCaseRow, ConstantOnlineReg.Col_Result);
 			ExcelUtils.writeWorkbook();
 			// If the exception is in between the test, bcoz of any element not found or anything, this will take a screen shot
-		//	takeScreenshot(driver, sTestCaseName);
+			takeScreenshot(driver, sTestCaseName);
 			// This will print the error log message
 			Log.error(e.getMessage());
 			throw (e);
