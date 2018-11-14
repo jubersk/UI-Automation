@@ -3,7 +3,7 @@
 
 <suite name="UI Test Suite" parallel="tests">
          
- <!--  <test name="NISNASS">
+  <test name="NISNASS">
 	 <classes>
 	   <class name="com.altayer.web.tests.TC_01_NISNASS"/>
 	  <class name="com.altayer.web.tests.TC_02_AddToCart"/>
@@ -15,7 +15,7 @@
        <class name="com.altayer.web.tests.TC_03_OUNASS"/>
       <class name="com.altayer.web.tests.TC_04_ProductListingPage"/>
      </classes>
-   </test> -->
+   </test>
    
     <test name="APIS">
      <classes>
