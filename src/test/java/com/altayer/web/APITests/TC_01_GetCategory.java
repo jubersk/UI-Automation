@@ -9,8 +9,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import com.altayer.web.utilitiy.BaseClass;
-import com.altayer.web.utilitiy.ConstantOnlineReg;
-import com.altayer.web.utilitiy.ExcelUtils;
 import com.altayer.web.utilitiy.Log;
 import com.relevantcodes.extentreports.LogStatus;
 import APIAutomation.Action_TC01_CategoryNode;
@@ -26,12 +24,14 @@ public class TC_01_GetCategory extends BaseClass {
 	public static String serviceAPI = "https://www.ounass.ae/categories/getcategorytree/";
 	public static SoftAssert softas = new SoftAssert();
 	public static boolean bResult; 
+	public static String apiURL = null;
 
 	@BeforeClass
 	public void init() throws Exception {
 
 		logger = extent.startTest("Category API Tests");
 		bResult = true;
+		apiURL = "https://www.ounass.ae/categories/getcategorytree/";
 
 	}
 	@Test
@@ -78,7 +78,7 @@ public class TC_01_GetCategory extends BaseClass {
 			Reporter.log("Response Sucess::" + statusCode);
 
 			//***************************************First node should have more than 10 categories on children data node.***********
-			ResponseBody jsonresponseBody= RestAssured.get("https://www.ounass.ae/categories/getcategorytree/").getBody();
+			ResponseBody jsonresponseBody= RestAssured.get(apiURL).getBody();
 			Action_TC01_CategoryNode objCategoryNode = jsonresponseBody.as(Action_TC01_CategoryNode.class);
 
 			//softas.assertTrue(objCategoryNode.getChildren().size()>=10);
