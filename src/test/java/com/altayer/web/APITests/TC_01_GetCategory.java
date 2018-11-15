@@ -67,6 +67,7 @@ public class TC_01_GetCategory extends BaseClass {
 			Log.info("Response Failed::" + statusCode);
 			logger.log(LogStatus.FAIL, "Response failed::" + statusCode);
 			Reporter.log("Response failed::" + statusCode);
+	
 
 		}
 
@@ -101,7 +102,7 @@ public class TC_01_GetCategory extends BaseClass {
 		}
 
 		//softas.assertTrue(StringUtils.isNotBlank(categoryNode.getName()),"name");
-
+	try{
 		if(categoryNode.getName()!=""){
 
 			Log.info("name Found For Category ID::" + categoryNode.getCategoryId());
@@ -130,9 +131,7 @@ public class TC_01_GetCategory extends BaseClass {
 
 
 			else{	//softas.assertFalse(categoryNode.getIncludeInMenu());
-				Log.info("Should contains an image"+ "Category ID::" + categoryNode.getCategoryId() + "Level" + categoryNode.getLevel());
-				//logger.log(LogStatus.FAIL, "Should contains an image"+ "Category ID::" + categoryNode.getCategoryId() + "Level" + categoryNode.getLevel(),"Failed");
-				Reporter.log("Should contains an image"+ "Category ID::" + categoryNode.getCategoryId() + "Level" + categoryNode.getLevel());
+				
 				throw new Exception("Should contains an image");
 
 			}
@@ -144,9 +143,7 @@ public class TC_01_GetCategory extends BaseClass {
 
 
 
-		try{
-
-			if(isLastLevel(categoryNode)){
+		if(isLastLevel(categoryNode)){
 				//softas.assertTrue(categoryNode.getAvailableSortBy().size()>=2);
 
 				if((categoryNode.getAvailableSortBy().size()>=2)){
@@ -159,14 +156,14 @@ public class TC_01_GetCategory extends BaseClass {
 				}
 
 				else{
-					logger.log(LogStatus.FAIL, "Last level of categories availableSortBy has less than 2 sub nodes::Category ID::"+categoryNode.getCategoryId());
-					
+					throw new Exception("Last level of categories availableSortBy has less than 2 sub nodes");
 				}
 
 			}
 		}
 			catch(Exception e){
-				logger.log(LogStatus.FAIL, "Should contains and image"+ "Category ID::" + categoryNode.getCategoryId() + "Level" + categoryNode.getLevel());
+				logger.log(LogStatus.FAIL, "Last level of categories availableSortBy has less than 2 sub nodes::Category ID::" + categoryNode.getCategoryId() + "Level" + categoryNode.getLevel());
+				throw e;
 			}
 
 			if(isFeatureEditLink(categoryNode.getFeatureLink())){
@@ -199,7 +196,6 @@ public class TC_01_GetCategory extends BaseClass {
 			}
 
 		}
-
 		private boolean isLastLevel(Action_TC01_CategoryNode categoryNode) {
 			return CollectionUtils.isEmpty(categoryNode.getChildren());
 		}

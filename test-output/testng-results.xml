@@ -20,20 +20,20 @@
       <![CDATA[Should contains an imageCategory ID::2Level0]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3839" started-at="2018-11-14T15:58:14Z" finished-at="2018-11-14T15:58:18Z">
+  <suite name="Default suite" duration-ms="5593" started-at="2018-11-14T15:59:26Z" finished-at="2018-11-14T15:59:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3839" started-at="2018-11-14T15:58:14Z" finished-at="2018-11-14T15:58:18Z">
+    <test name="Default test" duration-ms="5593" started-at="2018-11-14T15:59:26Z" finished-at="2018-11-14T15:59:32Z">
       <class name="com.altayer.web.APITests.TC_01_GetCategory">
-        <test-method status="PASS" signature="extentReport()[pri:0, instance:com.altayer.web.APITests.TC_01_GetCategory@5fdba6f9]" name="extentReport" is-config="true" duration-ms="258" started-at="2018-11-14T15:58:14Z" finished-at="2018-11-14T15:58:14Z">
+        <test-method status="PASS" signature="extentReport()[pri:0, instance:com.altayer.web.APITests.TC_01_GetCategory@5fdba6f9]" name="extentReport" is-config="true" duration-ms="230" started-at="2018-11-14T15:59:26Z" finished-at="2018-11-14T15:59:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReport -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.altayer.web.APITests.TC_01_GetCategory@5fdba6f9]" name="init" is-config="true" duration-ms="4" started-at="2018-11-14T15:58:14Z" finished-at="2018-11-14T15:58:14Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.altayer.web.APITests.TC_01_GetCategory@5fdba6f9]" name="init" is-config="true" duration-ms="3" started-at="2018-11-14T15:59:26Z" finished-at="2018-11-14T15:59:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="getPlaceAPI()[pri:0, instance:com.altayer.web.APITests.TC_01_GetCategory@5fdba6f9]" name="getPlaceAPI" duration-ms="3814" started-at="2018-11-14T15:58:14Z" finished-at="2018-11-14T15:58:18Z">
+        <test-method status="FAIL" signature="getPlaceAPI()[pri:0, instance:com.altayer.web.APITests.TC_01_GetCategory@5fdba6f9]" name="getPlaceAPI" duration-ms="5561" started-at="2018-11-14T15:59:26Z" finished-at="2018-11-14T15:59:32Z">
           <exception class="java.lang.Exception">
             <message>
               <![CDATA[Should contains an image]]>
@@ -91,7 +91,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- getPlaceAPI -->
-        <test-method status="PASS" signature="flushExtentReport()[pri:0, instance:com.altayer.web.APITests.TC_01_GetCategory@5fdba6f9]" name="flushExtentReport" is-config="true" duration-ms="411" started-at="2018-11-14T15:58:18Z" finished-at="2018-11-14T15:58:19Z">
+        <test-method status="PASS" signature="flushExtentReport()[pri:0, instance:com.altayer.web.APITests.TC_01_GetCategory@5fdba6f9]" name="flushExtentReport" is-config="true" duration-ms="457" started-at="2018-11-14T15:59:32Z" finished-at="2018-11-14T15:59:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushExtentReport -->
