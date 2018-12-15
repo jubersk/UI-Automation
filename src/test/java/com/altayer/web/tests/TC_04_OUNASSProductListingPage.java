@@ -27,7 +27,7 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-public class TC_04_ProductListingPage extends BaseClass {
+public class TC_04_OUNASSProductListingPage extends BaseClass {
 	
 	public static RemoteWebDriver driver = null;
 	private static String rootPath = "";
@@ -90,7 +90,7 @@ public class TC_04_ProductListingPage extends BaseClass {
 		driver.get("https://www.ounass.ae/");
 		Log.info("Web application launched successfully");
 		logger = extent.startTest(sTestCaseName);
-		logger.log(LogStatus.INFO, "Web application launched successfully");
+		logger.log(LogStatus.INFO, "Web application launched successfully"+TC_04_OUNASSProductListingPage.class.getName());
 		wait = new WebDriverWait(driver, 120);
 	}
 
@@ -100,7 +100,7 @@ public class TC_04_ProductListingPage extends BaseClass {
 		try{
 			//extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReportNew.html", true);
 		
-			logger.log(LogStatus.INFO, "OUNASS Product Feature Listing Test started");
+			logger.log(LogStatus.INFO, "OUNASS Product Feature Listing Test started"+TC_04_OUNASSProductListingPage.class.getName());
 			Log.info("OUNASS Product Feature Listing Test started::" + sTestCaseName);
 			Reporter.log("OUNASS Product Feature Listing  Test started::" + sTestCaseName);
 			//Execute the action on below test
@@ -125,18 +125,21 @@ public class TC_04_ProductListingPage extends BaseClass {
 
 		if(bResult==true){
 				Reporter.log("OUNASS Product Feature Listing Tests has been verified successfully");
+				logger.log(LogStatus.PASS, "OUNASS Product Feature Listing Tests has been verified successfully"+TC_04_OUNASSProductListingPage.class.getName());
 				// If the value of boolean variable is True, then your test is complete pass and do this
 				ExcelUtils.setCellData("Pass", iTestCaseRow, ConstantOnlineReg.Col_Result);
 				ExcelUtils.writeWorkbook();
 		
 
 			}else{
+				logger.log(LogStatus.FAIL, "OUNASS Product Feature Listing Tests Failed"+TC_04_OUNASSProductListingPage.class.getName());
 				Log.info("OUNASS Product Feature Listing Tests Failed");
 				Reporter.log("OUNASS Product Feature Listing Tests Failed");
 			}
 
 			// Below are the steps you may like to perform in case of failed test or any exception faced before ending your test 
 		}catch (Exception e){
+			logger.log(LogStatus.FAIL, "OUNASS Product Feature Listing Tests Failed because of Verification"+TC_04_OUNASSProductListingPage.class.getName());
 			Log.info("OUNASS Product Feature Listing Tests Failed because of Verification");
 			Reporter.log("OUNASS Product Feature Listing Tests Failed because of Verification");
 			// If in case you got any exception during the test, it will mark your test as Fail in the test result sheet
@@ -155,8 +158,10 @@ public class TC_04_ProductListingPage extends BaseClass {
 	@AfterClass
 	public void quit() {
 		Log.endTestCase(sTestCaseName);
-   		Reporter.log("OUNASS FB Login Test Ends::" + sTestCaseName);
+   		Reporter.log("OUNASS ProductListingPage Verification Test Ends::" + sTestCaseName);
+   		logger.log(LogStatus.INFO, "OUNASS ProductListingPage Verification Test Ends::" + sTestCaseName+TC_04_OUNASSProductListingPage.class.getName());
    		extent.endTest(logger);
+   		//extent.close();
    		//driver.close();
 		driver.quit();
    	
@@ -220,11 +225,13 @@ public class TC_04_ProductListingPage extends BaseClass {
 					System.out.println(objList.size());
 					if (objList.size()>85){
 						Reporter.log("Items loaded are more than 12 items");
+						logger.log(LogStatus.PASS, "Items loaded are more than 12 items"+TC_04_OUNASSProductListingPage.class.getName());
 					}
 						else
 						{
 							Log.info("Items loaded are less than 12 items");
 							Reporter.log("Items loaded are less than 12 items");
+							logger.log(LogStatus.FAIL, "Items loaded are less than 12 items"+TC_04_OUNASSProductListingPage.class.getName());
 							bResult = false;
 							takeScreenshot(driver, "ProductListingPage");
 						}
@@ -234,6 +241,7 @@ public class TC_04_ProductListingPage extends BaseClass {
 					//Load more button is not being displayed
 					Log.info("Load more button is not being displayed");
 					Reporter.log("Load more button is not being displayed");
+					logger.log(LogStatus.FAIL, "Load more button is not being displayed"+TC_04_OUNASSProductListingPage.class.getName());
 					bResult = false;
 					takeScreenshot(driver, "ProductListingPage");
 				}

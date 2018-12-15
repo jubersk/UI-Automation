@@ -29,7 +29,7 @@ import org.testng.annotations.BeforeClass;
 
 
 
-public class TC_02_AddToCart extends BaseClass{
+public class TC_02_NISNASSAddToCart extends BaseClass{
 	public static RemoteWebDriver driver = null;
 	private static String rootPath = "";
 	public static WebDriverWait wait;
@@ -43,7 +43,7 @@ public class TC_02_AddToCart extends BaseClass{
 
 	@BeforeClass
 	public void init() throws Exception {
-
+		
 
 		if(prop==null){
 			prop = new Properties();
@@ -90,7 +90,7 @@ public class TC_02_AddToCart extends BaseClass{
 		driver.get("https://www.nisnass.ae/");
 		logger = extent.startTest(sTestCaseName);
 		Log.info("Web application launched successfully");
-		logger.log(LogStatus.INFO, "Web application launched successfully");
+		logger.log(LogStatus.INFO, "Web application launched successfully"+TC_02_NISNASSAddToCart.class.getName());
 		wait = new WebDriverWait(driver, 120);
 	}
 
@@ -99,12 +99,13 @@ public class TC_02_AddToCart extends BaseClass{
 	public void nisnassAddToCart() throws Exception {
 		try{
 
-			logger.log(LogStatus.INFO, "NISNASS Add to Cart Test Started");
+			logger.log(LogStatus.INFO, "NISNASS Add to Cart Test Started"+TC_02_NISNASSAddToCart.class.getName());
 			Log.info("NISNASS Add to Cart Test Started");
 			Reporter.log("NISNASS Add to Cart Test Started");
 			//Tests Actual Steps
 			fn_AddToCart();
 			if(bResult==true){
+				logger.log(LogStatus.PASS, "NISNASS Add to Cart Tests verified successfully"+TC_02_NISNASSAddToCart.class.getName());
 				Reporter.log("NISNASS Add to Cart Tests verified successfully");
 				// If the value of boolean variable is True, then your test is complete pass and do this
 				ExcelUtils.setCellData("Pass", iTestCaseRow, ConstantOnlineReg.Col_Result);
@@ -113,8 +114,8 @@ public class TC_02_AddToCart extends BaseClass{
 			}else{
 
 				Log.info("NISNASS Add to Cart Tests Failed");
+				logger.log(LogStatus.FAIL, "NISNASS Add to Cart Tests Failed"+TC_02_NISNASSAddToCart.class.getName());
 				Reporter.log("NISNASS Add to Cart Tests Failed");
-				logger.log(LogStatus.FAIL, "NISNASS Add to Cart Tests Failed");
 				throw new Exception("NISNASS Add to Cart Tests Failed");
 
 			}
@@ -141,8 +142,10 @@ public class TC_02_AddToCart extends BaseClass{
 	@AfterClass
 	public void quit() {
 		Log.endTestCase(sTestCaseName);
-		Reporter.log("Nisnass User Registration Test Ends::" + sTestCaseName);
+		Reporter.log("Nisnass AddToCart Test Ends::" + sTestCaseName);
+		logger.log(LogStatus.INFO, "Nisnass AddToCart Test Ends::" + sTestCaseName+TC_02_NISNASSAddToCart.class.getName());
 		extent.endTest(logger);
+		//extent.close();
 		//extent.flush();
 		//driver.close();
 		driver.quit();
@@ -185,10 +188,12 @@ public class TC_02_AddToCart extends BaseClass{
 		try{
 			Assert.assertEquals(items, strActual);
 			Reporter.log("All the items addedd in cart successfully");
+			logger.log(LogStatus.PASS, "All the items addedd in cart successfully"+TC_02_NISNASSAddToCart.class.getName());
 
 		}catch(Throwable e){
 			System.err.println("Added items are not available in cart "+e.getMessage());
 			Log.info("Added items are not available in cart");
+			logger.log(LogStatus.FAIL, "Added items are not available in cart"+TC_02_NISNASSAddToCart.class.getName());
 			Reporter.log("Added items are not available in cart");
 			bResult = false;
 			takeScreenshot(driver, "Cart Page");
@@ -221,6 +226,7 @@ public class TC_02_AddToCart extends BaseClass{
 					//throw new SkipException(itemTitle + "->Item is out of stock or Add to Bag is not enabled, Skipping this exception");
 					//System.err.println(itemTitle + "->Item is out of stock or Add to Bag button is not enabled");
 					Log.info(itemTitle + "->Item is out of stock or Add to Bag button is not enabled");
+					logger.log(LogStatus.FAIL, itemTitle + "->Item is out of stock or Add to Bag button is not enabled"+TC_02_NISNASSAddToCart.class.getName());
 					Reporter.log(itemTitle + "->Item is out of stock or Add to Bag button is not enabled");
 					bResult = false;
 					takeScreenshot(driver, "Add To Bag Page");

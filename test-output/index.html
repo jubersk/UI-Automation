@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,12 +102,17 @@
                     <div class="method-list-content failed suite-UI_Test_Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-UI_Test_Suite" title="com.altayer.web.tests.TC_02_AddToCart" hash-for-method="nisnassAAddToCart">nisnassAAddToCart</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-UI_Test_Suite" title="com.altayer.web.tests.TC_01_NISNASSAccountRegistration" hash-for-method="nisnassAccountRegistration">nisnassAccountRegistration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-UI_Test_Suite" title="com.altayer.web.tests.TC_03_OUNASS" hash-for-method="ounassFacebookLogin">ounassFacebookLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-UI_Test_Suite" title="com.altayer.web.tests.TC_02_NISNASSAddToCart" hash-for-method="nisnassAddToCart">nisnassAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-UI_Test_Suite" title="com.altayer.web.tests.TC_03_OUNASSFacebookLogin" hash-for-method="ounassFacebookLogin">ounassFacebookLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-UI_Test_Suite -->
@@ -121,12 +126,7 @@
                     <div class="method-list-content passed suite-UI_Test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-UI_Test_Suite" title="com.altayer.web.tests.TC_01_NISNASS" hash-for-method="nisnassAccountRegistration">nisnassAccountRegistration</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-UI_Test_Suite" title="com.altayer.web.tests.TC_04_ProductListingPage" hash-for-method="ounassProductListing">ounassProductListing</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-UI_Test_Suite" title="com.altayer.web.tests.TC_04_OUNASSProductListingPage" hash-for-method="ounassProductListing">ounassProductListing</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-UI_Test_Suite -->
@@ -144,7 +144,7 @@
           <div class="suite-UI_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.altayer.web.tests.TC_03_OUNASS</span>
+              <span class="class-name">com.altayer.web.tests.TC_03_OUNASSFacebookLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -153,7 +153,7 @@
                   </a> <!-- ounassFacebookLogin -->
                   <span class="method-name">ounassFacebookLogin</span>
                   <div class="stack-trace">java.lang.Exception: OUNASS FB Login  FB Tests Failed
-	at com.altayer.web.tests.TC_03_OUNASS.ounassFacebookLogin(TC_03_OUNASS.java:146)
+	at com.altayer.web.tests.TC_03_OUNASSFacebookLogin.ounassFacebookLogin(TC_03_OUNASSFacebookLogin.java:148)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
@@ -167,16 +167,16 @@
           <div class="suite-UI_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.altayer.web.tests.TC_02_AddToCart</span>
+              <span class="class-name">com.altayer.web.tests.TC_02_NISNASSAddToCart</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="nisnassAAddToCart">
-                  </a> <!-- nisnassAAddToCart -->
-                  <span class="method-name">nisnassAAddToCart</span>
+                  <a name="nisnassAddToCart">
+                  </a> <!-- nisnassAddToCart -->
+                  <span class="method-name">nisnassAddToCart</span>
                   <div class="stack-trace">java.lang.Exception: NISNASS Add to Cart Tests Failed
-	at com.altayer.web.tests.TC_02_AddToCart.nisnassAAddToCart(TC_02_AddToCart.java:118)
+	at com.altayer.web.tests.TC_02_NISNASSAddToCart.nisnassAddToCart(TC_02_NISNASSAddToCart.java:119)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
@@ -187,25 +187,10 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-UI_Test_Suite-class-failed -->
-          <div class="suite-UI_Test_Suite-class-passed">
+          <div class="suite-UI_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.altayer.web.tests.TC_04_ProductListingPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="ounassProductListing">
-                  </a> <!-- ounassProductListing -->
-                  <span class="method-name">ounassProductListing</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-UI_Test_Suite-class-passed -->
-          <div class="suite-UI_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.altayer.web.tests.TC_01_NISNASS</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.altayer.web.tests.TC_01_NISNASSAccountRegistration</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -213,6 +198,48 @@
                   <a name="nisnassAccountRegistration">
                   </a> <!-- nisnassAccountRegistration -->
                   <span class="method-name">nisnassAccountRegistration</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: .CustomerPopup &gt; a:nth-child(1) (tried for 120 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.altayer.web.tests.TC_01_NISNASSAccountRegistration.fn_RegistrationDetail(TC_01_NISNASSAccountRegistration.java:219)
+	at com.altayer.web.tests.TC_01_NISNASSAccountRegistration.fn_UserRegistration(TC_01_NISNASSAccountRegistration.java:179)
+	at com.altayer.web.tests.TC_01_NISNASSAccountRegistration.nisnassAccountRegistration(TC_01_NISNASSAccountRegistration.java:117)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: .CustomerPopup &gt; a:nth-child(1)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.2&apos;, revision: &apos;10229a9&apos;, time: &apos;2017-08-21T17:29:55.15Z&apos;
+System info: host: &apos;JLT01702L&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 23 more
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-UI_Test_Suite-class-failed -->
+          <div class="suite-UI_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.altayer.web.tests.TC_04_OUNASSProductListingPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ounassProductListing">
+                  </a> <!-- ounassProductListing -->
+                  <span class="method-name">ounassProductListing</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -226,20 +253,20 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;UI Test Suite&quot; parallel=&quot;tests&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; name=&quot;NISNASS&quot; parallel=&quot;tests&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;UI Test Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;4&quot; name=&quot;NISNASS&quot; parallel=&quot;tests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.altayer.web.tests.TC_01_NISNASS&quot;/&gt;
-      &lt;class name=&quot;com.altayer.web.tests.TC_02_AddToCart&quot;/&gt;
+      &lt;class name=&quot;com.altayer.web.tests.TC_01_NISNASSAccountRegistration&quot;/&gt;
+      &lt;class name=&quot;com.altayer.web.tests.TC_02_NISNASSAddToCart&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- NISNASS --&gt;
-  &lt;test thread-count=&quot;2&quot; name=&quot;OUNASS&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;4&quot; name=&quot;OUNASS&quot; parallel=&quot;tests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.altayer.web.tests.TC_03_OUNASS&quot;/&gt;
-      &lt;class name=&quot;com.altayer.web.tests.TC_04_ProductListingPage&quot;/&gt;
+      &lt;class name=&quot;com.altayer.web.tests.TC_03_OUNASSFacebookLogin&quot;/&gt;
+      &lt;class name=&quot;com.altayer.web.tests.TC_04_OUNASSProductListingPage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- OUNASS --&gt;
-  &lt;test thread-count=&quot;2&quot; name=&quot;APIS&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;4&quot; name=&quot;APIS&quot; parallel=&quot;tests&quot;&gt;
   &lt;/test&gt; &lt;!-- APIS --&gt;
 &lt;/suite&gt; &lt;!-- UI Test Suite --&gt;
             </pre>
@@ -286,26 +313,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ounassProductListing')
-data.setCell(0, 2, 'com.altayer.web.tests.TC_04_ProductListingPage')
-data.setCell(0, 3, 109972);
+data.setCell(0, 1, 'nisnassAccountRegistration')
+data.setCell(0, 2, 'com.altayer.web.tests.TC_01_NISNASSAccountRegistration')
+data.setCell(0, 3, 151017);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'nisnassAccountRegistration')
-data.setCell(1, 2, 'com.altayer.web.tests.TC_01_NISNASS')
-data.setCell(1, 3, 74088);
+data.setCell(1, 1, 'ounassProductListing')
+data.setCell(1, 2, 'com.altayer.web.tests.TC_04_OUNASSProductListingPage')
+data.setCell(1, 3, 94876);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'ounassFacebookLogin')
-data.setCell(2, 2, 'com.altayer.web.tests.TC_03_OUNASS')
-data.setCell(2, 3, 46969);
+data.setCell(2, 2, 'com.altayer.web.tests.TC_03_OUNASSFacebookLogin')
+data.setCell(2, 3, 48356);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'nisnassAAddToCart')
-data.setCell(3, 2, 'com.altayer.web.tests.TC_02_AddToCart')
-data.setCell(3, 3, 33476);
+data.setCell(3, 1, 'nisnassAddToCart')
+data.setCell(3, 2, 'com.altayer.web.tests.TC_02_NISNASSAddToCart')
+data.setCell(3, 3, 31541);
 window.suiteTableData['UI_Test_Suite']= { tableData: data, tableDiv: 'times-div-UI_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-UI_Test_Suite">
               </div> <!-- times-div-UI_Test_Suite -->
             </div> <!-- times-div -->
@@ -317,20 +344,25 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">nisnassAccountRegistration</span>
+              <span class="reporter-method-name">ounassProductListing</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">NISNASS User Registration Tests started</span>
-                <span class="reporter-method-output">NISNASS HP Launched</span>
-                <span class="reporter-method-output">Sigup Popup opened sucessfully</span>
-                <span class="reporter-method-output">User Loggin Sucess</span>
-                <span class="reporter-method-output">Email Field is non editable</span>
-                <span class="reporter-method-output">Profile is updated successfully</span>
-                <span class="reporter-method-output">New mobile number is updated successfully</span>
-                <span class="reporter-method-output">NISNASS User Registration Tests verified successfully</span>
+                <span class="reporter-method-output">OUNASS Product Feature Listing  Test started::TC_04_OUNASSProductListingPage</span>
+                <span class="reporter-method-output">Load More button is displayed successfully</span>
+                <span class="reporter-method-output">Items loaded are more than 12 items</span>
+                <span class="reporter-method-output">OUNASS Product Feature Listing Tests has been verified successfully</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">nisnassAAddToCart</span>
+              <span class="reporter-method-name">ounassFacebookLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Ounass FB Login Test started::TC_03_OUNASSFacebookLogin</span>
+                <span class="reporter-method-output">Social Account Error while FB Login</span>
+                <span class="reporter-method-output">OUNASS FB Login  FB Tests Failed</span>
+                <span class="reporter-method-output">OUNASS FB Login  Tests Failed because of Verification</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">nisnassAddToCart</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">NISNASS Add to Cart Test Started</span>
                 <span class="reporter-method-output">Embellishment Kamma Block Heels->Item is out of stock or Add to Bag button is not enabled</span>
@@ -340,48 +372,21 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">ounassProductListing</span>
+              <span class="reporter-method-name">nisnassAccountRegistration</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">OUNASS Product Feature Listing  Test started::TC_04_ProductListingPage</span>
-                <span class="reporter-method-output">Load More button is displayed successfully</span>
-                <span class="reporter-method-output">Items loaded are more than 12 items</span>
-                <span class="reporter-method-output">OUNASS Product Feature Listing Tests has been verified successfully</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">ounassFacebookLogin</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Ounass FB Login Test started::TC_03_OUNASS</span>
-                <span class="reporter-method-output">Social Account Error while FB Login</span>
-                <span class="reporter-method-output">OUNASS FB Login  FB Tests Failed</span>
-                <span class="reporter-method-output">OUNASS FB Login  Tests Failed because of Verification</span>
+                <span class="reporter-method-output">NISNASS User Registration Tests started</span>
+                <span class="reporter-method-output">NISNASS HP Launched</span>
+                <span class="reporter-method-output">Sigup Popup opened sucessfully</span>
+                <span class="reporter-method-output">NISNASS User Registration Tests Failed because of Verification</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-UI_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.altayer.web.tests.TC_04_ProductListingPage</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">extentReport</span>
-                <br/>
-                <span class="ignored-method-name">flushExtentReport</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.altayer.web.tests.TC_02_AddToCart</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">extentReport</span>
-                <br/>
-                <span class="ignored-method-name">flushExtentReport</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-UI_Test_Suite" class="panel">
@@ -390,93 +395,95 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.altayer.web.tests.TC_03_OUNASS</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.altayer.web.tests.TC_01_NISNASSAccountRegistration</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">extentReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.altayer.web.tests.TC_01_NISNASS</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.altayer.web.tests.TC_03_OUNASSFacebookLogin</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
-                <span class="method-start">434 ms</span>
+                <span class="method-start">351 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.altayer.web.tests.TC_03_OUNASS</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.altayer.web.tests.TC_01_NISNASSAccountRegistration</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
-                <span class="method-start">434 ms</span>
+                <span class="method-start">351 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.altayer.web.tests.TC_01_NISNASS</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">nisnassAccountRegistration</span>
-                <span class="method-start">22847 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quit</span>
-                <span class="method-start">96937 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.altayer.web.tests.TC_02_AddToCart</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">init</span>
-                <span class="method-start">97067 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.altayer.web.tests.TC_03_OUNASS</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.altayer.web.tests.TC_03_OUNASSFacebookLogin</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ounassFacebookLogin</span>
-                <span class="method-start">115038 ms</span>
+                <span class="method-start">18790 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">quit</span>
+                <span class="method-start">67155 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.altayer.web.tests.TC_02_AddToCart</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.altayer.web.tests.TC_04_OUNASSProductListingPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">67345 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.altayer.web.tests.TC_01_NISNASSAccountRegistration</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">nisnassAAddToCart</span>
-                <span class="method-start">116148 ms</span>
+                <span class="method-name">nisnassAccountRegistration</span>
+                <span class="method-start">90690 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">quit</span>
-                <span class="method-start">149628 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.altayer.web.tests.TC_03_OUNASS</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">quit</span>
-                <span class="method-start">162010 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.altayer.web.tests.TC_04_ProductListingPage</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">init</span>
-                <span class="method-start">162138 ms</span>
-              </div> <!-- configuration-class before -->
+              <div class="chronological-class-name">com.altayer.web.tests.TC_04_OUNASSProductListingPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">ounassProductListing</span>
-                <span class="method-start">186326 ms</span>
+                <span class="method-start">103055 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quit</span>
-                <span class="method-start">296302 ms</span>
+                <span class="method-start">197934 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.altayer.web.tests.TC_03_OUNASS</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.altayer.web.tests.TC_01_NISNASSAccountRegistration</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">quit</span>
+                <span class="method-start">241711 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.altayer.web.tests.TC_02_NISNASSAddToCart</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">241803 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">nisnassAddToCart</span>
+                <span class="method-start">258510 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">quit</span>
+                <span class="method-start">290053 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.altayer.web.tests.TC_01_NISNASSAccountRegistration</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">flushExtentReport</span>
-                <span class="method-start">297423 ms</span>
+                <span class="method-start">291828 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

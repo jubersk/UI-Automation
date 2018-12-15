@@ -19,7 +19,8 @@ import org.testng.annotations.BeforeSuite;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+
+
 
 
 public class BaseClass {
@@ -39,7 +40,7 @@ public class BaseClass {
 	public static ExtentReports extent;
 	public static ExtentTest logger;
 	
-	@BeforeSuite
+	/*@BeforeSuite
 	public void extentReport(){
 		extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReportNew.html", true);
 	}
@@ -48,7 +49,7 @@ public class BaseClass {
 	public void flushExtentReport(){
 	    extent.flush();
 	   // extent.close();
-	   }
+	   }*/
 	
 	/*
 	public  void OpenBrowser(int iTestCaseRow, String sBrowserName, String navigateURL) throws Exception{

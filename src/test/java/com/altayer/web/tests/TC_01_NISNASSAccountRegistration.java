@@ -5,6 +5,7 @@ import com.altayer.web.utilitiy.BaseClass;
 import com.altayer.web.utilitiy.ConstantOnlineReg;
 import com.altayer.web.utilitiy.ExcelUtils;
 import com.altayer.web.utilitiy.Log;
+import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
 import java.io.FileInputStream;
 import java.net.URL;
@@ -22,11 +23,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 
 
 
-public class TC_01_NISNASS extends BaseClass{
+public class TC_01_NISNASSAccountRegistration extends BaseClass{
 	public static RemoteWebDriver driver = null;
 	private static String rootPath = "";
 	public static WebDriverWait wait;
@@ -36,7 +39,15 @@ public class TC_01_NISNASS extends BaseClass{
 	public static boolean bResult;
 	private static String navigateURL = "";
 
+	@BeforeSuite
+	public void extentReport(){
+		extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReportNew.html", true);
+	}
 
+	@AfterSuite
+	public void flushExtentReport(){
+		extent.flush();
+	}
 
 
 	@BeforeClass
@@ -76,9 +87,9 @@ public class TC_01_NISNASS extends BaseClass{
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
 		cap.setCapability("version", "");
 		cap.setPlatform(Platform.LINUX);
-		
+
 		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
-		
+
 		/*String driverPath = rootPath + "Drivers\\";
 		System.setProperty("webdriver.gecko.driver", driverPath+ "geckodriver.exe");
 		driver =new FirefoxDriver();*/
@@ -87,9 +98,10 @@ public class TC_01_NISNASS extends BaseClass{
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		Log.info("Implicit wait applied on the driver for 20 seconds");
 		driver.get("https://www.nisnass.ae/");
+		
 		logger = extent.startTest(sTestCaseName);
 		Log.info("Web application launched successfully");
-		logger.log(LogStatus.INFO, "Web application launched successfully");
+		logger.log(LogStatus.INFO, "Web application launched successfully"+this.getClass().getName());
 		wait = new WebDriverWait(driver, 120);
 	}
 
@@ -98,7 +110,7 @@ public class TC_01_NISNASS extends BaseClass{
 	public void nisnassAccountRegistration() throws Exception {
 		try{
 
-			logger.log(LogStatus.INFO, "User Registration Test Started");
+			logger.log(LogStatus.INFO, "User Registration Test Started"+this.getClass().getName());
 			Log.info("NISNASS User Registration Tests started");
 			Reporter.log("NISNASS User Registration Tests started");
 			//Tests Actual Steps
@@ -114,7 +126,7 @@ public class TC_01_NISNASS extends BaseClass{
 
 				Log.info("NISNASS User Registration Tests Failed");
 				Reporter.log("NISNASS User Registration TestsFailed");
-				logger.log(LogStatus.FAIL, "User Registration Test Failed");
+				logger.log(LogStatus.FAIL, "User Registration Test Failed"+this.getClass().getName());
 				throw new Exception("User Registration Test Failed");
 
 			}
@@ -141,7 +153,9 @@ public class TC_01_NISNASS extends BaseClass{
 	public void quit() {
 		Log.endTestCase(sTestCaseName);
 		Reporter.log("Nisnass User Registration Test Ends::" + sTestCaseName);
+		logger.log(LogStatus.INFO, "Nisnass User Registration Test Ends::" + sTestCaseName+this.getClass().getName());
 		extent.endTest(logger);
+		//extent.close();
 		//extent.flush();
 		//driver.close();
 		driver.quit();
@@ -158,12 +172,14 @@ public class TC_01_NISNASS extends BaseClass{
 			//Verify that popup opened successfully
 			if(isElementPresent(driver,By.cssSelector(".SignInForm-signUpButton"))){
 				//check the individual fields on the page
+				logger.log(LogStatus.PASS, "Sigup Popup opened sucessfully"+TC_01_NISNASSAccountRegistration.class.getName());
 				Reporter.log("Sigup Popup opened sucessfully");
 				driver.findElement(By.cssSelector(".SignInForm-signUpButton")).click();
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".Profile-firstName")));
 				fn_RegistrationDetail(iTestCaseRow);
 			}
 			else{
+				logger.log(LogStatus.FAIL, "Sigup Popup Does not opened"+TC_01_NISNASSAccountRegistration.class.getName());
 				Log.info("Sigup Popup Does not opened");
 				Reporter.log("Sigup Popup Does not opened");
 				bResult = false;
@@ -205,7 +221,7 @@ public class TC_01_NISNASS extends BaseClass{
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector(prop.getProperty("txt_MyAccount_css")))));
 		//Verify that verification code page is displayed
 		if(isElementPresent(driver,By.cssSelector(prop.getProperty("txt_MyAccount_css")))){
-
+			logger.log(LogStatus.PASS, "User Loggin Sucess"+TC_01_NISNASSAccountRegistration.class.getName());
 			Log.info("User Loggin Sucess");
 			Reporter.log("User Loggin Sucess");
 			//Click on MyProfile
@@ -214,11 +230,13 @@ public class TC_01_NISNASS extends BaseClass{
 			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector(prop.getProperty("txt_Email_css")))));
 			//	String readonlyEmail = driver.findElement(By.cssSelector(prop.getProperty("txt_Email_css"))).getAttribute("disabled");
 			if (driver.findElement(By.cssSelector(prop.getProperty("txt_Email_css"))).isEnabled()==false){
+				logger.log(LogStatus.PASS, "Email Field is non editable"+TC_01_NISNASSAccountRegistration.class.getName());
 				Log.info("Email Field is non editable");
 				Reporter.log("Email Field is non editable");
 			}
 			else
 			{
+				logger.log(LogStatus.FAIL, "Email Field should be non editable"+TC_01_NISNASSAccountRegistration.class.getName());
 				Log.info("Email Field should be non editable");
 				Reporter.log("Email Field should be non editable");
 				bResult = false;
@@ -237,14 +255,17 @@ public class TC_01_NISNASS extends BaseClass{
 			String strSuccessMsg = driver.findElement(By.cssSelector(prop.getProperty("msg_Success_css"))).getText();
 			if (strSuccessMsg.contains("updated")){
 				//Check the number is updated
+				logger.log(LogStatus.PASS, "Profile is updated successfully"+TC_01_NISNASSAccountRegistration.class.getName());
 				Log.info("Profile is updated successfully");
 				Reporter.log("Profile is updated successfully");
 				if (driver.findElement(By.cssSelector(prop.getProperty("txt_PhoneNumber_css"))).getAttribute("value").equals((ExcelUtils.getCellData(iTestCaseRow,ConstantOnlineReg.Col_NewPhoneNumber)))){
+					logger.log(LogStatus.PASS, "New mobile number is updated successfully"+TC_01_NISNASSAccountRegistration.class.getName());
 					Log.info("New mobile number is updated successfully");
 					Reporter.log("New mobile number is updated successfully");
 
 				}
 				else {
+					logger.log(LogStatus.FAIL, "Mobile number is not updated with new number"+TC_01_NISNASSAccountRegistration.class.getName());
 					Log.info("Mobile number is not updated with new number");
 					Reporter.log("Mobile number is not updated with new number");
 					bResult = false;
@@ -252,6 +273,7 @@ public class TC_01_NISNASS extends BaseClass{
 				}
 			}
 			else {
+				logger.log(LogStatus.FAIL, "Update Message is not displayed on Profile Update"+TC_01_NISNASSAccountRegistration.class.getName());
 				Log.info("Update Message is not displayed on Profile Update");
 				Reporter.log("Update Message is not displayed on Profile Update");
 				bResult = false;
@@ -260,7 +282,7 @@ public class TC_01_NISNASS extends BaseClass{
 
 		}
 		else{
-
+			logger.log(LogStatus.FAIL, "User in not loggedin"+TC_01_NISNASSAccountRegistration.class.getName());
 			Log.info("User in not loggedin");
 			Reporter.log("User in not loggedin");
 			bResult = false;

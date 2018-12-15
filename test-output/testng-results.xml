@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="4" total="8" passed="2">
+<testng-results skipped="0" failed="3" ignored="0" total="4" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Ounass FB Login Test started::TC_03_OUNASSFacebookLogin]]>
+    </line>
+    <line>
+      <![CDATA[Social Account Error while FB Login]]>
+    </line>
+    <line>
+      <![CDATA[OUNASS FB Login  FB Tests Failed]]>
+    </line>
+    <line>
+      <![CDATA[OUNASS FB Login  Tests Failed because of Verification]]>
+    </line>
+    <line>
+      <![CDATA[OUNASS FB Login Test Ends::TC_03_OUNASSFacebookLogin]]>
+    </line>
     <line>
       <![CDATA[NISNASS User Registration Tests started]]>
     </line>
@@ -11,25 +26,25 @@
       <![CDATA[Sigup Popup opened sucessfully]]>
     </line>
     <line>
-      <![CDATA[User Loggin Sucess]]>
+      <![CDATA[OUNASS Product Feature Listing  Test started::TC_04_OUNASSProductListingPage]]>
     </line>
     <line>
-      <![CDATA[Email Field is non editable]]>
+      <![CDATA[Load More button is displayed successfully]]>
     </line>
     <line>
-      <![CDATA[Profile is updated successfully]]>
+      <![CDATA[Items loaded are more than 12 items]]>
     </line>
     <line>
-      <![CDATA[New mobile number is updated successfully]]>
+      <![CDATA[OUNASS Product Feature Listing Tests has been verified successfully]]>
     </line>
     <line>
-      <![CDATA[NISNASS User Registration Tests verified successfully]]>
+      <![CDATA[OUNASS ProductListingPage Verification Test Ends::TC_04_OUNASSProductListingPage]]>
     </line>
     <line>
-      <![CDATA[Nisnass User Registration Test Ends::TC_01_NISNASS]]>
+      <![CDATA[NISNASS User Registration Tests Failed because of Verification]]>
     </line>
     <line>
-      <![CDATA[Ounass FB Login Test started::TC_03_OUNASS]]>
+      <![CDATA[Nisnass User Registration Test Ends::TC_01_NISNASSAccountRegistration]]>
     </line>
     <line>
       <![CDATA[NISNASS Add to Cart Test Started]]>
@@ -47,46 +62,170 @@
       <![CDATA[NISNASS AddToCart Tests Failed because of Verification]]>
     </line>
     <line>
-      <![CDATA[Nisnass User Registration Test Ends::TC_02_AddToCart]]>
-    </line>
-    <line>
-      <![CDATA[Social Account Error while FB Login]]>
-    </line>
-    <line>
-      <![CDATA[OUNASS FB Login  FB Tests Failed]]>
-    </line>
-    <line>
-      <![CDATA[OUNASS FB Login  Tests Failed because of Verification]]>
-    </line>
-    <line>
-      <![CDATA[OUNASS FB Login Test Ends::TC_03_OUNASS]]>
-    </line>
-    <line>
-      <![CDATA[OUNASS Product Feature Listing  Test started::TC_04_ProductListingPage]]>
-    </line>
-    <line>
-      <![CDATA[Load More button is displayed successfully]]>
-    </line>
-    <line>
-      <![CDATA[Items loaded are more than 12 items]]>
-    </line>
-    <line>
-      <![CDATA[OUNASS Product Feature Listing Tests has been verified successfully]]>
-    </line>
-    <line>
-      <![CDATA[OUNASS FB Login Test Ends::TC_04_ProductListingPage]]>
+      <![CDATA[Nisnass AddToCart Test Ends::TC_02_NISNASSAddToCart]]>
     </line>
   </reporter-output>
-  <suite name="UI Test Suite" duration-ms="296986" started-at="2018-12-15T12:19:05Z" finished-at="2018-12-15T12:24:02Z">
+  <suite name="UI Test Suite" duration-ms="291466" started-at="2018-12-15T16:04:31Z" finished-at="2018-12-15T16:09:22Z">
     <groups>
     </groups>
-    <test name="NISNASS" duration-ms="151857" started-at="2018-12-15T12:19:05Z" finished-at="2018-12-15T12:21:37Z">
-      <class name="com.altayer.web.tests.TC_01_NISNASS">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.altayer.web.tests.TC_01_NISNASS@7a36aefa]" name="init" is-config="true" duration-ms="22407" started-at="2018-12-15T12:19:05Z" finished-at="2018-12-15T12:19:27Z">
+    <test name="APIS" duration-ms="9" started-at="2018-12-15T16:04:31Z" finished-at="2018-12-15T16:04:31Z">
+      <class name="com.altayer.web.tests.TC_01_NISNASSAccountRegistration">
+        <test-method status="PASS" signature="extentReport()[pri:0, instance:com.altayer.web.tests.TC_01_NISNASSAccountRegistration@7a36aefa]" name="extentReport" is-config="true" duration-ms="333" started-at="2018-12-15T16:04:30Z" finished-at="2018-12-15T16:04:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentReport -->
+        <test-method status="PASS" signature="flushExtentReport()[pri:0, instance:com.altayer.web.tests.TC_01_NISNASSAccountRegistration@7a36aefa]" name="flushExtentReport" is-config="true" duration-ms="490" started-at="2018-12-15T16:09:22Z" finished-at="2018-12-15T16:09:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushExtentReport -->
+      </class> <!-- com.altayer.web.tests.TC_01_NISNASSAccountRegistration -->
+    </test> <!-- APIS -->
+    <test name="OUNASS" duration-ms="208536" started-at="2018-12-15T16:04:31Z" finished-at="2018-12-15T16:07:59Z">
+      <class name="com.altayer.web.tests.TC_04_OUNASSProductListingPage">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.altayer.web.tests.TC_04_OUNASSProductListingPage@5427c60c]" name="init" is-config="true" duration-ms="35709" started-at="2018-12-15T16:05:38Z" finished-at="2018-12-15T16:06:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="nisnassAccountRegistration()[pri:0, instance:com.altayer.web.tests.TC_01_NISNASS@7a36aefa]" name="nisnassAccountRegistration" duration-ms="74088" started-at="2018-12-15T12:19:27Z" finished-at="2018-12-15T12:20:41Z">
+        <test-method status="PASS" signature="ounassProductListing()[pri:0, instance:com.altayer.web.tests.TC_04_OUNASSProductListingPage@5427c60c]" name="ounassProductListing" duration-ms="94876" started-at="2018-12-15T16:06:14Z" finished-at="2018-12-15T16:07:48Z">
+          <reporter-output>
+            <line>
+              <![CDATA[OUNASS Product Feature Listing  Test started::TC_04_OUNASSProductListingPage]]>
+            </line>
+            <line>
+              <![CDATA[Load More button is displayed successfully]]>
+            </line>
+            <line>
+              <![CDATA[Items loaded are more than 12 items]]>
+            </line>
+            <line>
+              <![CDATA[OUNASS Product Feature Listing Tests has been verified successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ounassProductListing -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.altayer.web.tests.TC_04_OUNASSProductListingPage@5427c60c]" name="quit" is-config="true" duration-ms="10938" started-at="2018-12-15T16:07:48Z" finished-at="2018-12-15T16:07:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[OUNASS ProductListingPage Verification Test Ends::TC_04_OUNASSProductListingPage]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.altayer.web.tests.TC_04_OUNASSProductListingPage -->
+      <class name="com.altayer.web.tests.TC_03_OUNASSFacebookLogin">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.altayer.web.tests.TC_03_OUNASSFacebookLogin@80169cf]" name="init" is-config="true" duration-ms="18432" started-at="2018-12-15T16:04:31Z" finished-at="2018-12-15T16:04:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="ounassFacebookLogin()[pri:0, instance:com.altayer.web.tests.TC_03_OUNASSFacebookLogin@80169cf]" name="ounassFacebookLogin" duration-ms="48356" started-at="2018-12-15T16:04:49Z" finished-at="2018-12-15T16:05:38Z">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[OUNASS FB Login  FB Tests Failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: OUNASS FB Login  FB Tests Failed
+at com.altayer.web.tests.TC_03_OUNASSFacebookLogin.ounassFacebookLogin(TC_03_OUNASSFacebookLogin.java:148)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+            <line>
+              <![CDATA[Ounass FB Login Test started::TC_03_OUNASSFacebookLogin]]>
+            </line>
+            <line>
+              <![CDATA[Social Account Error while FB Login]]>
+            </line>
+            <line>
+              <![CDATA[OUNASS FB Login  FB Tests Failed]]>
+            </line>
+            <line>
+              <![CDATA[OUNASS FB Login  Tests Failed because of Verification]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ounassFacebookLogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.altayer.web.tests.TC_03_OUNASSFacebookLogin@80169cf]" name="quit" is-config="true" duration-ms="190" started-at="2018-12-15T16:05:38Z" finished-at="2018-12-15T16:05:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[OUNASS FB Login Test Ends::TC_03_OUNASSFacebookLogin]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.altayer.web.tests.TC_03_OUNASSFacebookLogin -->
+    </test> <!-- OUNASS -->
+    <test name="NISNASS" duration-ms="291466" started-at="2018-12-15T16:04:31Z" finished-at="2018-12-15T16:09:22Z">
+      <class name="com.altayer.web.tests.TC_01_NISNASSAccountRegistration">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.altayer.web.tests.TC_01_NISNASSAccountRegistration@7a36aefa]" name="init" is-config="true" duration-ms="90338" started-at="2018-12-15T16:04:31Z" finished-at="2018-12-15T16:06:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="nisnassAccountRegistration()[pri:0, instance:com.altayer.web.tests.TC_01_NISNASSAccountRegistration@7a36aefa]" name="nisnassAccountRegistration" duration-ms="151017" started-at="2018-12-15T16:06:01Z" finished-at="2018-12-15T16:08:32Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.cssSelector: .CustomerPopup > a:nth-child(1) (tried for 120 second(s) with 500 MILLISECONDS interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: .CustomerPopup > a:nth-child(1) (tried for 120 second(s) with 500 MILLISECONDS interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+at com.altayer.web.tests.TC_01_NISNASSAccountRegistration.fn_RegistrationDetail(TC_01_NISNASSAccountRegistration.java:219)
+at com.altayer.web.tests.TC_01_NISNASSAccountRegistration.fn_UserRegistration(TC_01_NISNASSAccountRegistration.java:179)
+at com.altayer.web.tests.TC_01_NISNASSAccountRegistration.nisnassAccountRegistration(TC_01_NISNASSAccountRegistration.java:117)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: .CustomerPopup > a:nth-child(1)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.2', revision: '10229a9', time: '2017-08-21T17:29:55.15Z'
+System info: host: 'JLT01702L', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+at java.util.Optional.orElseThrow(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+... 23 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
             <line>
               <![CDATA[NISNASS User Registration Tests started]]>
@@ -98,43 +237,31 @@
               <![CDATA[Sigup Popup opened sucessfully]]>
             </line>
             <line>
-              <![CDATA[User Loggin Sucess]]>
-            </line>
-            <line>
-              <![CDATA[Email Field is non editable]]>
-            </line>
-            <line>
-              <![CDATA[Profile is updated successfully]]>
-            </line>
-            <line>
-              <![CDATA[New mobile number is updated successfully]]>
-            </line>
-            <line>
-              <![CDATA[NISNASS User Registration Tests verified successfully]]>
+              <![CDATA[NISNASS User Registration Tests Failed because of Verification]]>
             </line>
           </reporter-output>
         </test-method> <!-- nisnassAccountRegistration -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.altayer.web.tests.TC_01_NISNASS@7a36aefa]" name="quit" is-config="true" duration-ms="130" started-at="2018-12-15T12:20:41Z" finished-at="2018-12-15T12:20:42Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.altayer.web.tests.TC_01_NISNASSAccountRegistration@7a36aefa]" name="quit" is-config="true" duration-ms="92" started-at="2018-12-15T16:08:32Z" finished-at="2018-12-15T16:08:32Z">
           <reporter-output>
             <line>
-              <![CDATA[Nisnass User Registration Test Ends::TC_01_NISNASS]]>
+              <![CDATA[Nisnass User Registration Test Ends::TC_01_NISNASSAccountRegistration]]>
             </line>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- com.altayer.web.tests.TC_01_NISNASS -->
-      <class name="com.altayer.web.tests.TC_02_AddToCart">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.altayer.web.tests.TC_02_AddToCart@17211155]" name="init" is-config="true" duration-ms="19080" started-at="2018-12-15T12:20:42Z" finished-at="2018-12-15T12:21:01Z">
+      </class> <!-- com.altayer.web.tests.TC_01_NISNASSAccountRegistration -->
+      <class name="com.altayer.web.tests.TC_02_NISNASSAddToCart">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.altayer.web.tests.TC_02_NISNASSAddToCart@17211155]" name="init" is-config="true" duration-ms="16705" started-at="2018-12-15T16:08:32Z" finished-at="2018-12-15T16:08:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="nisnassAAddToCart()[pri:0, instance:com.altayer.web.tests.TC_02_AddToCart@17211155]" name="nisnassAAddToCart" duration-ms="33476" started-at="2018-12-15T12:21:01Z" finished-at="2018-12-15T12:21:34Z">
+        <test-method status="FAIL" signature="nisnassAddToCart()[pri:0, instance:com.altayer.web.tests.TC_02_NISNASSAddToCart@17211155]" name="nisnassAddToCart" duration-ms="31541" started-at="2018-12-15T16:08:49Z" finished-at="2018-12-15T16:09:21Z">
           <exception class="java.lang.Exception">
             <message>
               <![CDATA[NISNASS Add to Cart Tests Failed]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.Exception: NISNASS Add to Cart Tests Failed
-at com.altayer.web.tests.TC_02_AddToCart.nisnassAAddToCart(TC_02_AddToCart.java:118)
+at com.altayer.web.tests.TC_02_NISNASSAddToCart.nisnassAddToCart(TC_02_NISNASSAddToCart.java:119)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -175,117 +302,15 @@ at java.lang.Thread.run(Unknown Source)
               <![CDATA[NISNASS AddToCart Tests Failed because of Verification]]>
             </line>
           </reporter-output>
-        </test-method> <!-- nisnassAAddToCart -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.altayer.web.tests.TC_02_AddToCart@17211155]" name="quit" is-config="true" duration-ms="2648" started-at="2018-12-15T12:21:34Z" finished-at="2018-12-15T12:21:37Z">
+        </test-method> <!-- nisnassAddToCart -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.altayer.web.tests.TC_02_NISNASSAddToCart@17211155]" name="quit" is-config="true" duration-ms="1751" started-at="2018-12-15T16:09:21Z" finished-at="2018-12-15T16:09:22Z">
           <reporter-output>
             <line>
-              <![CDATA[Nisnass User Registration Test Ends::TC_02_AddToCart]]>
+              <![CDATA[Nisnass AddToCart Test Ends::TC_02_NISNASSAddToCart]]>
             </line>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- com.altayer.web.tests.TC_02_AddToCart -->
+      </class> <!-- com.altayer.web.tests.TC_02_NISNASSAddToCart -->
     </test> <!-- NISNASS -->
-    <test name="APIS" duration-ms="2" started-at="2018-12-15T12:21:37Z" finished-at="2018-12-15T12:21:37Z">
-      <class name="com.altayer.web.tests.TC_03_OUNASS">
-        <test-method status="PASS" signature="extentReport()[pri:0, instance:com.altayer.web.tests.TC_03_OUNASS@80169cf]" name="extentReport" is-config="true" duration-ms="415" started-at="2018-12-15T12:19:05Z" finished-at="2018-12-15T12:19:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentReport -->
-        <test-method status="PASS" signature="flushExtentReport()[pri:0, instance:com.altayer.web.tests.TC_03_OUNASS@80169cf]" name="flushExtentReport" is-config="true" duration-ms="422" started-at="2018-12-15T12:24:02Z" finished-at="2018-12-15T12:24:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- flushExtentReport -->
-      </class> <!-- com.altayer.web.tests.TC_03_OUNASS -->
-    </test> <!-- APIS -->
-    <test name="OUNASS" duration-ms="296986" started-at="2018-12-15T12:19:05Z" finished-at="2018-12-15T12:24:02Z">
-      <class name="com.altayer.web.tests.TC_03_OUNASS">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.altayer.web.tests.TC_03_OUNASS@80169cf]" name="init" is-config="true" duration-ms="114604" started-at="2018-12-15T12:19:05Z" finished-at="2018-12-15T12:21:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="FAIL" signature="ounassFacebookLogin()[pri:0, instance:com.altayer.web.tests.TC_03_OUNASS@80169cf]" name="ounassFacebookLogin" duration-ms="46969" started-at="2018-12-15T12:21:00Z" finished-at="2018-12-15T12:21:47Z">
-          <exception class="java.lang.Exception">
-            <message>
-              <![CDATA[OUNASS FB Login  FB Tests Failed]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Exception: OUNASS FB Login  FB Tests Failed
-at com.altayer.web.tests.TC_03_OUNASS.ounassFacebookLogin(TC_03_OUNASS.java:146)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Exception -->
-          <reporter-output>
-            <line>
-              <![CDATA[Ounass FB Login Test started::TC_03_OUNASS]]>
-            </line>
-            <line>
-              <![CDATA[Social Account Error while FB Login]]>
-            </line>
-            <line>
-              <![CDATA[OUNASS FB Login  FB Tests Failed]]>
-            </line>
-            <line>
-              <![CDATA[OUNASS FB Login  Tests Failed because of Verification]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- ounassFacebookLogin -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.altayer.web.tests.TC_03_OUNASS@80169cf]" name="quit" is-config="true" duration-ms="128" started-at="2018-12-15T12:21:47Z" finished-at="2018-12-15T12:21:47Z">
-          <reporter-output>
-            <line>
-              <![CDATA[OUNASS FB Login Test Ends::TC_03_OUNASS]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- com.altayer.web.tests.TC_03_OUNASS -->
-      <class name="com.altayer.web.tests.TC_04_ProductListingPage">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.altayer.web.tests.TC_04_ProductListingPage@5427c60c]" name="init" is-config="true" duration-ms="24188" started-at="2018-12-15T12:21:47Z" finished-at="2018-12-15T12:22:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="ounassProductListing()[pri:0, instance:com.altayer.web.tests.TC_04_ProductListingPage@5427c60c]" name="ounassProductListing" duration-ms="109972" started-at="2018-12-15T12:22:11Z" finished-at="2018-12-15T12:24:01Z">
-          <reporter-output>
-            <line>
-              <![CDATA[OUNASS Product Feature Listing  Test started::TC_04_ProductListingPage]]>
-            </line>
-            <line>
-              <![CDATA[Load More button is displayed successfully]]>
-            </line>
-            <line>
-              <![CDATA[Items loaded are more than 12 items]]>
-            </line>
-            <line>
-              <![CDATA[OUNASS Product Feature Listing Tests has been verified successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- ounassProductListing -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.altayer.web.tests.TC_04_ProductListingPage@5427c60c]" name="quit" is-config="true" duration-ms="1104" started-at="2018-12-15T12:24:01Z" finished-at="2018-12-15T12:24:02Z">
-          <reporter-output>
-            <line>
-              <![CDATA[OUNASS FB Login Test Ends::TC_04_ProductListingPage]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- com.altayer.web.tests.TC_04_ProductListingPage -->
-    </test> <!-- OUNASS -->
   </suite> <!-- UI Test Suite -->
 </testng-results>

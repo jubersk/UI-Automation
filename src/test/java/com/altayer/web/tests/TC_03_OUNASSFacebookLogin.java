@@ -26,7 +26,7 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-public class TC_03_OUNASS extends BaseClass {
+public class TC_03_OUNASSFacebookLogin extends BaseClass {
 
 	public static RemoteWebDriver driver = null;
 	private static String rootPath = "";
@@ -100,7 +100,7 @@ public class TC_03_OUNASS extends BaseClass {
 		driver.get("https://www.ounass.ae/");
 		Log.info("Web application launched successfully");
 		logger = extent.startTest(sTestCaseName);
-		logger.log(LogStatus.INFO, "Web application launched successfully");
+		logger.log(LogStatus.INFO, "Web application launched successfully"+TC_03_OUNASSFacebookLogin.class.getName());
 		wait = new WebDriverWait(driver, 120);
 	}
 
@@ -110,7 +110,7 @@ public class TC_03_OUNASS extends BaseClass {
 		try{
 			//extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReportNew.html", true);
 
-			logger.log(LogStatus.INFO, "Ounass FB Login Test started");
+			logger.log(LogStatus.INFO, "Ounass FB Login Test started"+TC_03_OUNASSFacebookLogin.class.getName());
 			Log.info("Ounass FB Login Test started::" + sTestCaseName);
 			Reporter.log("Ounass FB Login Test started::" + sTestCaseName);
 			//Execute the action on below test
@@ -133,6 +133,7 @@ public class TC_03_OUNASS extends BaseClass {
 			fn_LoginFlow();
 
 			if(bResult==true){
+				logger.log(LogStatus.PASS, "OUNASS FB Login Tests has been verified successfully"+TC_03_OUNASSFacebookLogin.class.getName());
 				Reporter.log("OUNASS FB Login Tests has been verified successfully");
 				// If the value of boolean variable is True, then your test is complete pass and do this
 				ExcelUtils.setCellData("Pass", iTestCaseRow, ConstantOnlineReg.Col_Result);
@@ -140,15 +141,17 @@ public class TC_03_OUNASS extends BaseClass {
 
 
 			}else{
+				logger.log(LogStatus.FAIL, "OUNASS FB Login  FB Tests Failed"+TC_03_OUNASSFacebookLogin.class.getName());
 				Log.info("OUNASS FB Login  FB Tests Failed");
 				Reporter.log("OUNASS FB Login  FB Tests Failed");
-				logger.log(LogStatus.FAIL, "OUNASS FB Login  FB Tests Failed");
+				logger.log(LogStatus.FAIL, "OUNASS FB Login  FB Tests Failed"+TC_03_OUNASSFacebookLogin.class.getName());
 				throw new Exception("OUNASS FB Login  FB Tests Failed");
 			}
 
 			// Below are the steps you may like to perform in case of failed test or any exception faced before ending your test 
 		}catch (Exception e){
 			Log.info("OUNASS FB Login  Tests Failed because of Verification");
+			logger.log(LogStatus.FAIL, "OUNASS FB Login  Tests Failed because of Verification"+TC_03_OUNASSFacebookLogin.class.getName());
 			Reporter.log("OUNASS FB Login  Tests Failed because of Verification");
 			// If in case you got any exception during the test, it will mark your test as Fail in the test result sheet
 			ExcelUtils.setCellData("Fail", iTestCaseRow, ConstantOnlineReg.Col_Result);
@@ -167,7 +170,9 @@ public class TC_03_OUNASS extends BaseClass {
 	public void quit() {
 		Log.endTestCase(sTestCaseName);
 		Reporter.log("OUNASS FB Login Test Ends::" + sTestCaseName);
+		logger.log(LogStatus.INFO, "OUNASS FB Login Test Ends::" + sTestCaseName+TC_03_OUNASSFacebookLogin.class.getName());
 		extent.endTest(logger);
+		//extent.close();
 		//driver.close();
 		driver.quit();
 
