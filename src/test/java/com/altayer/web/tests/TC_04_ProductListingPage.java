@@ -16,9 +16,9 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Platform;
-import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -73,7 +73,7 @@ public class TC_04_ProductListingPage extends BaseClass {
 		navigateURL = ExcelUtils.getCellData(iTestCaseRow, ConstantOnlineReg.Col_URL);
 		System.out.println(navigateURL);
 		
-		DesiredCapabilities cap = DesiredCapabilities.chrome();
+		DesiredCapabilities cap = DesiredCapabilities.firefox();
 		cap.setCapability("version", "");
 		cap.setPlatform(Platform.LINUX);
 		
@@ -97,7 +97,7 @@ public class TC_04_ProductListingPage extends BaseClass {
 
 	// Product Listing
 	@Test
-	public void login() throws Exception {
+	public void ounassProductListing() throws Exception {
 		try{
 			//extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReportNew.html", true);
 		
@@ -208,7 +208,7 @@ public class TC_04_ProductListingPage extends BaseClass {
 				((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", driver.findElement(By.cssSelector(prop.getProperty("btn_loadmore_css"))));
 				Thread.sleep(2000);
 				((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", driver.findElement(By.cssSelector(prop.getProperty("btn_loadmore_css"))));
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				
 				if(isElementPresent(driver,By.cssSelector(prop.getProperty("btn_loadmore_css")))){
 					Reporter.log("Load More button is displayed successfully");

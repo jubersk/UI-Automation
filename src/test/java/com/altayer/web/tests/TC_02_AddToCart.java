@@ -1,13 +1,10 @@
 package com.altayer.web.tests;
 
 import org.testng.annotations.Test;
-import org.testng.internal.ExitCode;
-
 import com.altayer.web.utilitiy.BaseClass;
 import com.altayer.web.utilitiy.ConstantOnlineReg;
 import com.altayer.web.utilitiy.ExcelUtils;
 import com.altayer.web.utilitiy.Log;
-import com.google.common.base.Function;
 import com.relevantcodes.extentreports.LogStatus;
 import java.io.FileInputStream;
 import java.net.URL;
@@ -18,16 +15,15 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
-import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -101,7 +97,7 @@ public class TC_02_AddToCart extends BaseClass{
 
 	//Verify Add To Cart Tests
 	@Test
-	public void AddToCart() throws Exception {
+	public void nisnassAAddToCart() throws Exception {
 		try{
 
 			logger.log(LogStatus.INFO, "NISNASS Add to Cart Test Started");
@@ -127,8 +123,8 @@ public class TC_02_AddToCart extends BaseClass{
 
 
 		}catch (Exception e){
-			Log.info("NISNASS Add to Cart Tests Failed");
-			Reporter.log("NISNASS Add to Cart Tests Failed");
+			Log.info("NISNASS AddToCart Tests Failed because of Verification");
+			Reporter.log("NISNASS AddToCart Tests Failed because of Verification");
 			// If in case you got any exception during the test, it will mark your test as Fail in the test result sheet
 			ExcelUtils.setCellData("Fail", iTestCaseRow, ConstantOnlineReg.Col_Result);
 			ExcelUtils.writeWorkbook();

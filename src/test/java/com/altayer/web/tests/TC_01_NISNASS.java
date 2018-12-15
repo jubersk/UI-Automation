@@ -14,8 +14,8 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.Platform;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -73,7 +73,7 @@ public class TC_01_NISNASS extends BaseClass{
 		System.out.println("TestCase Row Number" +iTestCaseRow);
 		navigateURL = ExcelUtils.getCellData(iTestCaseRow, ConstantOnlineReg.Col_URL);	
 		System.out.println(navigateURL);
-		DesiredCapabilities cap = DesiredCapabilities.firefox();
+		DesiredCapabilities cap = DesiredCapabilities.chrome();
 		cap.setCapability("version", "");
 		cap.setPlatform(Platform.LINUX);
 		
@@ -95,7 +95,7 @@ public class TC_01_NISNASS extends BaseClass{
 
 	//Verify Account Registration
 	@Test
-	public void accountRegistration() throws Exception {
+	public void nisnassAccountRegistration() throws Exception {
 		try{
 
 			logger.log(LogStatus.INFO, "User Registration Test Started");
@@ -122,8 +122,8 @@ public class TC_01_NISNASS extends BaseClass{
 
 
 		}catch (Exception e){
-			Log.info("NISNASS User Registration Tests Failed");
-			Reporter.log("NISNASS User Registration Tests Failed");
+			Log.info("NISNASS User Registration Tests Failed because of Verification");
+			Reporter.log("NISNASS User Registration Tests Failed because of Verification");
 			// If in case you got any exception during the test, it will mark your test as Fail in the test result sheet
 			ExcelUtils.setCellData("Fail", iTestCaseRow, ConstantOnlineReg.Col_Result);
 			ExcelUtils.writeWorkbook();

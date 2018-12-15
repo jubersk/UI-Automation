@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>NISNASS</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Dec 15 13:51:42 GST 2018</td>
+<td>Started on:</td><td>Sat Dec 15 15:17:44 GST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>336 seconds (336995 ms)</td>
+<tr><td>Total time:</td><td>223 seconds (223303 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,53 +76,26 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.altayer.web.tests.TC_02_AddToCart.AddToCart()'><b>AddToCart</b><br>Test class: com.altayer.web.tests.TC_02_AddToCart<br/>
-<a href="#Output-924911797" onClick='toggleBox("Output-924911797", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-189299104" onClick='toggleBox("Output-189299104", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-924911797" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-924911797">
+<a href="#Output-189299104" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-189299104">
 NISNASS Add to Cart Test Started<br/>
+Embellishment Kamma Block Heels->Item is out of stock or Add to Bag button is not enabled<br/>
+All the items addedd in cart successfully<br/>
 NISNASS Add to Cart Tests Failed<br/>
+NISNASS AddToCart Tests Failed because of Verification<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Timeout loading page after 300000ms
-Build info: version: &apos;3.5.2&apos;, revision: &apos;10229a9&apos;, time: &apos;2017-08-21T17:29:55.15Z&apos;
-System info: host: &apos;JLT01702L&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{moz:profile=/tmp/rust_mozprofile.AYewtkFc2pQV, rotatable=false, moz:geckodriverVersion=0.23.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, webdriver.remote.sessionid=85f7b3d5-a0df-4896-b00f-3a834466b793, acceptInsecureCerts=true, browserVersion=63.0.1, platformVersion=4.9.125-linuxkit, moz:processID=730, browserName=firefox, javascriptEnabled=true, platformName=linux, setWindowRect=true, moz:webdriverClick=true}]
-Session ID: 85f7b3d5-a0df-4896-b00f-3a834466b793
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:368)
-	at com.altayer.web.tests.TC_02_AddToCart.fnAddToBag(TC_02_AddToCart.java:273)
-	at com.altayer.web.tests.TC_02_AddToCart.fn_AddToCart(TC_02_AddToCart.java:168)
-	at com.altayer.web.tests.TC_02_AddToCart.AddToCart(TC_02_AddToCart.java:109)
+<td><div><pre>java.lang.Exception: NISNASS Add to Cart Tests Failed
+	at com.altayer.web.tests.TC_02_AddToCart.AddToCart(TC_02_AddToCart.java:123)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace924911797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace924911797'><pre>org.openqa.selenium.TimeoutException: Timeout loading page after 300000ms
-Build info: version: &apos;3.5.2&apos;, revision: &apos;10229a9&apos;, time: &apos;2017-08-21T17:29:55.15Z&apos;
-System info: host: &apos;JLT01702L&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{moz:profile=/tmp/rust_mozprofile.AYewtkFc2pQV, rotatable=false, moz:geckodriverVersion=0.23.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, webdriver.remote.sessionid=85f7b3d5-a0df-4896-b00f-3a834466b793, acceptInsecureCerts=true, browserVersion=63.0.1, platformVersion=4.9.125-linuxkit, moz:processID=730, browserName=firefox, javascriptEnabled=true, platformName=linux, setWindowRect=true, moz:webdriverClick=true}]
-Session ID: 85f7b3d5-a0df-4896-b00f-3a834466b793
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:368)
-	at com.altayer.web.tests.TC_02_AddToCart.fnAddToBag(TC_02_AddToCart.java:273)
-	at com.altayer.web.tests.TC_02_AddToCart.fn_AddToCart(TC_02_AddToCart.java:168)
-	at com.altayer.web.tests.TC_02_AddToCart.AddToCart(TC_02_AddToCart.java:109)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace189299104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace189299104'><pre>java.lang.Exception: NISNASS Add to Cart Tests Failed
+	at com.altayer.web.tests.TC_02_AddToCart.AddToCart(TC_02_AddToCart.java:123)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -144,8 +117,90 @@ Session ID: 85f7b3d5-a0df-4896-b00f-3a834466b793
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>318</td>
+<td>34</td>
 <td>com.altayer.web.tests.TC_02_AddToCart@17211155</td></tr>
+<tr>
+<td title='com.altayer.web.tests.TC_01_NISNASS.accountRegistration()'><b>accountRegistration</b><br>Test class: com.altayer.web.tests.TC_01_NISNASS<br/>
+<a href="#Output-48611129" onClick='toggleBox("Output-48611129", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-48611129" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-48611129">
+NISNASS User Registration Tests started<br/>
+NISNASS HP Launched<br/>
+Sigup Popup opened sucessfully<br/>
+NISNASS User Registration Tests Failed because of Verification<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: .CustomerPopup &gt; a:nth-child(1) (tried for 120 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.altayer.web.tests.TC_01_NISNASS.fn_RegistrationDetail(TC_01_NISNASS.java:203)
+	at com.altayer.web.tests.TC_01_NISNASS.fn_UserRegistration(TC_01_NISNASS.java:164)
+	at com.altayer.web.tests.TC_01_NISNASS.accountRegistration(TC_01_NISNASS.java:105)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: .CustomerPopup &gt; a:nth-child(1)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.2&apos;, revision: &apos;10229a9&apos;, time: &apos;2017-08-21T17:29:55.15Z&apos;
+System info: host: &apos;JLT01702L&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 23 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace48611129", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace48611129'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: .CustomerPopup &gt; a:nth-child(1) (tried for 120 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at com.altayer.web.tests.TC_01_NISNASS.fn_RegistrationDetail(TC_01_NISNASS.java:203)
+	at com.altayer.web.tests.TC_01_NISNASS.fn_UserRegistration(TC_01_NISNASS.java:164)
+	at com.altayer.web.tests.TC_01_NISNASS.accountRegistration(TC_01_NISNASS.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: .CustomerPopup &gt; a:nth-child(1)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.2&apos;, revision: &apos;10229a9&apos;, time: &apos;2017-08-21T17:29:55.15Z&apos;
+System info: host: &apos;JLT01702L&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 23 more
+</pre></div></td>
+<td>141</td>
+<td>com.altayer.web.tests.TC_01_NISNASS@7a36aefa</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,104 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[NISNASS Add to Cart Test Started]]>
+      <![CDATA[NISNASS User Registration Tests started]]>
     </line>
     <line>
-      <![CDATA[Embellishment Kamma Block Heels->Item is out of stock or Add to Bag button is not enabled]]>
+      <![CDATA[NISNASS HP Launched]]>
     </line>
     <line>
-      <![CDATA[All the items addedd in cart successfully]]>
+      <![CDATA[Sigup Popup opened sucessfully]]>
     </line>
     <line>
-      <![CDATA[NISNASS Add to Cart Tests Failed]]>
+      <![CDATA[User Loggin Sucess]]>
     </line>
     <line>
-      <![CDATA[NISNASS Add to Cart Tests Failed]]>
+      <![CDATA[Email Field is non editable]]>
     </line>
     <line>
-      <![CDATA[Nisnass User Registration Test Ends::TC_02_AddToCart]]>
+      <![CDATA[Profile is updated successfully]]>
+    </line>
+    <line>
+      <![CDATA[New mobile number is updated successfully]]>
+    </line>
+    <line>
+      <![CDATA[NISNASS User Registration Tests verified successfully]]>
+    </line>
+    <line>
+      <![CDATA[Nisnass User Registration Test Ends::TC_01_NISNASS]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50899" started-at="2018-12-15T10:12:12Z" finished-at="2018-12-15T10:13:03Z">
+  <suite name="Default suite" duration-ms="99656" started-at="2018-12-15T11:41:17Z" finished-at="2018-12-15T11:42:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50899" started-at="2018-12-15T10:12:12Z" finished-at="2018-12-15T10:13:03Z">
-      <class name="com.altayer.web.tests.TC_02_AddToCart">
-        <test-method status="PASS" signature="extentReport()[pri:0, instance:com.altayer.web.tests.TC_02_AddToCart@5d11346a]" name="extentReport" is-config="true" duration-ms="231" started-at="2018-12-15T10:12:12Z" finished-at="2018-12-15T10:12:12Z">
+    <test name="Default test" duration-ms="99656" started-at="2018-12-15T11:41:17Z" finished-at="2018-12-15T11:42:57Z">
+      <class name="com.altayer.web.tests.TC_01_NISNASS">
+        <test-method status="PASS" signature="extentReport()[pri:0, instance:com.altayer.web.tests.TC_01_NISNASS@5d11346a]" name="extentReport" is-config="true" duration-ms="282" started-at="2018-12-15T11:41:17Z" finished-at="2018-12-15T11:41:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReport -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.altayer.web.tests.TC_02_AddToCart@5d11346a]" name="init" is-config="true" duration-ms="16354" started-at="2018-12-15T10:12:12Z" finished-at="2018-12-15T10:12:29Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.altayer.web.tests.TC_01_NISNASS@5d11346a]" name="init" is-config="true" duration-ms="10082" started-at="2018-12-15T11:41:17Z" finished-at="2018-12-15T11:41:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="AddToCart()[pri:0, instance:com.altayer.web.tests.TC_02_AddToCart@5d11346a]" name="AddToCart" duration-ms="31574" started-at="2018-12-15T10:12:29Z" finished-at="2018-12-15T10:13:00Z">
-          <exception class="java.lang.Exception">
-            <message>
-              <![CDATA[NISNASS Add to Cart Tests Failed]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Exception: NISNASS Add to Cart Tests Failed
-at com.altayer.web.tests.TC_02_AddToCart.AddToCart(TC_02_AddToCart.java:123)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Exception -->
+        <test-method status="PASS" signature="accountRegistration()[pri:0, instance:com.altayer.web.tests.TC_01_NISNASS@5d11346a]" name="accountRegistration" duration-ms="89459" started-at="2018-12-15T11:41:27Z" finished-at="2018-12-15T11:42:56Z">
           <reporter-output>
             <line>
-              <![CDATA[NISNASS Add to Cart Test Started]]>
+              <![CDATA[NISNASS User Registration Tests started]]>
             </line>
             <line>
-              <![CDATA[Embellishment Kamma Block Heels->Item is out of stock or Add to Bag button is not enabled]]>
+              <![CDATA[NISNASS HP Launched]]>
             </line>
             <line>
-              <![CDATA[All the items addedd in cart successfully]]>
+              <![CDATA[Sigup Popup opened sucessfully]]>
             </line>
             <line>
-              <![CDATA[NISNASS Add to Cart Tests Failed]]>
+              <![CDATA[User Loggin Sucess]]>
             </line>
             <line>
-              <![CDATA[NISNASS Add to Cart Tests Failed]]>
+              <![CDATA[Email Field is non editable]]>
+            </line>
+            <line>
+              <![CDATA[Profile is updated successfully]]>
+            </line>
+            <line>
+              <![CDATA[New mobile number is updated successfully]]>
+            </line>
+            <line>
+              <![CDATA[NISNASS User Registration Tests verified successfully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- AddToCart -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.altayer.web.tests.TC_02_AddToCart@5d11346a]" name="quit" is-config="true" duration-ms="2933" started-at="2018-12-15T10:13:00Z" finished-at="2018-12-15T10:13:03Z">
+        </test-method> <!-- accountRegistration -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.altayer.web.tests.TC_01_NISNASS@5d11346a]" name="quit" is-config="true" duration-ms="83" started-at="2018-12-15T11:42:56Z" finished-at="2018-12-15T11:42:57Z">
           <reporter-output>
             <line>
-              <![CDATA[Nisnass User Registration Test Ends::TC_02_AddToCart]]>
+              <![CDATA[Nisnass User Registration Test Ends::TC_01_NISNASS]]>
             </line>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="PASS" signature="flushExtentReport()[pri:0, instance:com.altayer.web.tests.TC_02_AddToCart@5d11346a]" name="flushExtentReport" is-config="true" duration-ms="418" started-at="2018-12-15T10:13:03Z" finished-at="2018-12-15T10:13:04Z">
+        <test-method status="PASS" signature="flushExtentReport()[pri:0, instance:com.altayer.web.tests.TC_01_NISNASS@5d11346a]" name="flushExtentReport" is-config="true" duration-ms="703" started-at="2018-12-15T11:42:57Z" finished-at="2018-12-15T11:42:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushExtentReport -->
-      </class> <!-- com.altayer.web.tests.TC_02_AddToCart -->
+      </class> <!-- com.altayer.web.tests.TC_01_NISNASS -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
