@@ -1,10 +1,13 @@
 package com.altayer.web.tests;
 
 import org.testng.annotations.Test;
+import org.testng.internal.ExitCode;
+
 import com.altayer.web.utilitiy.BaseClass;
 import com.altayer.web.utilitiy.ConstantOnlineReg;
 import com.altayer.web.utilitiy.ExcelUtils;
 import com.altayer.web.utilitiy.Log;
+import com.google.common.base.Function;
 import com.relevantcodes.extentreports.LogStatus;
 import java.io.FileInputStream;
 import java.net.URL;
@@ -45,7 +48,7 @@ public class TC_02_AddToCart extends BaseClass{
 	// This method is to navigate 
 	@BeforeClass
 	public void init() throws Exception {
-		
+
 
 		if(prop==null){
 			prop = new Properties();
@@ -59,8 +62,8 @@ public class TC_02_AddToCart extends BaseClass{
 
 		}
 		bResult = true;
-	
-	
+
+
 		// Configuring Log4j logs
 		DOMConfigurator.configure("log4j.xml");
 		// The below method will refine your test case name, exactly the name use have used
@@ -80,7 +83,7 @@ public class TC_02_AddToCart extends BaseClass{
 		DesiredCapabilities cap = DesiredCapabilities.firefox();
 		cap.setCapability("version", "");
 		cap.setPlatform(Platform.LINUX);
-		
+
 		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
 		/*String driverPath = rootPath + "Drivers\\";
 		System.setProperty("webdriver.gecko.driver", driverPath+ "geckodriver.exe");
@@ -152,95 +155,85 @@ public class TC_02_AddToCart extends BaseClass{
 
 
 	public static void fn_AddToCart() throws Exception{
-	List<String> items = new ArrayList<String>();
-	
-	//Add First Item
-	driver.get("https://www.nisnass.ae/shop-quench-intense-hydration-mask-1-sheet-for-womens-212054000.html");
-       //Check the item found on page and its ready to add to cart & Read the name of item
-        //Then Add to Cart
-	 String strOutOfStock =  driver.findElement(By.cssSelector(".AddToBag")).getText();
-	 if (strOutOfStock.contains("Out of stock")){
-		 
-		 throw new SkipException("1st Item is out of stock, Skipping this exception");
-	 }
-		 else{
-        
-        String itemTitle = driver.findElement(By.cssSelector(".Brief-title")).getText();
-        items.add(itemTitle);
-        //Click on size One
-        driver.findElement(By.cssSelector(".SizeSelection-option")).click();
-        driver.findElement(By.cssSelector(".AddToBag")).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a.CartTotal-secureCheckout > span")));
-	 }
-	 
-	 
-        //Add Second item
-        driver.navigate().to("https://www.nisnass.ae/shop-ciaran-point-toe-pumps-for-womens-212341719.html");
-        
-        String strOutOfStock1 =  driver.findElement(By.cssSelector(".AddToBag")).getText();
-        
-        if (strOutOfStock1.contains("Out of stock")){
-			 
-			 throw new SkipException("1st Item is out of stock, Skipping this exception");
-		 }
-			 else{
-        String itemTitle1 = driver.findElement(By.cssSelector(".Brief-title")).getText();
-        items.add(itemTitle1);
-        //select size
-        driver.findElement(By.cssSelector("div.SizeSelection-optionContainer:nth-child(8)")).click();
-        
-        driver.findElement(By.cssSelector(".AddToBag")).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a.CartTotal-secureCheckout > span")));
-			 }
-        //Add third Item
-        driver.navigate().to("https://www.nisnass.ae/shop-embellishment-kamma-block-heels-for-womens-211870808.html");
-        
-        String strOutOfStock2 =  driver.findElement(By.cssSelector(".Brief-title")).getText();
-        if (strOutOfStock2.contains("Out of stock")){
-			 
-			 throw new SkipException("1st Item is out of stock, Skipping this exception");
-		 }
-			 else{
-        String itemTitle2 = driver.findElement(By.cssSelector(".Brief-title")).getText();
-        items.add(itemTitle2);
-        //select size
-        driver.findElement(By.cssSelector("div.SizeSelection-optionContainer:nth-child(7)")).click();
-        
-        driver.findElement(By.cssSelector(".AddToBag")).click();
-      
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a.CartTotal-secureCheckout > span")));
-			 }
-        
-        //Click on bag and check that item is added to cart
-        driver.findElement(By.cssSelector("i.icon-bag")).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".CartTotal-secureCheckout")));
-        //Read all the items from cart table and match with above title
-        //get the child object of class
-        List<WebElement> list = driver.findElements(By.xpath("//div[@class='CartItem-name']"));
-    
-        List<String> strActual = new ArrayList<String>();
-        
-        for(WebElement element:list)
-        {
-        	  
-        	strActual.add(element.getText());
-               
-        }
-        
-        try{
-            Assert.assertEquals(items, strActual);
-            Reporter.log("All the items addedd in cart successfully");
-          
-        }catch(Throwable e){
-            System.err.println("Added items are not available in cart "+e.getMessage());
-        	Log.info("Added items are not available in cart");
+		List<String> items = new ArrayList<String>();
+
+		//Add First Item
+		String urlItem1 = "https://www.nisnass.ae/shop-quench-intense-hydration-mask-1-sheet-for-womens-212054000.html";
+		fnAddToBag(urlItem1,items);
+		
+		//Add Second Item
+		String urlItems2 = "https://www.nisnass.ae/shop-ciaran-point-toe-pumps-for-womens-212341719.html";
+		fnAddToBag(urlItems2,items);
+		
+		//Add Third Item
+		String urlItems3 = "https://www.nisnass.ae/shop-embellishment-kamma-block-heels-for-womens-211870808.html";
+		fnAddToBag(urlItems3,items);
+		
+
+		//Click on bag and check that item is added to cart
+		driver.findElement(By.cssSelector("i.icon-bag")).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".CartTotal-secureCheckout")));
+
+		//Read all the items from cart table and match with above title
+		//get the child object of class
+		List<WebElement> list = driver.findElements(By.xpath("//div[@class='CartItem-name']"));
+
+		List<String> strActual = new ArrayList<String>();
+
+		for(WebElement element:list)
+		{
+
+			strActual.add(element.getText());
+
+		}
+
+		try{
+			Assert.assertEquals(items, strActual);
+			Reporter.log("All the items addedd in cart successfully");
+
+		}catch(Throwable e){
+			System.err.println("Added items are not available in cart "+e.getMessage());
+			Log.info("Added items are not available in cart");
 			Reporter.log("Added items are not available in cart");
 			bResult = false;
 			takeScreenshot(driver, "Cart Page");
-        }
-       
-	//softas.assertAll();
-	
+		}
 
-}
+		//softas.assertAll();
+
+
+	}
+	
+	public static void fnAddToBag(String url,List<String> items) throws Exception{
+		//Add First Item
+				driver.get(url);
+				//get the name of item
+				String itemTitle = driver.findElement(By.cssSelector(".Brief-title")).getText();
+				//Check the item found on page and its ready to add to cart & Read the name of item
+				//Then Add to Cart
+				String strOutOfStock =  driver.findElement(By.cssSelector(".AddToBag")).getText();
+				System.out.println(strOutOfStock);
+				if (strOutOfStock.contains("ADD")){
+
+					items.add(itemTitle);
+					//Click on size One
+					driver.findElement(By.cssSelector(".SizeSelection-option")).click();
+					driver.findElement(By.cssSelector(".AddToBag")).click();
+					wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a.CartTotal-secureCheckout > span")));
+					
+				}
+				else{
+					//throw new SkipException(itemTitle + "->Item is out of stock or Add to Bag is not enabled, Skipping this exception");
+					//System.err.println(itemTitle + "->Item is out of stock or Add to Bag button is not enabled");
+					Log.info(itemTitle + "->Item is out of stock or Add to Bag button is not enabled");
+					Reporter.log(itemTitle + "->Item is out of stock or Add to Bag button is not enabled");
+					bResult = false;
+					takeScreenshot(driver, "Add To Bag Page");
+					
+					
+
+				}
+
+		
+	}
 }

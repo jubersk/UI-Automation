@@ -79,6 +79,7 @@ public class TC_01_GetCategory extends BaseClass {
 
 			//***************************************First node should have more than 10 categories on children data node.***********
 			ResponseBody jsonresponseBody= RestAssured.get(apiURL).getBody();
+			
 			Action_TC01_CategoryNode objCategoryNode = jsonresponseBody.as(Action_TC01_CategoryNode.class);
 
 			//softas.assertTrue(objCategoryNode.getChildren().size()>=10);
@@ -116,7 +117,6 @@ public class TC_01_GetCategory extends BaseClass {
 
 
 		//	softas.assertNotNull(categoryNode.getCategoryId(),"CategoryID");
-
 		if(categoryNode.getCategoryId()!= null){
 			Log.info("Category ID Found::" + categoryNode.getCategoryId());
 			//logger.log(LogStatus.PASS, "Category ID Found::" + categoryNode.getCategoryId());
@@ -220,21 +220,26 @@ public class TC_01_GetCategory extends BaseClass {
 		}
 
 		if(CollectionUtils.isNotEmpty(categoryNode.getChildren())){
-			categoryNode.getChildren().forEach(arg0 -> {
-				try {
-					verifyNode(arg0);
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			});
+			categoryNode.getChildren().forEach(childNode -> validateChild(childNode));
 		}
 
+	}
+	
+	private static void validateChild(Action_TC01_CategoryNode childNode) {
+		{
+			try {
+				verifyNode(childNode);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	}
 
 
 	private static boolean isLastLevel(Action_TC01_CategoryNode categoryNode) {
 		return CollectionUtils.isEmpty(categoryNode.getChildren());
+		
 	}
 
 	private static boolean isFeatureEditLink(String featureLink) {

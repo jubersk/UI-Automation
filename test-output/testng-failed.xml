@@ -3,14 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.altayer.web.APITests.TC_01_GetCategory">
+      <class name="com.altayer.web.tests.TC_02_AddToCart">
         <methods>
           <include name="extentReport"/>
-          <include name="getPlaceAPI"/>
+          <include name="AddToCart"/>
+          <include name="quit"/>
           <include name="init"/>
           <include name="flushExtentReport"/>
         </methods>
-      </class> <!-- com.altayer.web.APITests.TC_01_GetCategory -->
+      </class> <!-- com.altayer.web.tests.TC_02_AddToCart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

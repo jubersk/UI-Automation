@@ -10,7 +10,7 @@ public class Action_TC01_CategoryNode {
 	private Boolean includeInMenu;
 	private int level;
 	private String featureLink;
-	private List<Action_TC01_CategoryNode> children;
+	private List<Action_TC01_CategoryNode> children; //encapsulation
 	private List<String> availableSortBy;
 	private String image;
 	

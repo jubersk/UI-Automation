@@ -1,38 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [UI Test Suite]" parallel="tests">
-  <test thread-count="5" name="APIS(failed)" parallel="tests">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [UI Test Suite]" parallel="tests">
+  <test thread-count="2" name="NISNASS(failed)" parallel="tests">
     <classes>
-      <class name="com.altayer.web.APITests.TC_01_GetCategory">
+      <class name="com.altayer.web.tests.TC_02_AddToCart">
         <methods>
           <include name="extentReport"/>
-          <include name="getPlaceAPI"/>
-          <include name="init"/>
-          <include name="flushExtentReport"/>
-        </methods>
-      </class> <!-- com.altayer.web.APITests.TC_01_GetCategory -->
-    </classes>
-  </test> <!-- APIS(failed) -->
-  <test thread-count="5" name="OUNASS(failed)" parallel="tests">
-    <classes>
-      <class name="com.altayer.web.tests.TC_03_OUNASS">
-        <methods>
-          <include name="extentReport"/>
-          <include name="init"/>
-          <include name="login"/>
-          <include name="flushExtentReport"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- com.altayer.web.tests.TC_03_OUNASS -->
-      <class name="com.altayer.web.tests.TC_04_ProductListingPage">
-        <methods>
-          <include name="login"/>
-          <include name="extentReport"/>
+          <include name="AddToCart"/>
           <include name="quit"/>
           <include name="init"/>
           <include name="flushExtentReport"/>
         </methods>
-      </class> <!-- com.altayer.web.tests.TC_04_ProductListingPage -->
+      </class> <!-- com.altayer.web.tests.TC_02_AddToCart -->
     </classes>
-  </test> <!-- OUNASS(failed) -->
+  </test> <!-- NISNASS(failed) -->
 </suite> <!-- Failed suite [UI Test Suite] -->
