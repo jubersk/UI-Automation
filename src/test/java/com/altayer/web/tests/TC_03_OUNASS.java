@@ -38,7 +38,7 @@ public class TC_03_OUNASS extends BaseClass {
 	private static String navigateURL = "";
 
 
-	// This method is to navigate snapdeal URL
+	
 	@BeforeClass
 	public void init() throws Exception {
 		if(prop==null){

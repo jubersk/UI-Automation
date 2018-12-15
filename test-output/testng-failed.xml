@@ -5,43 +5,22 @@
     <classes>
       <class name="com.altayer.web.tests.TC_02_AddToCart">
         <methods>
+          <include name="nisnassAAddToCart"/>
           <include name="extentReport"/>
-          <include name="AddToCart"/>
           <include name="quit"/>
           <include name="init"/>
           <include name="flushExtentReport"/>
         </methods>
       </class> <!-- com.altayer.web.tests.TC_02_AddToCart -->
-      <class name="com.altayer.web.tests.TC_01_NISNASS">
-        <methods>
-          <include name="accountRegistration"/>
-          <include name="extentReport"/>
-          <include name="init"/>
-          <include name="quit"/>
-          <include name="flushExtentReport"/>
-        </methods>
-      </class> <!-- com.altayer.web.tests.TC_01_NISNASS -->
     </classes>
   </test> <!-- NISNASS(failed) -->
-  <test thread-count="2" name="APIS(failed)" parallel="tests">
-    <classes>
-      <class name="com.altayer.web.APITests.TC_01_GetCategory">
-        <methods>
-          <include name="extentReport"/>
-          <include name="getPlaceAPI"/>
-          <include name="init"/>
-          <include name="flushExtentReport"/>
-        </methods>
-      </class> <!-- com.altayer.web.APITests.TC_01_GetCategory -->
-    </classes>
-  </test> <!-- APIS(failed) -->
   <test thread-count="2" name="OUNASS(failed)" parallel="tests">
     <classes>
       <class name="com.altayer.web.tests.TC_03_OUNASS">
         <methods>
           <include name="extentReport"/>
           <include name="init"/>
-          <include name="login"/>
+          <include name="ounassFacebookLogin"/>
           <include name="flushExtentReport"/>
           <include name="quit"/>
         </methods>

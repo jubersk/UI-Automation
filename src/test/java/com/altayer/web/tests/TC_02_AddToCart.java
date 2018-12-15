@@ -41,7 +41,6 @@ public class TC_02_AddToCart extends BaseClass{
 
 
 
-	// This method is to navigate 
 	@BeforeClass
 	public void init() throws Exception {
 
@@ -97,7 +96,7 @@ public class TC_02_AddToCart extends BaseClass{
 
 	//Verify Add To Cart Tests
 	@Test
-	public void nisnassAAddToCart() throws Exception {
+	public void nisnassAddToCart() throws Exception {
 		try{
 
 			logger.log(LogStatus.INFO, "NISNASS Add to Cart Test Started");

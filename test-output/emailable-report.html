@@ -8,11 +8,31 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">99,656</td><td></td><td></td></tr>
+<tr><th colspan="7">UI Test Suite</th></tr>
+<tr><td><a href="#t0">NISNASS</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">151,857</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">APIS</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">2</td><td></td><td></td></tr>
+<tr><td><a href="#t2">OUNASS</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">296,986</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num attn">2</th><th class="num">448,845</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.altayer.web.tests.TC_01_NISNASS</td><td><a href="#m0">accountRegistration</a></td><td rowspan="1">1544874087456</td><td rowspan="1">89459</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">UI Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">NISNASS &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.altayer.web.tests.TC_02_AddToCart</td><td><a href="#m0">nisnassAAddToCart</a></td><td rowspan="1">1544876461177</td><td rowspan="1">33476</td></tr><tr><th colspan="4">NISNASS &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.altayer.web.tests.TC_01_NISNASS</td><td><a href="#m1">nisnassAccountRegistration</a></td><td rowspan="1">1544876367876</td><td rowspan="1">74088</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4" class="invisible"/></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">OUNASS &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.altayer.web.tests.TC_03_OUNASS</td><td><a href="#m2">ounassFacebookLogin</a></td><td rowspan="1">1544876460067</td><td rowspan="1">46969</td></tr><tr><th colspan="4">OUNASS &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.altayer.web.tests.TC_04_ProductListingPage</td><td><a href="#m3">ounassProductListing</a></td><td rowspan="1">1544876531355</td><td rowspan="1">109972</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.altayer.web.tests.TC_01_NISNASS#accountRegistration</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">NISNASS User Registration Tests started<br/>NISNASS HP Launched<br/>Sigup Popup opened sucessfully<br/>User Loggin Sucess<br/>Email Field is non editable<br/>Profile is updated successfully<br/>New mobile number is updated successfully<br/>NISNASS User Registration Tests verified successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>NISNASS</h2><h3 id="m0">com.altayer.web.tests.TC_02_AddToCart#nisnassAAddToCart</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">NISNASS Add to Cart Test Started<br/>Embellishment Kamma Block Heels->Item is out of stock or Add to Bag button is not enabled<br/>All the items addedd in cart successfully<br/>NISNASS Add to Cart Tests Failed<br/>NISNASS AddToCart Tests Failed because of Verification</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Exception: NISNASS Add to Cart Tests Failed
+	at com.altayer.web.tests.TC_02_AddToCart.nisnassAAddToCart(TC_02_AddToCart.java:118)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.altayer.web.tests.TC_01_NISNASS#nisnassAccountRegistration</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">NISNASS User Registration Tests started<br/>NISNASS HP Launched<br/>Sigup Popup opened sucessfully<br/>User Loggin Sucess<br/>Email Field is non editable<br/>Profile is updated successfully<br/>New mobile number is updated successfully<br/>NISNASS User Registration Tests verified successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>APIS</h2><h2>OUNASS</h2><h3 id="m2">com.altayer.web.tests.TC_03_OUNASS#ounassFacebookLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Ounass FB Login Test started::TC_03_OUNASS<br/>Social Account Error while FB Login<br/>OUNASS FB Login  FB Tests Failed<br/>OUNASS FB Login  Tests Failed because of Verification</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Exception: OUNASS FB Login  FB Tests Failed
+	at com.altayer.web.tests.TC_03_OUNASS.ounassFacebookLogin(TC_03_OUNASS.java:146)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.altayer.web.tests.TC_04_ProductListingPage#ounassProductListing</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">OUNASS Product Feature Listing  Test started::TC_04_ProductListingPage<br/>Load More button is displayed successfully<br/>Items loaded are more than 12 items<br/>OUNASS Product Feature Listing Tests has been verified successfully</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

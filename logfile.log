@@ -115625,3 +115625,199 @@ Session ID: 4344ceb4c0a244ce564510b2089d74a1
 2018-12-15 15:42:56,919 INFO  [Log] X 
 2018-12-15 15:42:56,919 INFO  [Log] X 
 2018-12-15 15:42:56,919 INFO  [Log] X 
+2018-12-15 16:15:44,028 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:15:44,059 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:15:44,059 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:TC_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-12-15 16:15:44,059 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:15:44,059 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:15:44,028 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:15:44,061 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:15:44,061 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:TC_03_OUNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-12-15 16:15:44,061 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:15:44,061 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:15:44,926 INFO  [Log] Excel sheet opened 
+2018-12-15 16:15:44,926 INFO  [Log] Excel sheet opened 
+2018-12-15 16:15:44,926 INFO  [Log] Total number of Row used return as < 4 >. 
+2018-12-15 16:15:44,926 INFO  [Log] Total number of Row used return as < 4 >. 
+2018-12-15 16:15:45,134 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:15:45,137 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:15:45,137 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:15:45,137 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:15:45,137 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:TC_04_ProductListingPage       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-12-15 16:15:45,137 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:TC_02_AddToCart       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-12-15 16:15:45,137 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:15:45,138 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:15:45,137 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:15:45,138 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:15:45,312 INFO  [Log] Excel sheet opened 
+2018-12-15 16:15:45,312 INFO  [Log] Total number of Row used return as < 4 >. 
+2018-12-15 16:15:45,412 INFO  [Log] Excel sheet opened 
+2018-12-15 16:15:45,412 INFO  [Log] Total number of Row used return as < 4 >. 
+2018-12-15 16:16:45,642 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:16:45,644 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:16:45,645 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:TC_02_AddToCart       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-12-15 16:16:45,645 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:16:45,645 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:16:46,532 INFO  [Log] Excel sheet opened 
+2018-12-15 16:16:46,532 INFO  [Log] Total number of Row used return as < 4 >. 
+2018-12-15 16:17:41,719 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:17:41,719 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:17:41,719 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:TC_02_AddToCart       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-12-15 16:17:41,719 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:17:41,719 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:17:42,449 INFO  [Log] Excel sheet opened 
+2018-12-15 16:17:42,449 INFO  [Log] Total number of Row used return as < 4 >. 
+2018-12-15 16:19:05,551 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:19:05,552 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:19:05,552 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:TC_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-12-15 16:19:05,552 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:19:05,552 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:19:05,553 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:19:05,553 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:19:05,553 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:TC_03_OUNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-12-15 16:19:05,553 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:19:05,553 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:19:06,478 INFO  [Log] Excel sheet opened 
+2018-12-15 16:19:06,478 INFO  [Log] Total number of Row used return as < 4 >. 
+2018-12-15 16:19:06,510 INFO  [Log] Excel sheet opened 
+2018-12-15 16:19:06,511 INFO  [Log] Total number of Row used return as < 4 >. 
+2018-12-15 16:19:08,968 INFO  [Log] New driver instantiated 
+2018-12-15 16:19:09,219 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-12-15 16:19:27,824 INFO  [Log] Web application launched successfully 
+2018-12-15 16:19:27,886 INFO  [Log] NISNASS User Registration Tests started 
+2018-12-15 16:19:27,945 INFO  [Log] NISNASS HP Launched 
+2018-12-15 16:20:22,824 INFO  [Log] User Loggin Sucess 
+2018-12-15 16:20:38,766 INFO  [Log] Email Field is non editable 
+2018-12-15 16:20:41,472 INFO  [Log] Profile is updated successfully 
+2018-12-15 16:20:41,518 INFO  [Log] New mobile number is updated successfully 
+2018-12-15 16:20:41,967 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-12-15 16:20:41,967 INFO  [Log] X 
+2018-12-15 16:20:41,967 INFO  [Log] X 
+2018-12-15 16:20:41,967 INFO  [Log] X 
+2018-12-15 16:20:41,967 INFO  [Log] X 
+2018-12-15 16:20:42,115 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:20:42,115 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:20:42,115 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:TC_02_AddToCart       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-12-15 16:20:42,115 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:20:42,115 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:20:42,219 INFO  [Log] Excel sheet opened 
+2018-12-15 16:20:42,219 INFO  [Log] Total number of Row used return as < 4 >. 
+2018-12-15 16:20:43,547 INFO  [Log] New driver instantiated 
+2018-12-15 16:20:43,680 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-12-15 16:20:50,624 INFO  [Log] New driver instantiated 
+2018-12-15 16:20:54,168 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-12-15 16:21:00,066 INFO  [Log] Web application launched successfully 
+2018-12-15 16:21:00,071 INFO  [Log] Ounass FB Login Test started::TC_03_OUNASS 
+2018-12-15 16:21:01,176 INFO  [Log] Web application launched successfully 
+2018-12-15 16:21:01,179 INFO  [Log] NISNASS Add to Cart Test Started 
+2018-12-15 16:21:29,764 INFO  [Log] Embellishment Kamma Block Heels->Item is out of stock or Add to Bag button is not enabled 
+2018-12-15 16:21:34,435 INFO  [Log] NISNASS Add to Cart Tests Failed 
+2018-12-15 16:21:34,435 INFO  [Log] NISNASS AddToCart Tests Failed because of Verification 
+2018-12-15 16:21:34,653 ERROR [Log] NISNASS Add to Cart Tests Failed 
+2018-12-15 16:21:34,658 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-12-15 16:21:34,658 INFO  [Log] X 
+2018-12-15 16:21:34,658 INFO  [Log] X 
+2018-12-15 16:21:34,658 INFO  [Log] X 
+2018-12-15 16:21:34,658 INFO  [Log] X 
+2018-12-15 16:21:46,504 INFO  [Log] Social Account Error while FB Login 
+2018-12-15 16:21:46,516 INFO  [Log] OUNASS FB Login  FB Tests Failed 
+2018-12-15 16:21:46,517 INFO  [Log] OUNASS FB Login  Tests Failed because of Verification 
+2018-12-15 16:21:47,036 ERROR [Log] OUNASS FB Login  FB Tests Failed 
+2018-12-15 16:21:47,039 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-12-15 16:21:47,040 INFO  [Log] X 
+2018-12-15 16:21:47,040 INFO  [Log] X 
+2018-12-15 16:21:47,040 INFO  [Log] X 
+2018-12-15 16:21:47,040 INFO  [Log] X 
+2018-12-15 16:21:47,184 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:21:47,185 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:21:47,185 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:TC_04_ProductListingPage       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-12-15 16:21:47,185 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:21:47,185 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:21:47,265 INFO  [Log] Excel sheet opened 
+2018-12-15 16:21:47,266 INFO  [Log] Total number of Row used return as < 4 >. 
+2018-12-15 16:21:52,801 INFO  [Log] New driver instantiated 
+2018-12-15 16:21:56,360 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-12-15 16:22:11,354 INFO  [Log] Web application launched successfully 
+2018-12-15 16:22:11,356 INFO  [Log] OUNASS Product Feature Listing Test started::TC_04_ProductListingPage 
+2018-12-15 16:24:01,336 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-12-15 16:24:01,336 INFO  [Log] X 
+2018-12-15 16:24:01,336 INFO  [Log] X 
+2018-12-15 16:24:01,336 INFO  [Log] X 
+2018-12-15 16:24:01,336 INFO  [Log] X 
+2018-12-15 16:42:40,665 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:42:40,665 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:42:40,685 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:42:40,685 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:42:40,685 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:TC_01_NISNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-12-15 16:42:40,686 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:42:40,686 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:42:40,685 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:TC_03_OUNASS       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-12-15 16:42:40,686 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:42:40,686 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:42:41,799 INFO  [Log] Excel sheet opened 
+2018-12-15 16:42:41,799 INFO  [Log] Excel sheet opened 
+2018-12-15 16:42:41,799 INFO  [Log] Total number of Row used return as < 4 >. 
+2018-12-15 16:42:41,799 INFO  [Log] Total number of Row used return as < 4 >. 
+2018-12-15 16:42:44,635 INFO  [Log] New driver instantiated 
+2018-12-15 16:42:44,848 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-12-15 16:43:04,447 INFO  [Log] Web application launched successfully 
+2018-12-15 16:43:04,465 INFO  [Log] NISNASS User Registration Tests started 
+2018-12-15 16:43:04,513 INFO  [Log] NISNASS HP Launched 
+2018-12-15 16:44:05,155 INFO  [Log] User Loggin Sucess 
+2018-12-15 16:44:20,086 INFO  [Log] Email Field is non editable 
+2018-12-15 16:44:22,780 INFO  [Log] Profile is updated successfully 
+2018-12-15 16:44:22,822 INFO  [Log] New mobile number is updated successfully 
+2018-12-15 16:44:23,211 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-12-15 16:44:23,211 INFO  [Log] X 
+2018-12-15 16:44:23,212 INFO  [Log] X 
+2018-12-15 16:44:23,212 INFO  [Log] X 
+2018-12-15 16:44:23,212 INFO  [Log] X 
+2018-12-15 16:44:23,407 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:44:23,407 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:44:23,407 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:TC_02_AddToCart       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-12-15 16:44:23,407 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:44:23,407 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:44:23,496 INFO  [Log] Excel sheet opened 
+2018-12-15 16:44:23,497 INFO  [Log] Total number of Row used return as < 4 >. 
+2018-12-15 16:44:24,800 INFO  [Log] New driver instantiated 
+2018-12-15 16:44:24,945 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-12-15 16:44:32,194 INFO  [Log] New driver instantiated 
+2018-12-15 16:44:35,737 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-12-15 16:44:40,967 INFO  [Log] Web application launched successfully 
+2018-12-15 16:44:40,968 INFO  [Log] Ounass FB Login Test started::TC_03_OUNASS 
+2018-12-15 16:44:41,793 INFO  [Log] Web application launched successfully 
+2018-12-15 16:44:41,794 INFO  [Log] NISNASS Add to Cart Test Started 
+2018-12-15 16:45:05,480 INFO  [Log] Embellishment Kamma Block Heels->Item is out of stock or Add to Bag button is not enabled 
+2018-12-15 16:45:09,594 INFO  [Log] NISNASS Add to Cart Tests Failed 
+2018-12-15 16:45:09,594 INFO  [Log] NISNASS AddToCart Tests Failed because of Verification 
+2018-12-15 16:45:09,855 ERROR [Log] NISNASS Add to Cart Tests Failed 
+2018-12-15 16:45:09,870 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-12-15 16:45:09,870 INFO  [Log] X 
+2018-12-15 16:45:09,870 INFO  [Log] X 
+2018-12-15 16:45:09,870 INFO  [Log] X 
+2018-12-15 16:45:09,870 INFO  [Log] X 
+2018-12-15 16:45:26,969 INFO  [Log] Social Account Error while FB Login 
+2018-12-15 16:45:26,982 INFO  [Log] OUNASS FB Login  FB Tests Failed 
+2018-12-15 16:45:26,982 INFO  [Log] OUNASS FB Login  Tests Failed because of Verification 
+2018-12-15 16:45:27,526 ERROR [Log] OUNASS FB Login  FB Tests Failed 
+2018-12-15 16:45:27,527 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-12-15 16:45:27,527 INFO  [Log] X 
+2018-12-15 16:45:27,527 INFO  [Log] X 
+2018-12-15 16:45:27,527 INFO  [Log] X 
+2018-12-15 16:45:27,527 INFO  [Log] X 
+2018-12-15 16:45:27,671 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:45:27,671 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:45:27,671 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Test Case Name:TC_04_ProductListingPage       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2018-12-15 16:45:27,671 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:45:27,671 INFO  [Log] **************************************************************************************** 
+2018-12-15 16:45:27,790 INFO  [Log] Excel sheet opened 
+2018-12-15 16:45:27,790 INFO  [Log] Total number of Row used return as < 4 >. 
+2018-12-15 16:45:32,786 INFO  [Log] New driver instantiated 
+2018-12-15 16:45:36,346 INFO  [Log] Implicit wait applied on the driver for 20 seconds 
+2018-12-15 16:45:56,057 INFO  [Log] Web application launched successfully 
+2018-12-15 16:45:56,057 INFO  [Log] OUNASS Product Feature Listing Test started::TC_04_ProductListingPage 
+2018-12-15 16:47:46,007 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2018-12-15 16:47:46,007 INFO  [Log] X 
+2018-12-15 16:47:46,007 INFO  [Log] X 
+2018-12-15 16:47:46,007 INFO  [Log] X 
+2018-12-15 16:47:46,007 INFO  [Log] X 

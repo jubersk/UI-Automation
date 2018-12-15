@@ -38,7 +38,7 @@ public class TC_01_NISNASS extends BaseClass{
 
 
 
-	// This method is to navigate 
+
 	@BeforeClass
 	public void init() throws Exception {
 
