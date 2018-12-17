@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.altayer.web.tests.TC_02_AddToCart">
+      <class name="com.altayer.web.tests.TC_02_NISNASSAddToCart">
         <methods>
-          <include name="nisnassAAddToCart"/>
-          <include name="extentReport"/>
           <include name="quit"/>
+          <include name="nisnassAddToCart"/>
           <include name="init"/>
-          <include name="flushExtentReport"/>
         </methods>
-      </class> <!-- com.altayer.web.tests.TC_02_AddToCart -->
+      </class> <!-- com.altayer.web.tests.TC_02_NISNASSAddToCart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

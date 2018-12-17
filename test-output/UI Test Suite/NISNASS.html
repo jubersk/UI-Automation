@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Dec 15 20:04:31 GST 2018</td>
+<td>Started on:</td><td>Sun Dec 16 17:59:28 GST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>291 seconds (291466 ms)</td>
+<tr><td>Total time:</td><td>192 seconds (192923 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,10 +76,10 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.altayer.web.tests.TC_01_NISNASSAccountRegistration.nisnassAccountRegistration()'><b>nisnassAccountRegistration</b><br>Test class: com.altayer.web.tests.TC_01_NISNASSAccountRegistration<br/>
-<a href="#Output-2017272836" onClick='toggleBox("Output-2017272836", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1113895488" onClick='toggleBox("Output-1113895488", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2017272836" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2017272836">
+<a href="#Output-1113895488" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1113895488">
 NISNASS User Registration Tests started<br/>
 NISNASS HP Launched<br/>
 Sigup Popup opened sucessfully<br/>
@@ -92,10 +92,6 @@ NISNASS User Registration Tests Failed because of Verification<br/>
 	at com.altayer.web.tests.TC_01_NISNASSAccountRegistration.fn_RegistrationDetail(TC_01_NISNASSAccountRegistration.java:219)
 	at com.altayer.web.tests.TC_01_NISNASSAccountRegistration.fn_UserRegistration(TC_01_NISNASSAccountRegistration.java:179)
 	at com.altayer.web.tests.TC_01_NISNASSAccountRegistration.nisnassAccountRegistration(TC_01_NISNASSAccountRegistration.java:117)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
 Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: .CustomerPopup &gt; a:nth-child(1)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.5.2&apos;, revision: &apos;10229a9&apos;, time: &apos;2017-08-21T17:29:55.15Z&apos;
@@ -110,9 +106,9 @@ Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	... 23 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2017272836", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2017272836'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: .CustomerPopup &gt; a:nth-child(1) (tried for 120 second(s) with 500 MILLISECONDS interval)
+	... 28 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1113895488", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1113895488'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: .CustomerPopup &gt; a:nth-child(1) (tried for 120 second(s) with 500 MILLISECONDS interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
 	at com.altayer.web.tests.TC_01_NISNASSAccountRegistration.fn_RegistrationDetail(TC_01_NISNASSAccountRegistration.java:219)
@@ -131,13 +127,18 @@ Driver info: driver.version: unknown
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: .CustomerPopup &gt; a:nth-child(1)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.5.2&apos;, revision: &apos;10229a9&apos;, time: &apos;2017-08-21T17:29:55.15Z&apos;
@@ -152,16 +153,16 @@ Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:644)
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	... 23 more
+	... 28 more
 </pre></div></td>
-<td>151</td>
+<td>129</td>
 <td>com.altayer.web.tests.TC_01_NISNASSAccountRegistration@7a36aefa</td></tr>
 <tr>
 <td title='com.altayer.web.tests.TC_02_NISNASSAddToCart.nisnassAddToCart()'><b>nisnassAddToCart</b><br>Test class: com.altayer.web.tests.TC_02_NISNASSAddToCart<br/>
-<a href="#Output-1623389046" onClick='toggleBox("Output-1623389046", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-788892554" onClick='toggleBox("Output-788892554", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1623389046" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1623389046">
+<a href="#Output-788892554" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-788892554">
 NISNASS Add to Cart Test Started<br/>
 Embellishment Kamma Block Heels->Item is out of stock or Add to Bag button is not enabled<br/>
 All the items addedd in cart successfully<br/>
@@ -171,12 +172,8 @@ NISNASS AddToCart Tests Failed because of Verification<br/>
 </td>
 <td><div><pre>java.lang.Exception: NISNASS Add to Cart Tests Failed
 	at com.altayer.web.tests.TC_02_NISNASSAddToCart.nisnassAddToCart(TC_02_NISNASSAddToCart.java:119)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1623389046", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1623389046'><pre>java.lang.Exception: NISNASS Add to Cart Tests Failed
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace788892554", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace788892554'><pre>java.lang.Exception: NISNASS Add to Cart Tests Failed
 	at com.altayer.web.tests.TC_02_NISNASSAddToCart.nisnassAddToCart(TC_02_NISNASSAddToCart.java:119)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -191,15 +188,20 @@ NISNASS AddToCart Tests Failed because of Verification<br/>
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>31</td>
+<td>32</td>
 <td>com.altayer.web.tests.TC_02_NISNASSAddToCart@17211155</td></tr>
 </table><p>
 </body>

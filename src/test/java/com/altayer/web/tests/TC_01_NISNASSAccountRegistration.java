@@ -84,7 +84,7 @@ public class TC_01_NISNASSAccountRegistration extends BaseClass{
 		System.out.println("TestCase Row Number" +iTestCaseRow);
 		navigateURL = ExcelUtils.getCellData(iTestCaseRow, ConstantOnlineReg.Col_URL);	
 		System.out.println(navigateURL);
-		DesiredCapabilities cap = DesiredCapabilities.chrome();
+		DesiredCapabilities cap = DesiredCapabilities.firefox();
 		cap.setCapability("version", "");
 		cap.setPlatform(Platform.LINUX);
 

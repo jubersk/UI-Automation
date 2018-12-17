@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Dec 15 20:04:31 GST 2018</td>
+<td>Started on:</td><td>Sun Dec 16 18:02:41 GST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>208 seconds (208536 ms)</td>
+<tr><td>Total time:</td><td>175 seconds (175850 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,25 +76,59 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.altayer.web.tests.TC_03_OUNASSFacebookLogin.ounassFacebookLogin()'><b>ounassFacebookLogin</b><br>Test class: com.altayer.web.tests.TC_03_OUNASSFacebookLogin<br/>
-<a href="#Output-896625281" onClick='toggleBox("Output-896625281", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1189651769" onClick='toggleBox("Output-1189651769", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-896625281" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-896625281">
+<a href="#Output-1189651769" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1189651769">
 Ounass FB Login Test started::TC_03_OUNASSFacebookLogin<br/>
-Social Account Error while FB Login<br/>
-OUNASS FB Login  FB Tests Failed<br/>
 OUNASS FB Login  Tests Failed because of Verification<br/>
 </div>
 </td>
-<td><div><pre>java.lang.Exception: OUNASS FB Login  FB Tests Failed
-	at com.altayer.web.tests.TC_03_OUNASSFacebookLogin.ounassFacebookLogin(TC_03_OUNASSFacebookLogin.java:148)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace896625281", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace896625281'><pre>java.lang.Exception: OUNASS FB Login  FB Tests Failed
-	at com.altayer.web.tests.TC_03_OUNASSFacebookLogin.ounassFacebookLogin(TC_03_OUNASSFacebookLogin.java:148)
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d),platform=Linux 4.9.125-linuxkit x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.5.2&apos;, revision: &apos;10229a9&apos;, time: &apos;2017-08-21T17:29:55.15Z&apos;
+System info: host: &apos;JLT01702L&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:42905}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d), userDataDir=/tmp/.org.chromium.Chromium.EueIBE}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=70.0.3538.77, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=290ad2febd6798475aaa9ce2bdce31e5, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 290ad2febd6798475aaa9ce2bdce31e5
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:99)
+	at com.altayer.web.tests.TC_03_OUNASSFacebookLogin.fn_LoginFlow(TC_03_OUNASSFacebookLogin.java:205)
+	at com.altayer.web.tests.TC_03_OUNASSFacebookLogin.ounassFacebookLogin(TC_03_OUNASSFacebookLogin.java:133)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1189651769", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1189651769'><pre>org.openqa.selenium.ElementNotVisibleException: element not interactable
+  (Session info: chrome=70.0.3538.77)
+  (Driver info: chromedriver=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d),platform=Linux 4.9.125-linuxkit x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.5.2&apos;, revision: &apos;10229a9&apos;, time: &apos;2017-08-21T17:29:55.15Z&apos;
+System info: host: &apos;JLT01702L&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=LINUX, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:42905}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d), userDataDir=/tmp/.org.chromium.Chromium.EueIBE}, takesHeapSnapshot=true, unhandledPromptBehavior=, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=70.0.3538.77, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=290ad2febd6798475aaa9ce2bdce31e5, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 290ad2febd6798475aaa9ce2bdce31e5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:99)
+	at com.altayer.web.tests.TC_03_OUNASSFacebookLogin.fn_LoginFlow(TC_03_OUNASSFacebookLogin.java:205)
+	at com.altayer.web.tests.TC_03_OUNASSFacebookLogin.ounassFacebookLogin(TC_03_OUNASSFacebookLogin.java:133)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -108,15 +142,20 @@ OUNASS FB Login  Tests Failed because of Verification<br/>
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>48</td>
+<td>47</td>
 <td>com.altayer.web.tests.TC_03_OUNASSFacebookLogin@80169cf</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -128,10 +167,10 @@ OUNASS FB Login  Tests Failed because of Verification<br/>
 </tr>
 <tr>
 <td title='com.altayer.web.tests.TC_04_OUNASSProductListingPage.ounassProductListing()'><b>ounassProductListing</b><br>Test class: com.altayer.web.tests.TC_04_OUNASSProductListingPage<br/>
-<a href="#Output-1587696227" onClick='toggleBox("Output-1587696227", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1878992188" onClick='toggleBox("Output-1878992188", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1587696227" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1587696227">
+<a href="#Output-1878992188" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1878992188">
 OUNASS Product Feature Listing  Test started::TC_04_OUNASSProductListingPage<br/>
 Load More button is displayed successfully<br/>
 Items loaded are more than 12 items<br/>

@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [UI Test Suite]" parallel="tests">
-  <test thread-count="4" name="OUNASS(failed)" parallel="tests">
-    <classes>
-      <class name="com.altayer.web.tests.TC_03_OUNASSFacebookLogin">
-        <methods>
-          <include name="quit"/>
-          <include name="ounassFacebookLogin"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- com.altayer.web.tests.TC_03_OUNASSFacebookLogin -->
-    </classes>
-  </test> <!-- OUNASS(failed) -->
-  <test thread-count="4" name="NISNASS(failed)" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [UI Test Suite]">
+  <test thread-count="5" name="NISNASS(failed)">
     <classes>
       <class name="com.altayer.web.tests.TC_02_NISNASSAddToCart">
         <methods>
@@ -32,4 +21,25 @@
       </class> <!-- com.altayer.web.tests.TC_01_NISNASSAccountRegistration -->
     </classes>
   </test> <!-- NISNASS(failed) -->
+  <test thread-count="5" name="OUNASS(failed)">
+    <classes>
+      <class name="com.altayer.web.tests.TC_03_OUNASSFacebookLogin">
+        <methods>
+          <include name="quit"/>
+          <include name="ounassFacebookLogin"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.altayer.web.tests.TC_03_OUNASSFacebookLogin -->
+    </classes>
+  </test> <!-- OUNASS(failed) -->
+  <test thread-count="5" name="APIS(failed)">
+    <classes>
+      <class name="com.altayer.web.APITests.TC_01_GetCategory">
+        <methods>
+          <include name="getPlaceAPI"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.altayer.web.APITests.TC_01_GetCategory -->
+    </classes>
+  </test> <!-- APIS(failed) -->
 </suite> <!-- Failed suite [UI Test Suite] -->
